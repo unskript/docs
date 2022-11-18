@@ -1,0 +1,66 @@
+---
+description: Use our free Cloud sandbox, or install the Open Source Docker Image
+---
+
+# Sign Up/Install
+
+To get up and running on your unSkript journey quickly, we've created two options:
+
+1. A local install using the  the open source Docker image.
+2. A free sandboxed version of our Cloud product.\
+
+
+{% tabs %}
+{% tab title="Open Source" %}
+unSkript is an open source project. We love PRs, stars and more - checkout our [GitHub](https://github.com/unskript/Awesome-CloudOps-Automation). &#x20;
+
+[![image-text](https://img.shields.io/github/stars/unskript/Awesome-CloudOps-Automation?style=social)](https://github.com/unskript/Awesome-CloudOps-Automation)
+
+The fastest way to get the open source version of unSkript running is via our Docker container.
+
+With Docker, you can get up and running in two steps (and just one if you already have Docker up and running!)
+
+1. Install [Docker](https://docs.docker.com/engine/install/), and start the Docker Client.
+2. In the terminal, run the following command:\
+   `docker run -it -p 8888:8888`\
+   `-v $HOME/.unskript:/data`\
+   `--user root`\
+   `docker.io/unskript/awesome-runbooks:latest`
+
+``
+
+Your installation will be available to use at: [http://127.0.0.1:8888/doc/workspaces/auto-t/tree/Welcome.ipynb](http://127.0.0.1:8888/doc/workspaces/auto-t/tree/Welcome.ipynb)
+
+
+
+You can read more about how to configure unSkript on the [GitHub README page](https://github.com/unskript/Awesome-CloudOps-Automation/blob/master/README.md).
+{% endtab %}
+
+{% tab title="Sandbox" %}
+unSkript offers a free cloud sandbox that can be easily accessed in your browser. &#x20;
+
+1. Visit [unSkript.com](https://unskript.com), and click the signup button at the top right of the page
+2. On the sign up  screen, you may either use Google to sign in, or you can use your email address to create an account (this will require email verification).
+
+
+
+Once you have verified your account, you'll be walked through a overview of the platform where you will create a xRunBook in three steps:
+
+1. ****[**Establish a proxy environment**](create-a-proxy.md) (these are used to store your credentials and xRunBooks). In the cloud demo, you can only have unSkript hosted proxies.
+2. ****[**Connect a Resource/Add Credentials**](add-credentials-to-connect-your-resources.md) **** We'll connect your environment to a MongoDb database for the demo. &#x20;
+3. **Create a xRunBook** This step will walk you through the creation of a xRunBook
+   1. First you'll create a xRunBook with a name, optional description and the Proxy you created in the first step.
+   2. Next we'll open the editor to begin creating the xRunBook.
+   3. xRunBooks are built by combining Actions. In the walkthrough we'll add the `MongoDB Find Document` Action from the installed Actions, by searching for the term, and then dragging the Action into our xRunbook.
+   4. Configure your Action.  Each Action can be [configured in many ways](../actions/action-configuration/). We've created a default configuration for this Action, but you'll need to add Credentials to the MongoDB.
+   5. Now you are ready to run your first xRunBook.  Click `Run Action` to just run the Action, or you can click the `Run XRunBook` to run the entire RunBook.  A list of movies will be the output.
+   6. Now you are ready to create your own xRunBooks!
+{% endtab %}
+{% endtabs %}
+
+
+
+
+
+
+

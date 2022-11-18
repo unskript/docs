@@ -1,0 +1,356 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Executions",
+    "version": "v1alpha1"
+  },
+  "tags": [],
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/v1alpha1/executions": {
+      "get": {
+        "summary": "Lists execution",
+        "description": "Lists executions matching the optional filter",
+        "operationId": "WorkflowsService_ListExecutions",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/ListExecutionsResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "description": "page_size specifies the maximum number of results to be returned.",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "pageToken",
+            "description": "page_token is used to request a specific page of the list results.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "description": "filter expression.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "orderBy",
+            "description": "order_by is used to sort the fields by ascending or descending.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "timeRange",
+            "description": "Time Range is used to filter the data by last month, last year and by default is all.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "execution"
+        ]
+      }
+    },
+    "/v1alpha1/executions/{executionId}": {
+      "get": {
+        "summary": "Get execution details",
+        "description": "Gets execution details",
+        "operationId": "WorkflowsService_GetExecution",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/GetExecutionResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "executionId",
+            "description": "execution_id is the id of execution.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "tenantId",
+            "description": "tenant_id is the tenantID.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "summary",
+            "description": "summary gives the execution details without the output field.",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
+          }
+        ],
+        "tags": [
+          "execution"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "protobufAny": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": {}
+    },
+    "rpcStatus": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "message": {
+          "type": "string"
+        },
+        "details": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/protobufAny"
+          }
+        }
+      }
+    },
+    "Execution": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "id is the execution id.",
+          "readOnly": true
+        },
+        "workflowName": {
+          "type": "string",
+          "description": "workflow_name is the name of the executed workflow.",
+          "readOnly": true
+        },
+        "createTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "create_time is the time of the execution create.",
+          "readOnly": true
+        },
+        "startTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "start_time is the time of the execution start.",
+          "readOnly": true
+        },
+        "endTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "end_time is the time of the execution end.",
+          "readOnly": true
+        },
+        "duration": {
+          "type": "string",
+          "description": "duration is the duration of the execution.",
+          "readOnly": true
+        },
+        "version": {
+          "type": "string",
+          "description": "version is the version of the execution.",
+          "readOnly": true
+        },
+        "executionStatus": {
+          "$ref": "#/definitions/ExecutionStatus",
+          "description": "execution_status is the status of the execution."
+        },
+        "inputs": {
+          "type": "string",
+          "description": "inputs describes the field input parameter schema.",
+          "readOnly": true
+        },
+        "output": {
+          "type": "string",
+          "format": "byte",
+          "description": "output is the execution output.",
+          "readOnly": true
+        },
+        "executor": {
+          "type": "string",
+          "description": "executor is the name of executor of workflow\nit's either email of the user, name of the token, who ran execution.",
+          "readOnly": true
+        },
+        "approver": {
+          "type": "string",
+          "description": "approver is the id of the user, who approved this execution.",
+          "readOnly": true
+        },
+        "reason": {
+          "type": "string",
+          "description": "reason is the reason of failure (in case of lambda failure).",
+          "readOnly": true
+        },
+        "executionType": {
+          "$ref": "#/definitions/ExecutionType",
+          "description": "execution_type is to identify whether it is Action or Runbook."
+        }
+      },
+      "description": "Execution is the execution details."
+    },
+    "ExecutionStatus": {
+      "type": "string",
+      "enum": [
+        "EXECUTION_STATUS_UNSPECIFIED",
+        "EXECUTION_STATUS_SUCCEEDED",
+        "EXECUTION_STATUS_FAILED",
+        "EXECUTION_STATUS_IN_PROGRESS"
+      ],
+      "default": "EXECUTION_STATUS_UNSPECIFIED",
+      "description": "ExecutionStatus is the execution status."
+    },
+    "ExecutionType": {
+      "type": "string",
+      "enum": [
+        "EXECUTION_TYPE_UNSPECIFIED",
+        "EXECUTION_TYPE_RUNBOOK",
+        "EXECUTION_TYPE_ACTION"
+      ],
+      "default": "EXECUTION_TYPE_UNSPECIFIED",
+      "description": "ExecutionType is the execution type."
+    },
+    "GetExecutionResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/ResponseHeader",
+          "description": "req_hdr is the common request header."
+        },
+        "execution": {
+          "$ref": "#/definitions/Execution",
+          "description": "execution is the details of the execution."
+        }
+      },
+      "description": "GetExecutionResponse is the response to GetExecutionRequest."
+    },
+    "ListExecutionsResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/ResponseHeader",
+          "description": "resp_hdr is the common response header."
+        },
+        "execution": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Execution"
+          },
+          "description": "execution is the execution details."
+        },
+        "statusTable": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "description": "status_table is a table containing information about the total number of executions in the list and their status."
+        },
+        "nextPageToken": {
+          "type": "string",
+          "description": "next_page_token represents the pagination token to retrieve the next page of results. If the value is \"\", it means no further results for the request."
+        },
+        "pageCount": {
+          "type": "integer",
+          "format": "int32",
+          "description": "page_count is the number of pages."
+        },
+        "aggregateTotalTable": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "description": "status_total_table is a table containing information about the total number of executions in the list and their status."
+        }
+      },
+      "description": "ListExecutionsResponse is the response to ListExecutionsRequest."
+    },
+    "ResponseHeader": {
+      "type": "object",
+      "properties": {
+        "tid": {
+          "type": "string",
+          "title": "tid is the unique response id"
+        },
+        "requestTid": {
+          "type": "string",
+          "title": "request_tid is the corresponding request tid"
+        }
+      },
+      "title": "ResponseHeader is the common header which every response (GRPC/HTTP) should have"
+    },
+    "RequestHeader": {
+      "type": "object",
+      "properties": {
+        "tid": {
+          "type": "string",
+          "title": "tid is the unique request id",
+          "required": [
+            "tid"
+          ]
+        }
+      },
+      "title": "RequestHeader is the common header which every request (GRPC/HTTP) should have",
+      "required": [
+        "tid"
+      ]
+    }
+  }
+}
