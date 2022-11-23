@@ -1,6 +1,8 @@
 # Folders
 
-Folders can be used to organize workflows as per business needs. unSkript allows users to create Folders to organize multiple xRunbooks for a particular workflow.
+Folders can be used to organize workflows as per business needs. unSkript allows users to create Folders to organize multiple xRunBooks for a particular workflow.  Folders are also used for [Role Based Access Control](role-based-access-control.md) -where all permissions are based at the folder level.
+
+
 
 To create a Folder, navigate to the xRunBooks tab and click on the Create button.
 
