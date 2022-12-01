@@ -1,5 +1,11 @@
 # Jenkins
 
+### [List of Jenkins xRunBooks](https://docs.unskript.com/unskript-product-documentation/lists/xrunbook\_list#jenkins)
+
+### [List of Jenkins Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#jenkins)
+
+### Authentication
+
 ![Information needed to onboard Jenkins connector](<../../.gitbook/assets/Screen Shot 2022-06-15 at 8.14.19 PM.png>)
 
 | Name        | Description                                               |
