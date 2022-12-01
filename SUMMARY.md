@@ -11,6 +11,7 @@
   * [Key Terms](guides/getting-started/key-terms.md)
 * [Importing unSkript xRunBooks](guides/importing-unskript-xrunbooks.md)
 * [xRunBooks](guides/xrunbooks/README.md)
+  * [Prebuilt xRunBooks](lists/xRunBook\_list.md)
   * [Create a xRunBook](guides/xrunbooks/create-a-xrunbook.md)
   * [Add an Action](guides/xrunbooks/add-an-action.md)
   * [Connecting Actions](guides/xrunbooks/connecting-actions.md)
@@ -107,5 +108,5 @@
 
 ## Lists
 
-* [List of xRunBooks](lists/xRunBook_list.md)
-* [List of Actions](lists/Action_list.md)
+* [List of xRunBooks](lists/xRunBook\_list.md)
+* [List of Actions](lists/Action\_list.md)
