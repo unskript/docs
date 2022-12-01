@@ -1,7 +1,13 @@
 # AWS
 
+### [Listing of all AWS XRunBooks](../../lists/xRunBook\_list.md#aws)
+
+### [Listing of all AWS Actions](../../lists/Action\_list.md#aws)
+
+### Authentication
+
 For the Docker version, we support Access Key based credential.\
-IN the SAAS version, we accept either the Access Key or Role based authentication:
+In the SAAS version, we accept either the Access Key or Role based authentication:
 
 ## Access Key
 
