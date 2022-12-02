@@ -1,5 +1,9 @@
 # Hadoop
 
+### [List of Hadoop Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#hadoop)
+
+### Authentication
+
 ![Information needed to onboard Hadoop connector](<../../.gitbook/assets/Screen Shot 2022-06-14 at 7.27.01 PM.png>)
 
 | Name     | Description                                               |

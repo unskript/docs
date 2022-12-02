@@ -1,5 +1,11 @@
 # Kubernetes
 
+### [List of K8s xRunBooks](https://docs.unskript.com/unskript-product-documentation/lists/xrunbook\_list#kubernetes)
+
+### [List of K8s Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#kubernetes)
+
+### Authentication
+
 ![Information needed to onboard kubernetes connector](<../../.gitbook/assets/Screen Shot 2022-06-14 at 6.03.08 PM.png>)
 
 | Name       | Description                                                                              |

@@ -1,5 +1,9 @@
 # MongoDB
 
+### [List of MongoDB Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#mongo)
+
+### Authentication
+
 ![Information needed to onboard Mongo DB connector](<../../.gitbook/assets/Screen Shot 2022-06-14 at 6.02.37 PM.png>)
 
 | Name                  | Description                                                                              |

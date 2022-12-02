@@ -4,6 +4,10 @@ description: Connect your xRunBook Actions to Slack. Message your team!
 
 # Slack
 
+### [List of Slack Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#slack)
+
+### Authenticate
+
 ![Information needed to onboard Slack connector](<../../.gitbook/assets/Screen Shot 2022-06-14 at 6.22.14 PM.png>)
 
 | Name               | Description                                               |

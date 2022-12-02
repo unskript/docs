@@ -1,5 +1,11 @@
 # Grafana
 
+### [List of Grafana Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#grafana)
+
+
+
+### Authentication
+
 ![Information needed to onboard Grafana connetor](<../../.gitbook/assets/Screen Shot 2022-06-15 at 7.25.46 PM.png>)
 
 | Name      | Description                                                                                                   |

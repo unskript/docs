@@ -1,5 +1,9 @@
 # MS SQL
 
+### [List of MS-SQL Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#mssql)
+
+### Authentication
+
 ![Information needed to onboard MSSQL connector](<../../.gitbook/assets/Screen Shot 2022-06-14 at 7.31.35 PM.png>)
 
 | Name          | Description                                                                                                                                                              |

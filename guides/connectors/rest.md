@@ -1,5 +1,9 @@
 # REST
 
+### [List of REST Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#rest)
+
+### Authentication with REST
+
 ![Information needed to onboard REST connector](<../../.gitbook/assets/Screen Shot 2022-06-14 at 6.26.14 PM.png>)
 
 | Name     | Description                                                                                                                                                                             |

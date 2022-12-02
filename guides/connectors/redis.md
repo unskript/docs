@@ -1,5 +1,9 @@
 # Redis
 
+### [List of Redis Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#redis)
+
+### Authentication
+
 ![Information needed to onboard REDIS connector](<../../.gitbook/assets/Screen Shot 2022-06-14 at 6.36.20 PM.png>)
 
 | Name     | Description                                               |

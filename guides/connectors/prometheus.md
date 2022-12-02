@@ -1,5 +1,9 @@
 # Prometheus
 
+### [List of Prometheus Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#prometheus)
+
+### Authentication
+
 ![Information needed to onboard Prometheus connector](<../../.gitbook/assets/Screen Shot 2022-06-15 at 7.52.25 PM.png>)
 
 | Name        | Description                                                                                                  |
