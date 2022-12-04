@@ -85,10 +85,9 @@
 * [API reference](api-reference/README.md)
   * [Authentication](api-reference/authentication.md)
   * [Endpoints](api-reference/endpoints/README.md)
-    * [v1alpha1](api-reference/endpoints/v1alpha1/README.md)
-      * [Workflows](api-reference/endpoints/v1alpha1/workflows/README.md)
-        * [Run](api-reference/endpoints/v1alpha1/workflows/run.md)
-      * [Executions](api-reference/endpoints/v1alpha1/executions.md)
+    * [Executions](api-reference/endpoints/executions.md)
+    * [Workflows](api-reference/endpoints/workflows.md)
+    * [Schedules](api-reference/endpoints/schedules.md)
 
 ## Use Cases
 
@@ -108,5 +107,5 @@
 
 ## Lists
 
-* [List of xRunBooks](lists/xRunBook\_list.md)
+*
 * [List of Actions](lists/Action\_list.md)

@@ -1,5 +1,9 @@
 # Apache Kafka
 
+### [Listing of all Kafka Actions](../../lists/Action\_list.md#kafka)
+
+### Authentication
+
 ![Information needed to onboard RAFKA connector](<../../.gitbook/assets/Screen Shot 2022-06-14 at 7.19.29 PM.png>)
 
 | Name          | Description                                                                                               |
