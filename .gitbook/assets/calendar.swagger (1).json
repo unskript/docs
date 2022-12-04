@@ -1,0 +1,645 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "calendar/v1alpha1/calendar.proto",
+    "version": "v1alpha1"
+  },
+  "tags": [
+    {
+      "name": "CalendarService"
+    }
+  ],
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/v1alpha1/schedules": {
+      "get": {
+        "summary": "List schedules",
+        "description": "List schedules",
+        "operationId": "CalendarService_ListSchedule",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1ListScheduleResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "description": "filter expression.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "description": "page_size specifies the maximum number of results to be returned.",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "pageToken",
+            "description": "page_token is used to request a specific page of the list results.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "orderBy",
+            "description": "order_by is used to sort the fields by ascending or descending.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "schedules"
+        ]
+      },
+      "post": {
+        "summary": "Create a Schedule",
+        "description": "Creates and returns a Schedule object on Success and error on failure",
+        "operationId": "CalendarService_CreateSchedule",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1CreateScheduleResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/v1alpha1CreateScheduleRequest"
+            }
+          }
+        ],
+        "tags": [
+          "schedules"
+        ]
+      }
+    },
+    "/v1alpha1/schedules/{scheduleId}": {
+      "get": {
+        "summary": "Get schedule details",
+        "description": "Get details about a particular schedule",
+        "operationId": "CalendarService_GetSchedule",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1GetScheduleResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "scheduleId",
+            "description": "schedule_id is the id of the schedule.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "schedules"
+        ]
+      },
+      "delete": {
+        "summary": "Delete a Schedule",
+        "description": "Deletes a particular schedule",
+        "operationId": "CalendarService_DeleteSchedule",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1DeleteScheduleResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "scheduleId",
+            "description": "schedule_id is the id of the schedule.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "schedules"
+        ]
+      },
+      "patch": {
+        "summary": "Update a Schedule",
+        "description": "Update certain fields of a schedule.",
+        "operationId": "CalendarService_UpdateSchedule",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1UpdateScheduleResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "scheduleId",
+            "description": "schedule_id is the id of schedule.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "description": "schedule is the details of the schedule.",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/v1alpha1Schedule"
+            }
+          },
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "updateMask",
+            "description": "The update mask applies to the resource. For the `FieldMask` definition,\nsee https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmask.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "schedules"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "calendarv1alpha1HealthStatusResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "description": "resp_hdr is the common response header."
+        },
+        "status": {
+          "type": "string",
+          "description": "status is the per application status."
+        }
+      },
+      "title": "HealthStatusResponse is the response to the /internal/health request"
+    },
+    "protobufAny": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string",
+          "description": "A URL/resource name that uniquely identifies the type of the serialized\nprotocol buffer message. This string must contain at least\none \"/\" character. The last segment of the URL's path must represent\nthe fully qualified name of the type (as in\n`path/google.protobuf.Duration`). The name should be in a canonical form\n(e.g., leading \".\" is not accepted).\n\nIn practice, teams usually precompile into the binary all types that they\nexpect it to use in the context of Any. However, for URLs which use the\nscheme `http`, `https`, or no scheme, one can optionally set up a type\nserver that maps type URLs to message definitions as follows:\n\n* If no scheme is provided, `https` is assumed.\n* An HTTP GET on the URL must yield a [google.protobuf.Type][]\n  value in binary format, or produce an error.\n* Applications are allowed to cache lookup results based on the\n  URL, or have them precompiled into a binary to avoid any\n  lookup. Therefore, binary compatibility needs to be preserved\n  on changes to types. (Use versioned type names to manage\n  breaking changes.)\n\nNote: this functionality is not currently available in the official\nprotobuf release, and it is not used for type URLs beginning with\ntype.googleapis.com.\n\nSchemes other than `http`, `https` (or the empty scheme) might be\nused with implementation specific semantics."
+        }
+      },
+      "additionalProperties": {},
+      "description": "`Any` contains an arbitrary serialized protocol buffer message along with a\nURL that describes the type of the serialized message.\n\nProtobuf library provides support to pack/unpack Any values in the form\nof utility functions or additional generated methods of the Any type.\n\nExample 1: Pack and unpack a message in C++.\n\n    Foo foo = ...;\n    Any any;\n    any.PackFrom(foo);\n    ...\n    if (any.UnpackTo(\u0026foo)) {\n      ...\n    }\n\nExample 2: Pack and unpack a message in Java.\n\n    Foo foo = ...;\n    Any any = Any.pack(foo);\n    ...\n    if (any.is(Foo.class)) {\n      foo = any.unpack(Foo.class);\n    }\n\n Example 3: Pack and unpack a message in Python.\n\n    foo = Foo(...)\n    any = Any()\n    any.Pack(foo)\n    ...\n    if any.Is(Foo.DESCRIPTOR):\n      any.Unpack(foo)\n      ...\n\n Example 4: Pack and unpack a message in Go\n\n     foo := \u0026pb.Foo{...}\n     any, err := anypb.New(foo)\n     if err != nil {\n       ...\n     }\n     ...\n     foo := \u0026pb.Foo{}\n     if err := any.UnmarshalTo(foo); err != nil {\n       ...\n     }\n\nThe pack methods provided by protobuf library will by default use\n'type.googleapis.com/full.type.name' as the type URL and the unpack\nmethods only use the fully qualified type name after the last '/'\nin the type URL, for example \"foo.bar.com/x/y.z\" will yield type\nname \"y.z\".\n\n\nJSON\n====\nThe JSON representation of an `Any` value uses the regular\nrepresentation of the deserialized, embedded message, with an\nadditional field `@type` which contains the type URL. Example:\n\n    package google.profile;\n    message Person {\n      string first_name = 1;\n      string last_name = 2;\n    }\n\n    {\n      \"@type\": \"type.googleapis.com/google.profile.Person\",\n      \"firstName\": \u003cstring\u003e,\n      \"lastName\": \u003cstring\u003e\n    }\n\nIf the embedded message type is well-known and has a custom JSON\nrepresentation, that representation will be embedded adding a field\n`value` which holds the custom JSON in addition to the `@type`\nfield. Example (for message [google.protobuf.Duration][]):\n\n    {\n      \"@type\": \"type.googleapis.com/google.protobuf.Duration\",\n      \"value\": \"1.212s\"\n    }"
+    },
+    "rpcStatus": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "message": {
+          "type": "string"
+        },
+        "details": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/protobufAny"
+          }
+        }
+      }
+    },
+    "v1alpha1AlarmsPullSchedule": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "id is the id of the schedule.",
+          "readOnly": true
+        },
+        "environmentId": {
+          "type": "string",
+          "description": "environment_id is the id of the environment under which the schedule should be created.",
+          "required": [
+            "environment_id"
+          ]
+        },
+        "environmentName": {
+          "type": "string",
+          "description": "environment_name is the name of the environment under which the schedule should be created.",
+          "readOnly": true
+        },
+        "connectorId": {
+          "type": "string",
+          "description": "connector_id is the id of the connector under which the schedule should be created.",
+          "required": [
+            "connector_id"
+          ]
+        },
+        "connectorName": {
+          "type": "string",
+          "description": "connector_name is the name of the connector under which the schedule should be created.",
+          "required": [
+            "connector_name"
+          ]
+        },
+        "schedule": {
+          "type": "string",
+          "title": "schedule is the schedule of Connector",
+          "required": [
+            "schedule"
+          ]
+        },
+        "connectorType": {
+          "$ref": "#/definitions/v1alpha1ConnectorType",
+          "title": "connector_type is the type of connector"
+        }
+      },
+      "description": "AlarmsPullSchedule contains basic details about a schedule for a connector.",
+      "required": [
+        "environmentId",
+        "connectorId",
+        "connectorName",
+        "schedule"
+      ]
+    },
+    "v1alpha1ConnectorType": {
+      "type": "string",
+      "enum": [
+        "CONNECTOR_TYPE_UNSPECIFIED",
+        "CONNECTOR_TYPE_AWS",
+        "CONNECTOR_TYPE_K8S",
+        "CONNECTOR_TYPE_GCP",
+        "CONNECTOR_TYPE_POSTGRESQL",
+        "CONNECTOR_TYPE_SLACK",
+        "CONNECTOR_TYPE_MONGODB",
+        "CONNECTOR_TYPE_JENKINS",
+        "CONNECTOR_TYPE_MYSQL",
+        "CONNECTOR_TYPE_JIRA",
+        "CONNECTOR_TYPE_REST",
+        "CONNECTOR_TYPE_ELASTICSEARCH",
+        "CONNECTOR_TYPE_KAFKA",
+        "CONNECTOR_TYPE_GRAFANA",
+        "CONNECTOR_TYPE_SSH",
+        "CONNECTOR_TYPE_PROMETHEUS",
+        "CONNECTOR_TYPE_DATADOG",
+        "CONNECTOR_TYPE_STRIPE",
+        "CONNECTOR_TYPE_REDIS",
+        "CONNECTOR_TYPE_ZABBIX",
+        "CONNECTOR_TYPE_OPENSEARCH",
+        "CONNECTOR_TYPE_PINGDOM",
+        "CONNECTOR_TYPE_GITHUB",
+        "CONNECTOR_TYPE_TERRAFORM",
+        "CONNECTOR_TYPE_AIRFLOW",
+        "CONNECTOR_TYPE_HADOOP",
+        "CONNECTOR_TYPE_MSSQL",
+        "CONNECTOR_TYPE_SNOWFLAKE",
+        "CONNECTOR_TYPE_SPLUNK",
+        "CONNECTOR_TYPE_SALESFORCE",
+        "CONNECTOR_TYPE_AZURE"
+      ],
+      "default": "CONNECTOR_TYPE_UNSPECIFIED",
+      "title": "ConnectorType Enum used to identify various Connectors. Starts with 0"
+    },
+    "v1alpha1CreateInternalScheduleResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr Common response header first"
+        },
+        "connectorSchedule": {
+          "$ref": "#/definitions/v1alpha1AlarmsPullSchedule",
+          "description": "connector is connector specific schedule."
+        }
+      },
+      "description": "CreateInternalScheduleResponse is the response to the CreateInternalScheduleRequest."
+    },
+    "v1alpha1CreateScheduleRequest": {
+      "type": "object",
+      "properties": {
+        "reqHdr": {
+          "$ref": "#/definitions/v1alpha1RequestHeader",
+          "title": "req_hdr - Common request header first"
+        },
+        "schedule": {
+          "$ref": "#/definitions/v1alpha1Schedule",
+          "description": "scheduler - Payload about the scheduler."
+        }
+      },
+      "description": "CreateScheduleRequest is the request to create new schedual\nfor particular xRunbook."
+    },
+    "v1alpha1CreateScheduleResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr Common response header first"
+        },
+        "schedule": {
+          "$ref": "#/definitions/v1alpha1Schedule",
+          "title": "schedule - Return back the created Schedule object"
+        }
+      },
+      "description": "CreateScheduleResponse is the response to the CreateScheduleRequest."
+    },
+    "v1alpha1CreateTenantSchedulerResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr Common response header first"
+        }
+      },
+      "description": "CreateTenantSchedulerResponse is the response to the CreateTenantSchedulerRequest."
+    },
+    "v1alpha1DeleteConnectorScheduleResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr Common response header first"
+        }
+      },
+      "description": "DeleteConnectorScheduleResponse is the response to the DeleteConnectorScheduleRequest."
+    },
+    "v1alpha1DeleteScheduleResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr Common response header first"
+        }
+      },
+      "description": "DeleteScheduleResponse is the response to the DeleteScheduleRequest."
+    },
+    "v1alpha1DeleteTenantSchedulerResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr Common response header first"
+        }
+      },
+      "description": "DeleteTenantSchedulerResponse is the response to the DeleteTenantSchedulerRequest."
+    },
+    "v1alpha1GetScheduleResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr Common response header first"
+        },
+        "schedule": {
+          "$ref": "#/definitions/v1alpha1Schedule",
+          "title": "schedule - Return back the created Schedule object"
+        }
+      },
+      "description": "GetScheduleResponse is the response to the GetScheduleRequest."
+    },
+    "v1alpha1InternalScheduleType": {
+      "type": "string",
+      "enum": [
+        "INTERNAL_SCHEDULE_TYPE_UNSPECIFIED",
+        "INTERNAL_SCHEDULE_TYPE_CONNECTOR"
+      ],
+      "default": "INTERNAL_SCHEDULE_TYPE_UNSPECIFIED",
+      "description": "EnvironmentType defines the types of environments we support."
+    },
+    "v1alpha1ListScheduleResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr Common response header first"
+        },
+        "schedules": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/v1alpha1Schedule"
+          },
+          "title": "schedule - Return back the list with Schedules objects"
+        },
+        "nextPageToken": {
+          "type": "string",
+          "description": "next_page_token represents the pagination token to retrieve the next page of results. If the value is \"\", it means no further results for the request."
+        },
+        "pageCount": {
+          "type": "integer",
+          "format": "int32",
+          "description": "page_count is the number of pages."
+        },
+        "totalCount": {
+          "type": "integer",
+          "format": "int32",
+          "description": "total_count is the total number of schedules."
+        }
+      },
+      "description": "ListScheduleResponse is the response to ListScheduleRequest."
+    },
+    "v1alpha1RequestHeader": {
+      "type": "object",
+      "properties": {
+        "tid": {
+          "type": "string",
+          "title": "tid is the unique request id",
+          "required": [
+            "tid"
+          ]
+        }
+      },
+      "title": "RequestHeader is the common header which every request (GRPC/HTTP) should have",
+      "required": [
+        "tid"
+      ]
+    },
+    "v1alpha1ResponseHeader": {
+      "type": "object",
+      "properties": {
+        "tid": {
+          "type": "string",
+          "title": "tid is the unique response id"
+        },
+        "requestTid": {
+          "type": "string",
+          "title": "request_tid is the corresponding request tid"
+        }
+      },
+      "title": "ResponseHeader is the common header which every response (GRPC/HTTP) should have"
+    },
+    "v1alpha1Schedule": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "id is the id of the schedule.",
+          "readOnly": true
+        },
+        "environmentId": {
+          "type": "string",
+          "description": "environment_id is the id of the environment under which the schedule should be created.",
+          "required": [
+            "environment_id"
+          ]
+        },
+        "environmentName": {
+          "type": "string",
+          "description": "environment_name is the name of the environment under which the schedule should be created.",
+          "readOnly": true
+        },
+        "runbookId": {
+          "type": "string",
+          "description": "runbook_id is the id of the runbook under which the schedule should be created.",
+          "required": [
+            "runbook_id"
+          ]
+        },
+        "runbookName": {
+          "type": "string",
+          "description": "runbook_name is the name of the runbook under which the schedule should be created.",
+          "required": [
+            "runbook_name"
+          ]
+        },
+        "inputSchema": {
+          "type": "string",
+          "description": "input_schema is the workflow's input schema."
+        },
+        "params": {
+          "type": "string",
+          "description": "params are params for creating a calendar."
+        },
+        "schedule": {
+          "type": "string",
+          "title": "schedule is the schedule of xRunBooks",
+          "required": [
+            "schedule"
+          ]
+        },
+        "lastRun": {
+          "type": "string",
+          "format": "date-time",
+          "description": "last_run captures the time it was last run.",
+          "readOnly": true
+        },
+        "lastUpdated": {
+          "type": "string",
+          "format": "date-time",
+          "description": "last_updated captures the time it was last updated.",
+          "readOnly": true
+        },
+        "userEmail": {
+          "type": "string",
+          "title": "The user who created the schedule",
+          "readOnly": true
+        }
+      },
+      "description": "Schedule contains basic details about a schedule.",
+      "required": [
+        "environmentId",
+        "runbookId",
+        "runbookName",
+        "schedule"
+      ]
+    },
+    "v1alpha1UpdateScheduleResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr Common response header first"
+        },
+        "schedule": {
+          "$ref": "#/definitions/v1alpha1Schedule",
+          "description": "schedule - Return back the updated Schedule object."
+        }
+      },
+      "description": "UpdateScheduleResponse is the response to the UpdateScheduleRequest."
+    }
+  },
+  "externalDocs": {
+    "description": "Connectors acts as a credentials/Metadata storage vault",
+    "url": "https://github.com/unskript/api/docs/connectors.doc"
+  }
+}
