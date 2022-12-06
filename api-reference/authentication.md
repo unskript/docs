@@ -1,6 +1,32 @@
 # Authentication
 
-&#x20;Unskript API uses API tokens to authenticate your requests. Unskript authorization system is based on RBAC model with domains. Roles and domains which token will have access to same as groups, to which token is assigned during creation. Each user or token should have granted privileges in order to access resources. API tokens are basically JWT tokens. Authentication to the API is performed by supplying the `X-unSkript-API-Key` header with API token as it's value. API keys can can be viewed and managed your API keys within the SaaS. Example of request to API:
+Unskript API uses API tokens to authenticate your requests. &#x20;
+
+### **Create a API Token:**&#x20;
+
+Note: API keys can be created and revoked by users with admin access rights.&#x20;
+
+* Log in to your unSkript dashboard.&#x20;
+* In the top navigation, under "_More_", click "_User Management._" &#x20;
+* There is a tab here that lists all of your API tokens.  Click "_+Create API Token._"
+
+<figure><img src="../.gitbook/assets/create-api-token-button.png" alt=""><figcaption></figcaption></figure>
+
+There are three fields for each API token
+
+* Name your API token
+* Days that it remains valid
+* Groups that have access to the token (Read about [Role based Access Control](../fundamentals/role-based-access-control.md))
+
+When you click "_**Create API Token**_" you will be able to copy the API Token. &#x20;
+
+
+
+### Use of API Token
+
+Authentication to the API is performed by supplying the `X-unSkript-API-Key` header with API token as it's value.&#x20;
+
+Example of request to API:
 
 {% code overflow="wrap" %}
 ```bash
@@ -8,27 +34,12 @@ curl --location --request GET 'https://dev.unskript.io/v1alpha1/workflows' --hea
 ```
 {% endcode %}
 
-&#x20;API keys can be created and revoked by users with admin access rights. Revoked tokens do not have access to API.
+### &#x20;Revoke Token
 
-How to create API token:
+Click the trash can next to the token to remove it from the unSkript system. Once removed, it cannot be recovered.
 
-![](../.gitbook/assets/create-api-token-button.png)
-
-![](../.gitbook/assets/create-api-token-name.png)
-
-![](../.gitbook/assets/create-api-token-lifespan.png)
-
-![](../.gitbook/assets/create-api-token-groups.png)
-
-![](../.gitbook/assets/create-api-token-button-create.png)
-
-![](../.gitbook/assets/create-api-token-button-copy-token.png)\
-
-
-&#x20;How to revoke API token:
-
-![](../.gitbook/assets/revoke-api-token.png)
+<figure><img src="../.gitbook/assets/revoke-api-token.png" alt="revoking an api token."><figcaption></figcaption></figure>
 
 
 
-&#x20;Your API keys carry the privileges to execute workflows (runbooks) your team owns and view results of executions so be sure to keep them secure! Do not share your API tokens in publicly accessible areas such as GitHub, client-side code, etc. All API requests must be made over HTTPS. Any requests made over plain HTTP will fail. Requests without a valid API token will fail and return a `401` error.
+Your API keys carry the privileges to execute workflows (runbooks) your team owns and view results of executions so be sure to keep them secure! Do not share your API tokens in publicly accessible areas such as GitHub, client-side code, etc. All API requests must be made over HTTPS. Any requests made over plain HTTP will fail. Requests without a valid API token will fail and return a `401` error.

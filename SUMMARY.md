@@ -74,11 +74,9 @@
   * [Credential Parameterization](fundamentals/unskript-framework/credential-parameterization.md)
   * [Errors](fundamentals/unskript-framework/errors.md)
   * [Input Schema](fundamentals/unskript-framework/input-schema.md)
-* [Platform](fundamentals/platform/README.md)
-  * [Folders](fundamentals/platform/folders.md)
-  * [Role Based Access Control](fundamentals/platform/role-based-access-control.md)
-  * [AWS hosted Proxy](fundamentals/platform/aws-hosted-proxy.md)
-  * [API Access](fundamentals/platform/api-access.md)
+* [Role Based Access Control](fundamentals/role-based-access-control.md)
+* [Folders](fundamentals/folders.md)
+* [AWS hosted Proxy](fundamentals/aws-hosted-proxy.md)
 
 ***
 
