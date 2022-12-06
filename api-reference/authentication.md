@@ -16,7 +16,7 @@ There are three fields for each API token
 
 * Name your API token
 * Days that it remains valid
-* Groups that have access to the token (Read about [Role based Access Control](../fundamentals/role-based-access-control.md))
+* Groups that have access to the token (Read about [Role based Access Control](../fundamentals/platform/role-based-access-control.md))
 
 When you click "_**Create API Token**_" you will be able to copy the API Token. &#x20;
 

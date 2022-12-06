@@ -16,6 +16,10 @@ unSkript is an open source project. We love PRs, stars and more - checkout our [
 
 [![image-text](https://img.shields.io/github/stars/unskript/Awesome-CloudOps-Automation?style=social)](https://github.com/unskript/Awesome-CloudOps-Automation)
 
+###
+
+### Docker:
+
 The fastest way to get the open source version of unSkript running is via our Docker container.
 
 With Docker, you can get up and running in two steps (and just one if you already have Docker up and running!)
@@ -30,6 +34,28 @@ With Docker, you can get up and running in two steps (and just one if you alread
 ``
 
 Your installation will be available to use at: [http://127.0.0.1:8888/doc/workspaces/auto-t/tree/Welcome.ipynb](http://127.0.0.1:8888/doc/workspaces/auto-t/tree/Welcome.ipynb)
+
+### Kubernetes:
+
+Here are the steps to launch the unSkript Docker image in k8s:
+
+* Deploy using the following command (the Yaml file is in our GitHub repository)
+
+```
+kubectl apply -f unskript-oss-k8s-deployment.yaml
+```
+
+* To access the jupyter server, you will have to enable port-forwarding using
+
+```
+kubectl port-forward <pod corresponding to this deployment> -n <k8s namespace> 8888:8888&
+```
+
+* You should be able to go to [`http://127.0.0.1:8888/lab/tree/Welcome.ipynb`](http://127.0.0.1:8888/lab/tree/Welcome.ipynb) and access runbooks as explained [`https://github.com/unskript/Awesome-CloudOps-Automation`](https://github.com/unskript/Awesome-CloudOps-Automation)
+
+
+
+
 
 
 
