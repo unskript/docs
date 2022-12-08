@@ -20,7 +20,7 @@ This button enables the user to create their custom actions and custom notes.&#x
 
 #### Credentials
 
-<figure><img src="../../.gitbook/assets/1CFA549C-361B-4EB8-9EC3-96F912033D65 (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1CFA549C-361B-4EB8-9EC3-96F912033D65 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This button can be used to add resources to your xRunBook. Credentials are used to authenticate the resource that you wish to connect to while running an action.
 

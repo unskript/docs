@@ -16,8 +16,13 @@
 
 ### Creating a Grafana API Token
 
+#### Self managed Grafana
+
 1. In your Grafana instance, click the configuration icon in the left navigation (it is the settings cog icon).
 2. In the list of tabs - click API key.
 3. Add an API key with the role and time you live you wish for your unSkript connection.
 4. Generate the key, and copy the value.  Add this to the Credential window in unSkript.
 
+#### Grafana cloud
+
+Follow the steps explained [https://grafana.com/docs/grafana-cloud/reference/create-api-key/](https://grafana.com/docs/grafana-cloud/reference/create-api-key/)
