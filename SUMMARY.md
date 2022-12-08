@@ -72,11 +72,10 @@
   * [Using outputs from previous Actions](fundamentals/unskript-framework/using-outputs-from-previous-actions.md)
   * [Defining xRunBook Parameters](fundamentals/unskript-framework/defining-xrunbook-parameters.md)
   * [Credential Parameterization](fundamentals/unskript-framework/credential-parameterization.md)
-  * [Errors](fundamentals/unskript-framework/errors.md)
-  * [Input Schema](fundamentals/unskript-framework/input-schema.md)
+  * [AWS hosted Proxy](fundamentals/unskript-framework/aws-hosted-proxy.md)
 * [Role Based Access Control](fundamentals/platform/role-based-access-control.md)
 * [Folders](fundamentals/platform/folders.md)
-* [AWS hosted Proxy](fundamentals/platform/aws-hosted-proxy.md)
+* [Jupyter Notebooks 101](fundamentals/jupyter-notebooks-101.md)
 
 ***
 
@@ -107,7 +106,3 @@
 
 * [List of xRunBooks](lists/xRunBook\_list.md)
 * [List of Actions](lists/Action\_list.md)
-
-***
-
-* [Page 1](page-1.md)
