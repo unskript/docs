@@ -1,0 +1,2463 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "workflows/v1alpha1/workflows.proto",
+    "version": "v1alpha1"
+  },
+  "tags": [
+    {
+      "name": "WorkflowsService"
+    }
+  ],
+  "schemes": [
+    "https"
+  ],
+   	"securityDefinitions": {
+ 		"Bearer": {
+ 			"type": "apiKey",
+ 			"in": "header",
+ 			"name": "X-unSkript-API-Key"
+ 		}
+ 	},
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/internal/health": {
+      "get": {
+        "summary": "Health status endpoint",
+        "description": "This endpoint returns 200 if the health is ok, otherwise the status field is filled",
+        "operationId": "WorkflowsService_HealthStatus",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/workflowsv1alpha1HealthStatusResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "tags": [
+          "Health"
+        ]
+      }
+    },
+    "/v1alpha1/credentials/vault": {
+      "get": {
+        "summary": "Return vault credentials.",
+        "description": "Obtain and return vault credentials.",
+        "operationId": "WorkflowsService_GetVaultCredentials",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1GetVaultCredentialsResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "credentials"
+        ]
+      }
+    },
+    "/v1alpha1/executions": {
+      "get": {
+        "summary": "Lists execution",
+        "description": "Lists executions matching the optional filter",
+        "operationId": "WorkflowsService_ListExecutions",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1ListExecutionsResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "description": "page_size specifies the maximum number of results to be returned.",
+            "in": "query",
+            "example":25,
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "pageToken",
+            "description": "page_token is used to request a specific page of the list results.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "description": "filter expression.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "orderBy",
+            "description": "order_by is used to sort the fields by ascending or descending.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "timeRange",
+            "description": "Time Range is used to filter the data by last month, last year and by default is all.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "execution"
+        ]
+      },
+      "post": {
+        "summary": "Creates execution",
+        "description": "Creates a executions with filled input form",
+        "operationId": "WorkflowsService_CreateExecution",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1CreateExecutionResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/v1alpha1CreateExecutionRequest"
+            }
+          }
+        ],
+        "tags": [
+          "execution"
+        ]
+      }
+    },
+    "/v1alpha1/executions/{executionId}": {
+      "get": {
+        "summary": "Get execution details",
+        "description": "Gets execution details",
+        "operationId": "WorkflowsService_GetExecution",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1GetExecutionResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "executionId",
+            "description": "execution_id is the id of execution.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "type": "string"
+          },
+        
+          {
+            "name": "summary",
+            "description": "summary gives the execution details without the output field.",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
+          }
+        ],
+        "tags": [
+          "execution"
+        ]
+      }
+    },
+    "/v1alpha1/folders": {
+      "get": {
+        "summary": "List Folders",
+        "description": "List of all matching runbooks and folders",
+        "operationId": "WorkflowsService_ListFolders",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1ListFoldersResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+           
+            "type": "string"
+          },
+          {
+            "name": "parentId",
+            "description": "[DEPRECATED] parent id filter return the folders and workflows inside of it ().",
+            "in": "query",
+            
+            "type": "string"
+          },
+          {
+            "name": "isFolder",
+            "description": "[DEPRECATED] is folder filter only return folder.",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
+          },
+          {
+            "name": "pageSize",
+            "description": "page_size specifies the maximum number of results to be returned.",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "pageToken",
+            "description": "page_token is used to request a specific page of the list results.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "description": "filter expression (supports parent_id, is_folder, search and search).",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "orderBy",
+            "description": "order_by is used to sort the fields by ascending or descending.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "isUnskript",
+            "description": "is_unskript describes if the workflow to duplicate is default or custom.",
+            "in": "query",
+            "default": false,
+            "type": "boolean"
+          }
+        ],
+        "tags": [
+          "folders"
+        ]
+      },
+      "post": {
+        "summary": "Create Folders",
+        "description": "creates a folder for runbooks",
+        "operationId": "WorkflowsService_CreateFolder",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1CreateFolderResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/v1alpha1CreateFolderRequest"
+            }
+          }
+        ],
+        "tags": [
+          "folders"
+        ]
+      }
+    },
+    "/v1alpha1/folders/{folderId}": {
+      "get": {
+        "summary": "Get folder details.",
+        "description": "Get folder details.",
+        "operationId": "WorkflowsService_GetFolder",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1GetFolderResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "folderId",
+            "description": "folder_id is the id of the requested folder.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "folders"
+        ]
+      },
+      "delete": {
+        "summary": "Delete a folder",
+        "description": "Delete a folder.",
+        "operationId": "WorkflowsService_DeleteFolder",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1DeleteFolderResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "folderId",
+            "description": "folder_id is the id of folder.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "folders"
+        ]
+      },
+      "patch": {
+        "summary": "Update folder",
+        "description": "Update folder",
+        "operationId": "WorkflowsService_UpdateFolder",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1UpdateFolderResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "folderId",
+            "description": "folder_id is the id of folder.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "description": "body is the body with the udpate folder details.",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/v1alpha1Workflow"
+            }
+          },
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "updateMask",
+            "description": "The update mask applies to the resource. For the `FieldMask` definition,\nsee https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmask.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "folders"
+        ]
+      }
+    },
+    "/v1alpha1/requests": {
+      "get": {
+        "summary": "Lists requests",
+        "description": "Lists requests matching filter",
+        "operationId": "WorkflowsService_ListRequests",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1ListRequestsResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "description": "page_size specifies the maximum number of results to be returned.",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "pageToken",
+            "description": "page_token is used to request a specific page of the list results.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "description": "filter expression (in format \u003cfield\u003e:\u003cvalue\u003e, currently supported fields are status and user_id).",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "orderBy",
+            "description": "order_by is used to sort the fields by ascending or descending.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "request"
+        ]
+      },
+      "post": {
+        "summary": "Creates request",
+        "description": "Creates a request to execute workflow",
+        "operationId": "WorkflowsService_CreateRequest",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1CreateRequestResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/v1alpha1CreateRequestRequest"
+            }
+          }
+        ],
+        "tags": [
+          "request"
+        ]
+      }
+    },
+    "/v1alpha1/requests/{requestId}": {
+      "get": {
+        "summary": "Gets specific workflow request",
+        "description": "Gets specific workflow request",
+        "operationId": "WorkflowsService_GetRequest",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1GetRequestResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "requestId",
+            "description": "request_id is the identifier of request.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "request"
+        ]
+      },
+      "delete": {
+        "summary": "Deletes specific workflow request",
+        "description": "Deletes specific workflow request",
+        "operationId": "WorkflowsService_DeleteRequest",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1DeleteRequestResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "requestId",
+            "description": "request_id is the identifier of request.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "request"
+        ]
+      },
+      "patch": {
+        "summary": "Updates request details",
+        "description": "Updates request details (currently only status)",
+        "operationId": "WorkflowsService_UpdateRequest",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1UpdateRequestResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "requestId",
+            "description": "request_id is the id of request.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "description": "request is the body with the update workflow request details.",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/v1alpha1Request"
+            }
+          },
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "updateMask",
+            "description": "The update mask applies to the resource. For the `FieldMask` definition,\nsee https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmask.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "request"
+        ]
+      }
+    },
+    "/v1alpha1/workflows": {
+      "get": {
+        "summary": "List workflows",
+        "description": "List workflows matching the optional filter",
+        "operationId": "WorkflowsService_ListWorkflows",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1ListWorkflowsResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            
+            "type": "string"
+          },
+          {
+            "name": "filter",
+            "description": "filter expression.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pageSize",
+            "description": "page_size specifies the maximum number of results to be returned.",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "pageToken",
+            "description": "page_token is used to request a specific page of the list results.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "isUnskript",
+            "description": "is_unskript describes whether to list unSkript or or custom workflows.",
+            "in": "query",
+            "default":false,
+            "type": "boolean"
+          }
+        ],
+        "tags": [
+          "workflow"
+        ]
+      },
+      "post": {
+        "summary": "Create a workflow",
+        "description": "Creates a workflows. A workflow with the same name returns error.",
+        "operationId": "WorkflowsService_CreateWorkflow",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1CreateWorkflowResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/v1alpha1CreateWorkflowRequest"
+            }
+          }
+        ],
+        "tags": [
+          "workflow"
+        ]
+      }
+    },
+    "/v1alpha1/workflows/populate": {
+      "post": {
+        "summary": "Populate global workflows.",
+        "description": "Update unskript workflows.",
+        "operationId": "WorkflowsService_PopulateGlobalWorkflows",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1PopulateGlobalWorkflowsResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/v1alpha1PopulateGlobalWorkflowsRequest"
+            }
+          }
+        ],
+        "tags": [
+          "workflow"
+        ]
+      }
+    },
+    "/v1alpha1/workflows/recommendations/{workflowId}": {
+      "get": {
+        "summary": "Get Recommendation for a workflow",
+        "description": "Get Recommendation for a workflow",
+        "operationId": "WorkflowsService_GetRecommendation",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1GetRecommendationResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "workflowId",
+            "description": "workflow_id is the id of the requested workflow.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "tenantId",
+            "description": "tenant_id is the tenant id of the workflow.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "workflow"
+        ]
+      }
+    },
+    "/v1alpha1/workflows/{workflowId}": {
+      "get": {
+        "summary": "Get workflow details.",
+        "description": "Get workflow details.",
+        "operationId": "WorkflowsService_GetWorkflow",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1GetWorkflowResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "workflowId",
+            "description": "workflow_id is the id of the requested workflow.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "default":"",
+            "type": "string"
+          },
+          {
+            "name": "isUnskript",
+            "description": "is_unskript describes if the workflow to get is default or custom.",
+            "in": "query",
+            "default": false,
+            "type": "boolean"
+          },
+          {
+            "name": "tenantId",
+            "description": "tenant_id is the tenantID of the workflow.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "workflow"
+        ]
+      },
+      "delete": {
+        "summary": "Delete a workflow",
+        "description": "Delete a workflow.",
+        "operationId": "WorkflowsService_DeleteWorkflow",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1DeleteWorkflowResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "workflowId",
+            "description": "workflow_id is the id of workflow.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "proxyId",
+            "description": "proxyId is the id of proxy.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "tenantId",
+            "description": "tenant_id is the id of the tenant, should be used only if non-bearer token is used.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "workflow"
+        ]
+      },
+      "patch": {
+        "summary": "Update a workflow",
+        "description": "Update certain fields of a workflow.",
+        "operationId": "WorkflowsService_UpdateWorkflow",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1UpdateWorkflowResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "workflowId",
+            "description": "workflow_id is the id of workflow.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "description": "body is the body with the udpate workflows details.",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/v1alpha1Workflow"
+            }
+          },
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "updateMask",
+            "description": "The update mask applies to the resource. For the `FieldMask` definition,\nsee https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmask.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "workflow"
+        ]
+      }
+    },
+    "/v1alpha1/workflows/{workflowId}/close": {
+      "post": {
+        "summary": "Close created workflow",
+        "description": "Close created workflow. Сopys temporary file to the currend and runs folders, then deletes it.",
+        "operationId": "WorkflowsService_CloseWorkflow",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1CloseWorkflowResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "workflowId",
+            "description": "workflow_id is the id of workflow.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "description": "body is the body of the CloseWorkflowRequest.",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/v1alpha1CloseWorkflowBody"
+            }
+          },
+          {
+            "name": "tenantId",
+            "description": "tenant_id is the id of the tenant, should be used only if non-bearer token is used.",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "workflow"
+        ]
+      }
+    },
+    "/v1alpha1/workflows/{workflowId}/duplicate": {
+      "post": {
+        "summary": "Duplicates a workflow",
+        "description": "Duplicates a workflow.",
+        "operationId": "WorkflowsService_DuplicateWorkflow",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1DuplicateWorkflowResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "workflowId",
+            "description": "workflow_id is the id of workflow that has to be duplicated.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "reqHdr": {
+                  "$ref": "#/definitions/v1alpha1RequestHeader",
+                  "description": "req_hdr is the common request header."
+                },
+                "workflowName": {
+                  "type": "string",
+                  "description": "workflow_name is the name of new workflow.",
+                  "required": [
+                    "workflow_name"
+                  ]
+                },
+                "proxyId": {
+                  "type": "string",
+                  "description": "proxyId is the id of proxy.",
+                  "required": [
+                    "proxy_id"
+                  ]
+                },
+                "isUnskript": {
+                  "type": "boolean",
+                  "description": "is_unskript describes if the workflow to duplicate is default or custom.",
+                  "required": [
+                    "is_unskript"
+                  ]
+                },
+                "email": {
+                  "type": "string",
+                  "description": "email of the user."
+                },
+                "userId": {
+                  "type": "string",
+                  "description": "user_id is the identifier of user."
+                },
+                "tenantId": {
+                  "type": "string",
+                  "description": "tenant_id is the id of the tenant."
+                },
+                "overwriteRunningDisabled": {
+                  "type": "boolean",
+                  "description": "overwrite_running_disabled makes the running disabled to false, if set."
+                },
+                "connectorTypeIdMap": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  },
+                  "description": "connector_type_id_map is the map of connector type to id."
+                },
+                "inputSchema": {
+                  "type": "string",
+                  "description": "input_schema is the schema with default values filled in."
+                }
+              },
+              "description": "DuplicateWorkflowRequest is the request for duplicate a workflow.",
+              "required": [
+                "workflowName",
+                "proxyId",
+                "isUnskript"
+              ]
+            }
+          }
+        ],
+        "tags": [
+          "workflow"
+        ]
+      }
+    },
+    "/v1alpha1/workflows/{workflowId}/edit": {
+      "get": {
+        "summary": "Get workflow details.",
+        "description": "Get workflow details.",
+        "operationId": "WorkflowsService_EditWorkflow",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1EditWorkflowResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "workflowId",
+            "description": "workflow_id is the id of the requested workflow.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "reqHdr.tid",
+            "description": "tid is the unique request id.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "workflow"
+        ]
+      }
+    },
+    "/v1alpha1/workflows/{workflowId}/run": {
+      "post": {
+        "summary": "Runs workflow",
+        "description": "Runs created workflow",
+        "operationId": "WorkflowsService_RunWorkflow",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1alpha1RunWorkflowResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "workflowId",
+            "description": "workflow_id is the id of the requested workflow.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "reqHdr": {
+                  "$ref": "#/definitions/v1alpha1RequestHeader",
+                  "description": "req_hdr is the common request header."
+                },
+                "tenantId": {
+                  "type": "string",
+                  "description": "tenant_id is the id of the tenant (is taken from token in case of http call)."
+                },
+                "proxyId": {
+                  "type": "string",
+                  "description": "proxyId is the id of proxy.",
+                  "required": [
+                    "proxy_id"
+                  ]
+                },
+                "params": {
+                  "type": "string",
+                  "description": "params describes the input parameters to this particular run."
+                },
+                "scheduleId": {
+                  "type": "string",
+                  "description": "schedule_id is the id of the scheduler. A workflow can have multiple schedules (is omitted if called by user)."
+                },
+                "userId": {
+                  "type": "string",
+                  "title": "user_id is the ID of the user who ran workflow.\n(should be sent if userID cannot be retrieved from context)"
+                },
+                "requestId": {
+                  "type": "string",
+                  "description": "request_id is the id of the request.\nIs present only in case of running workflow after request approval."
+                },
+                "userEmail": {
+                  "type": "string",
+                  "title": "Email of user who scheduled workflow execution"
+                }
+              },
+              "description": "RunWorkflowRequest is the request to run workflow.",
+              "required": [
+                "proxyId"
+              ]
+            }
+          }
+        ],
+        "tags": [
+          "workflow"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "protobufAny": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string",
+          "description": "A URL/resource name that uniquely identifies the type of the serialized\nprotocol buffer message. This string must contain at least\none \"/\" character. The last segment of the URL's path must represent\nthe fully qualified name of the type (as in\n`path/google.protobuf.Duration`). The name should be in a canonical form\n(e.g., leading \".\" is not accepted).\n\nIn practice, teams usually precompile into the binary all types that they\nexpect it to use in the context of Any. However, for URLs which use the\nscheme `http`, `https`, or no scheme, one can optionally set up a type\nserver that maps type URLs to message definitions as follows:\n\n* If no scheme is provided, `https` is assumed.\n* An HTTP GET on the URL must yield a [google.protobuf.Type][]\n  value in binary format, or produce an error.\n* Applications are allowed to cache lookup results based on the\n  URL, or have them precompiled into a binary to avoid any\n  lookup. Therefore, binary compatibility needs to be preserved\n  on changes to types. (Use versioned type names to manage\n  breaking changes.)\n\nNote: this functionality is not currently available in the official\nprotobuf release, and it is not used for type URLs beginning with\ntype.googleapis.com.\n\nSchemes other than `http`, `https` (or the empty scheme) might be\nused with implementation specific semantics."
+        }
+      },
+      "additionalProperties": {},
+      "description": "`Any` contains an arbitrary serialized protocol buffer message along with a\nURL that describes the type of the serialized message.\n\nProtobuf library provides support to pack/unpack Any values in the form\nof utility functions or additional generated methods of the Any type.\n\nExample 1: Pack and unpack a message in C++.\n\n    Foo foo = ...;\n    Any any;\n    any.PackFrom(foo);\n    ...\n    if (any.UnpackTo(\u0026foo)) {\n      ...\n    }\n\nExample 2: Pack and unpack a message in Java.\n\n    Foo foo = ...;\n    Any any = Any.pack(foo);\n    ...\n    if (any.is(Foo.class)) {\n      foo = any.unpack(Foo.class);\n    }\n\n Example 3: Pack and unpack a message in Python.\n\n    foo = Foo(...)\n    any = Any()\n    any.Pack(foo)\n    ...\n    if any.Is(Foo.DESCRIPTOR):\n      any.Unpack(foo)\n      ...\n\n Example 4: Pack and unpack a message in Go\n\n     foo := \u0026pb.Foo{...}\n     any, err := anypb.New(foo)\n     if err != nil {\n       ...\n     }\n     ...\n     foo := \u0026pb.Foo{}\n     if err := any.UnmarshalTo(foo); err != nil {\n       ...\n     }\n\nThe pack methods provided by protobuf library will by default use\n'type.googleapis.com/full.type.name' as the type URL and the unpack\nmethods only use the fully qualified type name after the last '/'\nin the type URL, for example \"foo.bar.com/x/y.z\" will yield type\nname \"y.z\".\n\n\nJSON\n====\nThe JSON representation of an `Any` value uses the regular\nrepresentation of the deserialized, embedded message, with an\nadditional field `@type` which contains the type URL. Example:\n\n    package google.profile;\n    message Person {\n      string first_name = 1;\n      string last_name = 2;\n    }\n\n    {\n      \"@type\": \"type.googleapis.com/google.profile.Person\",\n      \"firstName\": \u003cstring\u003e,\n      \"lastName\": \u003cstring\u003e\n    }\n\nIf the embedded message type is well-known and has a custom JSON\nrepresentation, that representation will be embedded adding a field\n`value` which holds the custom JSON in addition to the `@type`\nfield. Example (for message [google.protobuf.Duration][]):\n\n    {\n      \"@type\": \"type.googleapis.com/google.protobuf.Duration\",\n      \"value\": \"1.212s\"\n    }"
+    },
+    "rpcStatus": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "message": {
+          "type": "string"
+        },
+        "details": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/protobufAny"
+          }
+        }
+      }
+    },
+    "v1alpha1CloseWorkflowBody": {
+      "type": "object",
+      "properties": {
+        "reqHdr": {
+          "$ref": "#/definitions/v1alpha1RequestHeader",
+          "description": "req_hdr is the common request header."
+        },
+        "proxyId": {
+          "type": "string",
+          "description": "proxyId is the id of proxy.",
+          "required": [
+            "proxy_id"
+          ]
+        },
+        "url": {
+          "type": "string",
+          "description": "url is the url to temporary file.",
+          "required": [
+            "url"
+          ]
+        },
+        "executionId": {
+          "type": "string",
+          "description": "execution_id is the id of the last execution.",
+          "required": [
+            "execution_id"
+          ]
+        },
+        "workflow": {
+          "$ref": "#/definitions/v1alpha1Workflow",
+          "description": "workflow is the workflow details for the SaveAs option, it is nil for Save option."
+        },
+        "cancel": {
+          "type": "boolean",
+          "description": "cancel describes wheter workflows save should be canceled."
+        }
+      },
+      "description": "CloseWorkflowBody is the body of the CloseWorkflowRequest.",
+      "required": [
+        "proxyId",
+        "url",
+        "executionId"
+      ]
+    },
+    "v1alpha1CloseWorkflowResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "description": "resp_hdr is the common response header."
+        }
+      },
+      "description": "CloseWorkflowResponse response to CloseWorkflowRequest."
+    },
+    "v1alpha1Connector": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "name - connector's name",
+          "required": [
+            "name"
+          ]
+        },
+        "type": {
+          "$ref": "#/definitions/v1alpha1ConnectorType",
+          "description": "type - Type of the connector, JIRA, AWS, etc.."
+        },
+        "proxyId": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "proxy UUID of tenant's proxy list",
+          "required": [
+            "proxy_id"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "title": "id - Connector's Unique ID. Used to query requests",
+          "readOnly": true
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "tags - labels that can be attached which will be used for searching"
+        },
+        "createTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "create_time is the time of connector creation.",
+          "readOnly": true
+        },
+        "connectorData": {
+          "type": "string",
+          "title": "connector_data - Data for the individual connector",
+          "required": [
+            "connector_data"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "description": "status is the status of connector.",
+          "readOnly": true
+        },
+        "alertUrl": {
+          "type": "string",
+          "description": "alert_url is the url where alerts can call to.",
+          "readOnly": true
+        },
+        "alertEnabled": {
+          "type": "boolean",
+          "description": "alert_enabled tells whether we need to pull alerts using this connector."
+        },
+        "alarmPullFailureReason": {
+          "type": "string",
+          "title": "connector_detail capture the error if alarm pull fails",
+          "readOnly": true
+        },
+        "serviceId": {
+          "type": "string",
+          "description": "service_id is the Service ID."
+        },
+        "env": {
+          "type": "string",
+          "description": "env is the environment name to run the runbook.\nthis env is different from unskript environment."
+        },
+        "lastAlarmsPullTime": {
+          "type": "string",
+          "format": "date-time",
+          "title": "last_alarms_pull_time captures the time the alarms were pulled last",
+          "readOnly": true
+        },
+        "nextAlarmsPullTime": {
+          "type": "string",
+          "format": "date-time",
+          "title": "next_alarms_pull_time displays the time the alarms will be pulled next",
+          "readOnly": true
+        }
+      },
+      "description": "Connector contains basic details about a connector",
+      "title": "Message formats for GRPC calls",
+      "required": [
+        "name",
+        "proxyId",
+        "connectorData"
+      ]
+    },
+    "v1alpha1ConnectorType": {
+      "type": "string",
+      "enum": [
+        "CONNECTOR_TYPE_UNSPECIFIED",
+        "CONNECTOR_TYPE_AWS",
+        "CONNECTOR_TYPE_K8S",
+        "CONNECTOR_TYPE_GCP",
+        "CONNECTOR_TYPE_POSTGRESQL",
+        "CONNECTOR_TYPE_SLACK",
+        "CONNECTOR_TYPE_MONGODB",
+        "CONNECTOR_TYPE_JENKINS",
+        "CONNECTOR_TYPE_MYSQL",
+        "CONNECTOR_TYPE_JIRA",
+        "CONNECTOR_TYPE_REST",
+        "CONNECTOR_TYPE_ELASTICSEARCH",
+        "CONNECTOR_TYPE_KAFKA",
+        "CONNECTOR_TYPE_GRAFANA",
+        "CONNECTOR_TYPE_SSH",
+        "CONNECTOR_TYPE_PROMETHEUS",
+        "CONNECTOR_TYPE_DATADOG",
+        "CONNECTOR_TYPE_STRIPE",
+        "CONNECTOR_TYPE_REDIS",
+        "CONNECTOR_TYPE_ZABBIX",
+        "CONNECTOR_TYPE_OPENSEARCH",
+        "CONNECTOR_TYPE_PINGDOM",
+        "CONNECTOR_TYPE_GITHUB",
+        "CONNECTOR_TYPE_TERRAFORM",
+        "CONNECTOR_TYPE_AIRFLOW",
+        "CONNECTOR_TYPE_HADOOP",
+        "CONNECTOR_TYPE_MSSQL",
+        "CONNECTOR_TYPE_SNOWFLAKE",
+        "CONNECTOR_TYPE_SPLUNK",
+        "CONNECTOR_TYPE_SALESFORCE",
+        "CONNECTOR_TYPE_AZURE"
+      ],
+      "default": "CONNECTOR_TYPE_UNSPECIFIED",
+      "title": "ConnectorType Enum used to identify various Connectors. Starts with 0"
+    },
+    "v1alpha1CountEntry": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "name is the name of an entity."
+        },
+        "count": {
+          "type": "string",
+          "description": "count is the number of entries with particular name."
+        }
+      },
+      "description": "CountEntry contains info about number of entity with particular name."
+    },
+    "v1alpha1CreateExecutionRequest": {
+      "type": "object",
+      "properties": {
+        "reqHdr": {
+          "$ref": "#/definitions/v1alpha1RequestHeader",
+          "description": "req_hdr is the common request header."
+        },
+        "proxyId": {
+          "type": "string",
+          "description": "proxyId is the id of proxy.",
+          "required": [
+            "proxy_id"
+          ]
+        },
+        "workflowId": {
+          "type": "string",
+          "description": "workflow_id is the id of the requested workflow.",
+          "required": [
+            "workflow_id"
+          ]
+        },
+        "inputs": {
+          "type": "string",
+          "description": "inputs describes the field input parameter schema.",
+          "required": [
+            "inputs"
+          ]
+        }
+      },
+      "description": "CreateExecutionRequest is the request to update workflow with the new input schema, and creates temporary file in S3.",
+      "required": [
+        "proxyId",
+        "workflowId",
+        "inputs"
+      ]
+    },
+    "v1alpha1CreateExecutionResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "description": "req_hdr is the common request header."
+        },
+        "url": {
+          "type": "string",
+          "description": "url is the url to temporary file in S3."
+        },
+        "executionId": {
+          "type": "string",
+          "description": "execution_id is the id of the last execution."
+        }
+      },
+      "description": "CreateExecutionResponse is the response to CreateExecutionRequest."
+    },
+    "v1alpha1CreateFolderRequest": {
+      "type": "object",
+      "properties": {
+        "reqHdr": {
+          "$ref": "#/definitions/v1alpha1RequestHeader",
+          "title": "req_hdr is the common request header"
+        },
+        "folder": {
+          "$ref": "#/definitions/v1alpha1Workflow",
+          "description": "Folder is the info about the folder structure of folder being created."
+        }
+      },
+      "description": "CreateFolder is the request to create a folder."
+    },
+    "v1alpha1CreateFolderResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr is the common response header"
+        },
+        "folder": {
+          "$ref": "#/definitions/v1alpha1Workflow",
+          "description": "Folder is the info about the folder structure of folder being created."
+        }
+      },
+      "description": "CreateFolderResponse is the response to create a folder."
+    },
+    "v1alpha1CreateRequestRequest": {
+      "type": "object",
+      "properties": {
+        "reqHdr": {
+          "$ref": "#/definitions/v1alpha1RequestHeader",
+          "description": "req_hdr is the common request header."
+        },
+        "workflowId": {
+          "type": "string",
+          "description": "workflow_id is the id of the requested workflow.",
+          "required": [
+            "workflow_id"
+          ]
+        },
+        "inputs": {
+          "type": "string",
+          "description": "inputs describes the field input parameter schema.",
+          "required": [
+            "inputs"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "description": "reason is the reason for request creation.",
+          "required": [
+            "reason"
+          ]
+        }
+      },
+      "description": "CreateRequestRequest is the request to create workflow execution request.",
+      "required": [
+        "workflowId",
+        "inputs",
+        "reason"
+      ]
+    },
+    "v1alpha1CreateRequestResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "description": "req_hdr is the common request header."
+        },
+        "request": {
+          "$ref": "#/definitions/v1alpha1Request",
+          "description": "request is information about created workflow request."
+        }
+      },
+      "description": "CreateRequestResponse is the response to CreateRequestRequest."
+    },
+    "v1alpha1CreateWorkflowRequest": {
+      "type": "object",
+      "properties": {
+        "reqHdr": {
+          "$ref": "#/definitions/v1alpha1RequestHeader",
+          "title": "req_hdr is the common request header"
+        },
+        "workflow": {
+          "$ref": "#/definitions/v1alpha1Workflow",
+          "description": "workflow is the info about the workflow being created."
+        }
+      },
+      "description": "CreateWorkflowRequest is the request to create a workflow."
+    },
+    "v1alpha1CreateWorkflowResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr is the common response header"
+        },
+        "workflow": {
+          "$ref": "#/definitions/v1alpha1Workflow",
+          "description": "workflow is the info about the workflow being created."
+        }
+      },
+      "description": "CreateWorkflowResponse is the response to create workflow request."
+    },
+    "v1alpha1DeleteFolderResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr is the common response header"
+        }
+      },
+      "description": "DeleteFolderResponse is the response to the delete folder."
+    },
+    "v1alpha1DeleteRequestResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "description": "resp_hdr is the common response header."
+        }
+      },
+      "description": "DeleteRequestResponse is the response to DeleteRequestRequest."
+    },
+    "v1alpha1DeleteWorkflowResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr is the common response header"
+        }
+      },
+      "description": "DeleteWorkflowResponse is the response to the delete request."
+    },
+    "v1alpha1DuplicateWorkflowResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr is the common response header"
+        },
+        "workflow": {
+          "$ref": "#/definitions/v1alpha1Workflow",
+          "description": "workflow is the info about the workflow duplicate."
+        }
+      },
+      "description": "DuplicateWorkflowResponse is a response to the DuplicateWorkflowRequest."
+    },
+    "v1alpha1EditWorkflowResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr is the common response header"
+        },
+        "workflow": {
+          "$ref": "#/definitions/v1alpha1Workflow",
+          "description": "workflow is the detail of a workflow."
+        },
+        "url": {
+          "type": "string",
+          "description": "url is the url to temporary file."
+        }
+      },
+      "description": "EditWorkflowResponse is the response to edit workflow request."
+    },
+    "v1alpha1EnvironmentStatus": {
+      "type": "object",
+      "properties": {
+        "environmentName": {
+          "type": "string",
+          "title": "environment_name is the name of the environment"
+        },
+        "status": {
+          "type": "string",
+          "title": "status is the status of the environment"
+        },
+        "reason": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "if an environment is not ready, then reason is a list of reasons as to why the environment is not ready"
+        }
+      },
+      "title": "EnvironmentStatus is the status of an environment"
+    },
+    "v1alpha1Execution": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "id is the execution id.",
+          "readOnly": true
+        },
+        "workflowName": {
+          "type": "string",
+          "description": "workflow_name is the name of the executed workflow.",
+          "readOnly": true
+        },
+        "createTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "create_time is the time of the execution create.",
+          "readOnly": true
+        },
+        "startTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "start_time is the time of the execution start.",
+          "readOnly": true
+        },
+        "endTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "end_time is the time of the execution end.",
+          "readOnly": true
+        },
+        "duration": {
+          "type": "string",
+          "description": "duration is the duration of the execution.",
+          "readOnly": true
+        },
+        "version": {
+          "type": "string",
+          "description": "version is the version of the execution.",
+          "readOnly": true
+        },
+        "executionStatus": {
+          "$ref": "#/definitions/v1alpha1ExecutionStatus",
+          "description": "execution_status is the status of the execution."
+        },
+        "inputs": {
+          "type": "string",
+          "description": "inputs describes the field input parameter schema.",
+          "readOnly": true
+        },
+        "output": {
+          "type": "string",
+          "format": "byte",
+          "description": "output is the execution output.",
+          "readOnly": true
+        },
+        "executor": {
+          "type": "string",
+          "description": "executor is the name of executor of workflow\nit's either email of the user, name of the token, who ran execution.",
+          "readOnly": true
+        },
+        "approver": {
+          "type": "string",
+          "description": "approver is the id of the user, who approved this execution.",
+          "readOnly": true
+        },
+        "reason": {
+          "type": "string",
+          "description": "reason is the reason of failure (in case of lambda failure).",
+          "readOnly": true
+        },
+        "executionType": {
+          "$ref": "#/definitions/v1alpha1ExecutionType",
+          "description": "execution_type is to identify whether it is Action or Runbook."
+        }
+      },
+      "description": "Execution is the execution details."
+    },
+    "v1alpha1ExecutionStatus": {
+      "type": "string",
+      "enum": [
+        "EXECUTION_STATUS_UNSPECIFIED",
+        "EXECUTION_STATUS_SUCCEEDED",
+        "EXECUTION_STATUS_FAILED",
+        "EXECUTION_STATUS_IN_PROGRESS"
+      ],
+      "default": "EXECUTION_STATUS_UNSPECIFIED",
+      "description": "ExecutionStatus is the execution status."
+    },
+    "v1alpha1ExecutionType": {
+      "type": "string",
+      "enum": [
+        "EXECUTION_TYPE_UNSPECIFIED",
+        "EXECUTION_TYPE_RUNBOOK",
+        "EXECUTION_TYPE_ACTION"
+      ],
+      "default": "EXECUTION_TYPE_UNSPECIFIED",
+      "description": "ExecutionType is the execution type."
+    },
+    "v1alpha1GetExecutionResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "description": "req_hdr is the common request header."
+        },
+        "execution": {
+          "$ref": "#/definitions/v1alpha1Execution",
+          "description": "execution is the details of the execution."
+        }
+      },
+      "description": "GetExecutionResponse is the response to GetExecutionRequest."
+    },
+    "v1alpha1GetFolderResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr is the common response header"
+        },
+        "folder": {
+          "$ref": "#/definitions/v1alpha1Workflow",
+          "description": "Folder is the info about the folder structure of folder being created."
+        }
+      },
+      "description": "GetFolderResponse is the response to get folder request."
+    },
+    "v1alpha1GetRecommendationResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr is the common response header"
+        },
+        "uuids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "recommended list of uuids"
+        }
+      },
+      "description": "GetRecommendationResponse is the response to get recommendation request."
+    },
+    "v1alpha1GetRequestResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "description": "resp_hdr is the common response header."
+        },
+        "request": {
+          "$ref": "#/definitions/v1alpha1Request",
+          "description": "request is information about specific workflow request."
+        }
+      },
+      "description": "GetRequestResponse is the response to GetRequestRequest."
+    },
+    "v1alpha1GetVaultCredentialsResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr is the common response header"
+        },
+        "token": {
+          "type": "string",
+          "description": "token is vault token."
+        }
+      },
+      "description": "GetVaultCredentialsResponse is the response to the get vault credentials request."
+    },
+    "v1alpha1GetWorkflowResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr is the common response header"
+        },
+        "workflow": {
+          "$ref": "#/definitions/v1alpha1Workflow",
+          "description": "workflow is the detail of a workflow."
+        },
+        "url": {
+          "type": "string",
+          "description": "url is the url to temporary file."
+        }
+      },
+      "description": "GetWorkflowResponse is the response to get workflow request."
+    },
+    "v1alpha1ListExecutionsResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "description": "resp_hdr is the common response header."
+        },
+        "execution": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/v1alpha1Execution"
+          },
+          "description": "execution is the execution details."
+        },
+        "statusTable": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "description": "status_table is a table containing information about the total number of executions in the list and their status."
+        },
+        "nextPageToken": {
+          "type": "string",
+          "description": "next_page_token represents the pagination token to retrieve the next page of results. If the value is \"\", it means no further results for the request."
+        },
+        "pageCount": {
+          "type": "integer",
+          "format": "int32",
+          "description": "page_count is the number of pages."
+        },
+        "aggregateTotalTable": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "description": "status_total_table is a table containing information about the total number of executions in the list and their status."
+        }
+      },
+      "description": "ListExecutionsResponse is the response to ListExecutionsRequest."
+    },
+    "v1alpha1ListFoldersResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr is the common response header"
+        },
+        "folders": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/v1alpha1Workflow"
+          },
+          "title": "List of folders and workflows"
+        },
+        "nextPageToken": {
+          "type": "string",
+          "description": "next_page_token represents the pagination token to retrieve the next page of results. If the value is \"\", it means no further results for the request."
+        },
+        "pageCount": {
+          "type": "integer",
+          "format": "int32",
+          "description": "page_count is the number of pages."
+        },
+        "totalCount": {
+          "type": "integer",
+          "format": "int32",
+          "description": "total_count is the total number of workflows."
+        },
+        "categoryCounts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/v1alpha1CountEntry"
+          },
+          "description": "category_counts is the list of count details for each present category."
+        }
+      },
+      "description": "ListFoldersResponse is the paginated response to the List request."
+    },
+    "v1alpha1ListRequestsResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "description": "resp_hdr is the common response header."
+        },
+        "requests": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/v1alpha1Request"
+          },
+          "description": "requests is the list of pending requests details."
+        },
+        "nextPageToken": {
+          "type": "string",
+          "description": "next_page_token represents the pagination token to retrieve the next page of results. If the value is \"\", it means no further results for the request."
+        },
+        "pageCount": {
+          "type": "integer",
+          "format": "int32",
+          "description": "page_count is the number of pages."
+        },
+        "totalCount": {
+          "type": "integer",
+          "format": "int32",
+          "description": "total_count is the Total number of Requests."
+        }
+      },
+      "description": "ListRequestsResponse is the response to ListRequestsRequest."
+    },
+    "v1alpha1ListWorkflowsResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr is the common response header"
+        },
+        "workflows": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/v1alpha1Workflow"
+          },
+          "description": "workflows is the details of all the Workflows."
+        },
+        "nextPageToken": {
+          "type": "string",
+          "description": "next_page_token represents the pagination token to retrieve the next page of results. If the value is \"\", it means no further results for the request."
+        },
+        "pageCount": {
+          "type": "integer",
+          "format": "int32",
+          "description": "page_count is the number of pages."
+        },
+        "totalCount": {
+          "type": "integer",
+          "format": "int32",
+          "description": "total_count is the Total number of workflows."
+        },
+        "categoryCounts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/v1alpha1CountEntry"
+          },
+          "description": "category_counts is the list of count details for each present category."
+        }
+      },
+      "description": "ListWorkflowsResponse is the paginated response to the List request."
+    },
+    "v1alpha1PopulateGlobalWorkflowsRequest": {
+      "type": "object",
+      "properties": {
+        "reqHdr": {
+          "$ref": "#/definitions/v1alpha1RequestHeader",
+          "title": "req_hdr is the common request header"
+        },
+        "buildNumber": {
+          "type": "integer",
+          "format": "int32",
+          "description": "build_number is the number of build from which we take global workflows."
+        }
+      },
+      "description": "PopulateGlobalWorkflowsRequest is the request to populate global workflows."
+    },
+    "v1alpha1PopulateGlobalWorkflowsResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr is the common response header"
+        }
+      },
+      "description": "PopulateGlobalWorkflowsResponse is the response to the populate global workflows request."
+    },
+    "v1alpha1RefreshEnvironmentStatusResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr Common Response header first"
+        }
+      },
+      "title": "RefreshEnvironmentStatusResponse is the response to RefreshEnvironmentStatusRequest"
+    },
+    "v1alpha1Request": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "id is the request id."
+        },
+        "workflowName": {
+          "type": "string",
+          "description": "workflow_name is the name of the requested workflow."
+        },
+        "workflowId": {
+          "type": "string",
+          "description": "workflow_id is the uuid of the requested workflow."
+        },
+        "createTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "create_time is the time of the request create."
+        },
+        "status": {
+          "$ref": "#/definitions/v1alpha1RequestStatus",
+          "description": "status is the status of the request."
+        },
+        "inputs": {
+          "type": "string",
+          "description": "inputs describes the field input parameter schema."
+        },
+        "reason": {
+          "type": "string",
+          "description": "reason is the reason for request creation."
+        },
+        "user": {
+          "type": "string",
+          "description": "user is the username of the user who made request."
+        },
+        "userId": {
+          "type": "string",
+          "description": "user_id is the id of the user who made request."
+        },
+        "lastUpdate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "last_update is the time of the last update of request."
+        },
+        "approverNotes": {
+          "type": "string",
+          "description": "approver_notes is comment provided by approver of the request."
+        }
+      },
+      "description": "Request is the workflow request details."
+    },
+    "v1alpha1RequestHeader": {
+      "type": "object",
+      "properties": {
+        "tid": {
+          "type": "string",
+          "title": "tid is the unique request id",
+          "required": [
+            "tid"
+          ]
+        }
+      },
+      "title": "RequestHeader is the common header which every request (GRPC/HTTP) should have",
+      "required": [
+        "tid"
+      ]
+    },
+    "v1alpha1RequestStatus": {
+      "type": "string",
+      "enum": [
+        "REQUEST_STATUS_UNSPECIFIED",
+        "REQUEST_STATUS_PENDING",
+        "REQUEST_STATUS_APPROVED",
+        "REQUEST_STATUS_REJECTED",
+        "REQUEST_STATUS_WITHDRAWN"
+      ],
+      "default": "REQUEST_STATUS_UNSPECIFIED",
+      "description": "RequestStatus is the request status."
+    },
+    "v1alpha1ResponseHeader": {
+      "type": "object",
+      "properties": {
+        "tid": {
+          "type": "string",
+          "title": "tid is the unique response id"
+        },
+        "requestTid": {
+          "type": "string",
+          "title": "request_tid is the corresponding request tid"
+        }
+      },
+      "title": "ResponseHeader is the common header which every response (GRPC/HTTP) should have"
+    },
+    "v1alpha1RunWorkflowResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "description": "resp_hdr is the common response header."
+        },
+        "executionIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "execution_id is the id of the execution entry."
+        }
+      },
+      "description": "RunWorkflowResponse is the response to RunWorkflowRequest."
+    },
+    "v1alpha1RunWorkflowWithoutExecutionEntryResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "description": "resp_hdr is the common request header."
+        }
+      },
+      "description": "RunWorkflowWithoutExecutionEntryResponse is the response to RunWorkflowWithoutExecutionEntryRequest."
+    },
+    "v1alpha1UpdateFolderResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "description": "resp_hdr is the common response header."
+        },
+        "folder": {
+          "$ref": "#/definitions/v1alpha1Workflow",
+          "description": "Folder is the folder details."
+        }
+      },
+      "description": "UpdateFolderResponse is the response to the UpdateFolderResponse."
+    },
+    "v1alpha1UpdateRequestResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "description": "resp_hdr is the common response header."
+        },
+        "request": {
+          "$ref": "#/definitions/v1alpha1Request",
+          "description": "request is the request details."
+        }
+      },
+      "description": "UpdateRequestResponse is the response to the UpdateRequestRequest."
+    },
+    "v1alpha1UpdateWorkflowResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "description": "resp_hdr is the common response header."
+        },
+        "workflow": {
+          "$ref": "#/definitions/v1alpha1Workflow",
+          "description": "workflow is the workflow details."
+        }
+      },
+      "description": "UpdateWorkflowResponse is the response to the UpdateWorkflowRequest."
+    },
+    "v1alpha1Workflow": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "name is the human-readable name of the workflow."
+        },
+        "id": {
+          "type": "string",
+          "description": "id is the uuid for the workflow.",
+          "readOnly": true
+        },
+        "description": {
+          "type": "string",
+          "description": "description is details about the workflow."
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "tags represent labels attached to this workflow. This will help with the search."
+        },
+        "currentVersion": {
+          "type": "string",
+          "description": "current_version indicates the current version of the workflow. It follows the semantic versioning naming."
+        },
+        "createTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "create_time is the time of the workflow create.",
+          "readOnly": true
+        },
+        "lastRun": {
+          "type": "string",
+          "format": "date-time",
+          "description": "last_run captures the time it was last run.",
+          "readOnly": true
+        },
+        "lastUpdated": {
+          "type": "string",
+          "format": "date-time",
+          "description": "last_updated captures the time it was last updated.",
+          "readOnly": true
+        },
+        "proxyId": {
+          "type": "string",
+          "description": "environment_id is id of environment under which workflow should be created."
+        },
+        "inputSchema": {
+          "type": "string",
+          "description": "input_schema describes the input parameter schema."
+        },
+        "requiresApproval": {
+          "type": "boolean",
+          "description": "requires_approval flag defines whether this workflow requires approval for execution."
+        },
+        "runningDisabled": {
+          "type": "boolean",
+          "description": "running_disabled flag defines whether this workflow can be run.",
+          "readOnly": true
+        },
+        "parentId": {
+          "type": "string",
+          "description": "parent_id defines folder identifier."
+        },
+        "isFolder": {
+          "type": "boolean",
+          "title": "is_folder flag to determine folder or runbook",
+          "readOnly": true
+        },
+        "path": {
+          "type": "string",
+          "title": "path determines the path of runbook or folder",
+          "readOnly": true
+        },
+        "enableEnvironment": {
+          "type": "boolean",
+          "description": "enable_environment_selection flag defines whether this workflow requires an env paramter to be added."
+        },
+        "executionDisabled": {
+          "type": "boolean",
+          "description": "execution_disabled flag defines whether this workflow can be executed, flag is defined by user."
+        },
+        "connectorTypes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "connector_types is the list of connector types which workflow requires."
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "categories is the list of categories to which workflow relates."
+        },
+        "icon": {
+          "type": "string",
+          "description": "icon is the icon for workflow."
+        },
+        "environmentStatus": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/v1alpha1EnvironmentStatus"
+          },
+          "title": "environment_status is the status of the environments (Ready/Not ready) for a particular workflow"
+        },
+        "runningDisabledByFloatingEnv": {
+          "type": "boolean",
+          "title": "running_disabled_by_floating_env flag defines the outcome of env status check for workflow(runbook disabled or not)"
+        }
+      },
+      "description": "Workflow contains details about a workflow."
+    },
+    "workflowsv1alpha1HealthStatusResponse": {
+      "type": "object",
+      "properties": {
+        "respHdr": {
+          "$ref": "#/definitions/v1alpha1ResponseHeader",
+          "title": "resp_hdr is the common response header"
+        },
+        "status": {
+          "type": "string",
+          "title": "status is the per application status"
+        }
+      },
+      "title": "HealthStatusResponse is the response to the /health request"
+    }
+  },
+  "externalDocs": {
+    "description": "Workflows service manages the workflows",
+    "url": "https://github.com/unskript/api/docs/Workflows.doc"
+  }
+}
