@@ -20,8 +20,8 @@ https://tenant-staging.alpha.unskript.io/v1alpha1/workflows?pageSize=100&isUnskr
 
 ```
 
-{% swagger src="../../.gitbook/assets/swagger.workflows" path="/v1alpha1/workflows/{workflowId}" method="get" %}
-[swagger.workflows](../../.gitbook/assets/swagger.workflows)
+{% swagger src="../../.gitbook/assets/openapi2 (1).json" path="/v1alpha1/workflows/{workflowId}" method="get" %}
+[openapi2 (1).json](<../../.gitbook/assets/openapi2 (1).json>)
 {% endswagger %}
 
 **Curl Example:**

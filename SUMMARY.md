@@ -105,5 +105,4 @@
 
 ## Lists
 
-*
 * [List of Actions](lists/Action\_list.md)
