@@ -61,6 +61,7 @@
   * [Zabbix](guides/connectors/zabbix.md)
 * [Secret store](guides/secret-store/README.md)
   * [Vault](guides/secret-store/vault.md)
+* [Notifications](guides/notifications.md)
 * [Contribute to Open Source](guides/contribute-to-open-source.md)
 
 ## Fundamentals
