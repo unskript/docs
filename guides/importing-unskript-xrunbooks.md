@@ -6,6 +6,8 @@ description: Use our pre-configured xRunBooks
 
 The [unSkript GitHub repository](../open-source/cloudops-automation-with-unskript.md) has many xRunBooks that are open source and available for your use.
 
+Here is [another listing of all of our xRunBooks](../lists/xRunBook\_list.md).
+
 {% tabs %}
 {% tab title="Open Source" %}
 All of the pre-configured xRunBooks are shown on the Welcome.ipynb.  Simply click the link, and the xRunBook will open in a new tab for editing.
