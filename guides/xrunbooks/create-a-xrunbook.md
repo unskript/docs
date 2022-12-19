@@ -6,6 +6,8 @@ To create a xRunBook, please follow these instructions:
 
 {% tabs %}
 {% tab title="Open Source" %}
+### Copy an existing template xRunBook:
+
 
 
 In order to create a xRunBook in the open source Docker container, you can copy an existing template.
@@ -16,6 +18,16 @@ In order to create a xRunBook in the open source Docker container, you can copy 
    1. `` CONTAINER=`docker ps -l | grep awesome-runbooks | awk '{print $1}'` ``
    2. `docker cp templates/runbooks/GCP.ipynb $CONTAINER:/home/jovyan/runbooks/`\<YOUR\_RUNBOOK\_NAME.ipynb>
 4. Point your browser to `http://127.0.0.1:8888/lab/tree/<YOUR_RUNBOOK_NAME.ipynb>` to begin editing.
+
+
+
+### Save an existing Jupyter Notebook
+
+If you have an existing Jupyter Notebook:
+
+1. Save your Notebook into `~/.unskript/runbooks.`
+2. Restart your Docker instance.
+3. Navigate to `http://127.0.0.1:8888:8888/lab/tree/<yourFileName>.ipynb`
 {% endtab %}
 
 {% tab title="Cloud" %}
