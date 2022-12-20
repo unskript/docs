@@ -1,6 +1,14 @@
+---
+description: Expand the functionality of your xRunBook with additional Actions
+---
+
 # Add an Action
 
 **Built-In Actions**
+
+{% hint style="info" %}
+The screenshots below are from the Sandbox/SAAS, but addition a built in Action with the Open Source Docker is functionally the same (with minor interface differences.)Ex
+{% endhint %}
 
 To get started quickly, we'll use one of the built-in unSkript Actions to create your xRunBook (you can write your own [Actions](../actions/create-custom-actions.md)). From within the xRunBook editor interface, use the search bar on the right to search the available actions.
 
