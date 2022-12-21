@@ -38,7 +38,3 @@ Learn the fundamentals of unSkript to get a deeper understanding of our main fea
 {% content-ref url="fundamentals/unskript-framework/" %}
 [unskript-framework](fundamentals/unskript-framework/)
 {% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
