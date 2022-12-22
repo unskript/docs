@@ -24,7 +24,7 @@ If your Action is connecting to an external resource, it will likely require a c
 
 ![](<../../../.gitbook/assets/Screenshot 2022-08-17 at 7.01.31 PM.png>)
 
-Use the drop down to select the credential that you would like to use.
+Use the drop down to select the credential that you would like to use. You can also create a credential from the drop down.
 
 
 
