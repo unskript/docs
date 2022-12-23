@@ -67,7 +67,7 @@
 ## Fundamentals
 
 * [unSkript Framework](fundamentals/unskript-framework/README.md)
-  * [Connect your Environment](fundamentals/unskript-framework/connect-your-environment.md)
+  * [Proxy Environments](fundamentals/unskript-framework/connect-your-environment.md)
   * [Using Iterators](fundamentals/unskript-framework/using-iterators.md)
   * [Using Poll](fundamentals/unskript-framework/using-poll.md)
   * [Using Start Conditions](fundamentals/unskript-framework/using-start-conditions.md)
