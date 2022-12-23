@@ -28,7 +28,7 @@ With unSkript environments you can configure each of your xRunBooks to run in al
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-12-23 at 15.14.42.jpg" alt="screenshot of a new environment"><figcaption></figcaption></figure>
 
-Now, we will edit each Connection with the credentials needed to connect to the service.  Additionally, add a ServiceId to each Connection.  In this case, we'll use ServiceId with the format "\<appname>\_\<connection>" - which results in "test\_aws" and "test\_slack":
+Now, we will edit each Connection with the credentials needed to connect to the service.  We have [detailed instructions](../../guides/connectors/) for each connection type.  Additionally, add a ServiceId to each Connection.  In this case, we'll use ServiceId with the format "\<appname>\_\<connection>" - meaning that we'll  use 2 ServiceIds here: "test\_aws" and "test\_slack":
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-12-23 at 15.27.46.jpg" alt="connectors with added credentials"><figcaption></figcaption></figure>
 
