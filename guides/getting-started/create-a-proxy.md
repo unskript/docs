@@ -22,4 +22,4 @@ Once you boot up the AMI, it establishes a secure connection with unSkript SaaS 
 In the [free cloud sandbox,](https://us.app.unskript.io/) only one proxy (that is hosted at`unSkript)` is available. Contact us for demos of our proxies in other clouds.
 {% endhint %}
 
-We also support environments other than AWS. Please contact support@unskript.com to schedule an onboarding call to bring up Non-AWS environments.
+We also support proxy installs in most public clouds (AWS, GCP, Azure). Please contact support@unskript.com to schedule an onboarding call to bring up Non-AWS environments.
