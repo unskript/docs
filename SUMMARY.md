@@ -78,7 +78,7 @@
   * [AWS hosted Proxy](fundamentals/unskript-framework/aws-hosted-proxy.md)
 * [Role Based Access Control](fundamentals/platform/role-based-access-control.md)
 * [Folders](fundamentals/platform/folders.md)
-* [Jupyter Notebooks 101](fundamentals/jupyter-notebooks-101.md)
+* [Jupyter Notebook 101](fundamentals/jupyter-notebooks-101.md)
 
 ***
 
