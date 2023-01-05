@@ -55,6 +55,8 @@
   * [Redis](guides/connectors/redis.md)
   * [REST](guides/connectors/rest.md)
   * [Slack](guides/connectors/slack.md)
+  * [Snowflake](guides/connectors/prometheus-1.md)
+  * [Splunk](guides/connectors/prometheus-2.md)
   * [SSH](guides/connectors/ssh.md)
   * [Stripe](guides/connectors/stripe.md)
   * [Terraform](guides/connectors/terraform.md)

@@ -20,7 +20,7 @@ This button enables the user to create their custom actions and custom notes.&#x
 
 #### Credentials
 
-<figure><img src="../../.gitbook/assets/1CFA549C-361B-4EB8-9EC3-96F912033D65 (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1CFA549C-361B-4EB8-9EC3-96F912033D65 (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This button can be used to add resources to your xRunBook. Credentials are used to authenticate the resource that you wish to connect to while running an action.
 
@@ -50,7 +50,7 @@ This button is used to execute an action.&#x20;
 
 #### First Cell: unSkript Internal
 
-<figure><img src="../../.gitbook/assets/C02C3270-C692-4DEE-A61C-9DF6C88667EA (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/C02C3270-C692-4DEE-A61C-9DF6C88667EA (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This is the first action of every xRunbook. The unSkript Internal action initializes the kernel and prepares an environment based on which the next/ consecutive actions are run.&#x20;
 
