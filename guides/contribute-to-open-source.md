@@ -14,7 +14,21 @@ The Three dot menu:
 
 <figure><img src="../.gitbook/assets/Screenshot 2022-12-14 at 20.54.17.jpg" alt="menu screenshot"><figcaption></figcaption></figure>
 
-Now that your file is downloaded, copy it into the folder for the connector your xRunBook uses (for example GCP or AWS).
+Now that your file is downloaded,  we'll need to make a few edits.\
+
+
+#### Edit the RunBook
+
+In each Action of the runbook, there are a number of task.configure blocks.&#x20;
+
+\
+1\. Delete all blocks with credential data.  Users will enter their own credentials, and do not need to see yours.
+
+2\. For any inputs that are "hardcoded" meaning you enter inputs as values, and not as variables - delete these inputs.  If your inputs \&outputs are variables that are defined and used elseqhere - leave them in.\
+\
+Once the edits are saved, copy the xRunBook into the folder for the connector your xRunBook uses (for example GCP or AWS).
+
+#### Runbook JSON file
 
 You'll need to create a \<runbook name>.json file.  This JSON has several attributes:
 
