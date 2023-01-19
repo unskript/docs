@@ -6,6 +6,8 @@
 
 * [Getting started](guides/getting-started/README.md)
   * [Sign Up/Install](guides/getting-started/sign-up-install.md)
+  * [Authentication](guides/getting-started/authentication/README.md)
+    * [Okta configuration](guides/getting-started/authentication/okta-configuration.md)
   * [Create a Proxy](guides/getting-started/create-a-proxy.md)
   * [Add Credentials to Connect your Resources](guides/getting-started/add-credentials-to-connect-your-resources.md)
   * [Key Terms](guides/getting-started/key-terms.md)
