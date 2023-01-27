@@ -96,6 +96,7 @@
 ## Use Cases
 
 * [For DevOps](use-cases/for-devops/README.md)
+  * [Chaos Engineering](use-cases/for-devops/chaos-engineering.md)
   * [Automate Cloud Operations](use-cases/for-devops/automate-cloud-operations.md)
 * [For SRE](use-cases/for-sre/README.md)
   * [Chaos Engineering](use-cases/for-sre/chaos-engineering.md)

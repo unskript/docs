@@ -4,7 +4,7 @@
 
 ### Authentication
 
-![Information needed to onboard Airflow connector](<../../.gitbook/assets/Screen Shot 2022-06-15 at 8.24.23 PM (1).png>)
+![Information needed to onboard Airflow connector](<../../.gitbook/assets/Screen Shot 2022-06-15 at 8.24.23 PM.png>)
 
 
 
