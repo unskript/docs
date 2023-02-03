@@ -10,6 +10,16 @@ Note: There is no concept of a Proxy in the [open source version](https://github
 
 unSkript needs a dedicated runtime environment where xRunBook workflows can be securely executed. This can be either on the unSkript SAAS side, or in your cloud (behind your cloud firewalls).
 
+We currently offer the ability to install proxies in your:
+
+* AWS Cloud
+* GCP Cloud
+* Private Cloud
+* onPrem
+* unSkript Hosted
+
+
+
 Customers who want to connect to resources and APIs that are not reachable from the Internet can use a customer hosted Proxy. unSkript offers an AMI (Amazon Machine Image) that can be used to bring up this proxy.
 
 On the Proxies tab, click the `Add Proxy` button and select your Cloud provider. Complete the provided form fields to generate a CloudFormation template that you can use to bring up the proxy instance on an EC2 machine.
