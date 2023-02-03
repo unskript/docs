@@ -1,6 +1,6 @@
 # Elasticsearch
 
-### [Listing of Elasticsearch xRunBooks](https://docs.unskript.com/unskript-product-documentation/lists/xrunbook\_list#elasticsearch)
+### [Listing of Elasticsearch xRunBooks](../../lists/xRunBook\_list.md#elasticsearch)
 
 ### [Listing of Elasticsearch Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#elasticsearch)
 

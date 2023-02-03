@@ -1,6 +1,6 @@
 # Jenkins
 
-### [List of Jenkins xRunBooks](https://docs.unskript.com/unskript-product-documentation/lists/xrunbook\_list#jenkins)
+### [List of Jenkins xRunBooks](../../lists/xRunBook\_list.md#jenkins)
 
 ### [List of Jenkins Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#jenkins)
 

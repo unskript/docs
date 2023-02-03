@@ -1,6 +1,6 @@
 # Postgres
 
-### [List of Postgres xRunBooks](https://docs.unskript.com/unskript-product-documentation/lists/xrunbook\_list#postgresql)
+### [List of Postgres xRunBooks](../../lists/xRunBook\_list.md#postgresql)
 
 ### [List of Postgres Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#postgresql)
 

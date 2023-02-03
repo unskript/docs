@@ -1,6 +1,6 @@
 # Kubernetes
 
-### [List of K8s xRunBooks](https://docs.unskript.com/unskript-product-documentation/lists/xrunbook\_list#kubernetes)
+### [List of K8s xRunBooks](../../lists/xRunBook\_list.md#kubernetes)
 
 ### [List of K8s Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#kubernetes)
 
