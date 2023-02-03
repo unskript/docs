@@ -36,6 +36,8 @@
   * [Anatomy of an Action](guides/actions/anatomy-of-an-action.md)
 * [Proxies](guides/proxies/README.md)
   * [unSkript Proxy](guides/proxies/unskript-proxy.md)
+  * [AWS Proxy](guides/proxies/aws-proxy.md)
+  * [GCP Proxy](guides/proxies/gcp-proxy.md)
 * [Connectors](guides/connectors/README.md)
   * [Airflow](guides/connectors/airflow.md)
   * [AWS](guides/connectors/aws.md)
