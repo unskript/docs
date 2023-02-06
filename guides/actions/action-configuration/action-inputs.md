@@ -2,9 +2,11 @@
 description: The data that your xRunBook supplies to the Action
 ---
 
-# Action Inputs
+# Add Action Inputs
 
 Actions are parameterized to provide the ultimate in flexibility. In this section, we'll walk through defining the Input parameters for an Action.
+
+{% embed url="https://youtu.be/mTSrUGqXVBw" %}
 
 To add an input to your Action, click the "three dot" menu for the Action, and select `Inputs`.
 
