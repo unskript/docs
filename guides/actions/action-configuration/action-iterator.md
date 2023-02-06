@@ -6,7 +6,11 @@ description: Run the same action multiple times with different input parameters
 
 ### Reuse the same Action multiple times
 
+{% embed url="https://youtu.be/7id_TS9EK_c?t=149" %}
+
 Action input parameters are often set for a single value: for example, an Action might require _**AWS Region**_ - as a single value.  However, it is possible to image a xRunBook where you might wish to run an Action against multiple regions (or even a varying number of regions in each invocation of the xRunBook).  Rather than hardcoding multiple instances of the same action, you can use the Iterator.
+
+
 
 Example: This Action gives an array of Public AWS EC2 instances for a given region.  Configured as below, it will list the instances for "us-west-2":
 

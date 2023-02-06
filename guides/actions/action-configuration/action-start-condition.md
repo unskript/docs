@@ -6,3 +6,4 @@ description: Skip an Action - or force it to run - based on the xRunBook Status
 
 A Python condition can be given as a start condition to run the task.
 
+{% embed url="https://youtu.be/NEJlkIBWHyw" %}

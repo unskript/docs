@@ -20,6 +20,8 @@ unSkript is an open source project. We love PRs, stars and more - checkout our [
 
 ### Docker:
 
+{% embed url="https://youtu.be/QT0sghAo_t0" %}
+
 The fastest way to get the open source version of unSkript running is via our Docker container.
 
 With Docker, you can get up and running in two steps (and just one if you already have Docker up and running!)

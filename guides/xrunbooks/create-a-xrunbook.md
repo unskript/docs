@@ -8,16 +8,13 @@ To create a xRunBook, please follow these instructions:
 {% tab title="Open Source" %}
 ### Copy an existing template xRunBook:
 
+{% embed url="https://youtu.be/TfO8aLtMNKE" %}
 
+All RunBooks are saved in `~/.unskript/runbooks.`
 
-In order to create a xRunBook in the open source Docker container, you can copy an existing template.
-
-1. Clone the repository to your local computer: `git clone https://github.com/unskript/Awesome-CloudOps-Automation`
-2. Navigate to the repository directory: `cd Awesome-CloudOps-Automation`
-3. `Create your xRunBook:`
-   1. `` CONTAINER=`docker ps -l | grep awesome-runbooks | awk '{print $1}'` ``
-   2. `docker cp templates/runbooks/GCP.ipynb $CONTAINER:/home/jovyan/runbooks/`\<YOUR\_RUNBOOK\_NAME.ipynb>
-4. Point your browser to `http://127.0.0.1:8888/lab/tree/<YOUR_RUNBOOK_NAME.ipynb>` to begin editing.
+1. Copy an existing RunBook, and rename it.&#x20;
+2. Restart your Docker instance.
+3. Navigate to `http://127.0.0.1:8888:8888/lab/tree/<yourFileName>.ipynb`
 
 
 

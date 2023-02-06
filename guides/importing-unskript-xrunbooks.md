@@ -11,6 +11,14 @@ Here is [another listing of all of our xRunBooks](broken-reference).
 {% tabs %}
 {% tab title="Open Source" %}
 All of the pre-configured xRunBooks are shown on the Welcome.ipynb.  Simply click the link, and the xRunBook will open in a new tab for editing.
+
+{% embed url="https://youtu.be/wDF8rfyKhrI" %}
+
+1. Add [Credentials](getting-started/add-credentials-to-connect-your-resources.md)
+2. Set Input Parameters for the RunBook
+3. Configure each Action in the RunBook:
+   1. Credentials
+   2. Set Input Parameters for the Action
 {% endtab %}
 
 {% tab title="Sandbox/SAAS" %}

@@ -6,8 +6,9 @@ description: Connecting your Actions to external services
 
 Any Action that connects to an external service will require a Credential.  To learn how to create a credential to a specific provider, check the section on [Connectors](../connectors/).  Each Connector service has instructions on how to add a Credential.
 
-\
-Example: Creating a Credential for AWS:
+### &#x20;Example: Creating a Credential for AWS:
+
+{% embed url="https://youtu.be/OD-Kd8eqiwE" %}
 
 1. Under Proxies/Environments, click **Create Credential** (Or you can add a new credential when editing an Action in an xRunBook).
 2. Choose AWS as your credential.
