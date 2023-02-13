@@ -6,4 +6,4 @@ Currently we support 3 ways to login:
 * **Google SSO**:  Click the Google Link to sign in with your Google Account.
 * **Okta SSO**: Users can use Okta to login.
   * NOTE: This is ONLY supported for customers on Team or Enterprise plans.
-  * [okta-configuration.md](okta-configuration.md "mention")
+  * [okta-configuration](okta-configuration/ "mention")
