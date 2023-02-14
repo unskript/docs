@@ -6,12 +6,20 @@ description: >-
 
 # AWS Service Quota list
 
+```markdown
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+```
+
 ```
 |Service Name | Quota Name | Quota Code | Quota Value | Quota Unit | Global? | Adjustable? |
 |--- | --- | --- | --- | --- |--- | --- |
 | AWSCloudMap | DiscoverInstances operation per account steady rate | L-514A639A | 1000.0 | None | False | True | 
 | AWSCloudMap | DiscoverInstances operation per account burst rate | L-76CF203B | 2000.0 | None | False | True | 
-| AWSCloudMap | Namespaces per Region | L-0FE3F50E | 50.0 | None | False | True | 
+| AWSCloudMap | Namespaces per Region | L-0FE3F50E | 50.0mark | None | False | True | 
 | access-analyzer | Policy generation CloudTrail time range | L-96F55078 | 90.0 | None | False | False | 
 | access-analyzer | Archive rules per analyzer | L-1E51937C | 100.0 | None | False | True | 
 | access-analyzer | CloudTrail log files processed per policy generation | L-5EFCE71D | 100000.0 | None | False | False | 
