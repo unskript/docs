@@ -2,7 +2,7 @@
 
 ### [Listing of all AWS XRunBooks](../../lists/xRunBook\_list.md#aws)
 
-### [Listing of all AWS Actions](../../lists/Action\_list.md#aws)
+### [Listing of all AWS Actions](broken-reference)
 
 ### Authentication
 
@@ -27,13 +27,13 @@ If you do not have an Access Key or a Secret Access Key, you will need to create
 1. Once you are logged in, go to Identity and Access Management (search for IAM in the top search bar)
 2. If you do not yet have a Group or User with the permissions for unSkript, create this user, and add the required permissions.&#x20;
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-11-02 at 11.01.30 AM (1).png" alt=""><figcaption><p>List of users on the AWS IAM service</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-11-02 at 11.01.30 AM.png" alt=""><figcaption><p>List of users on the AWS IAM service</p></figcaption></figure>
 
 3\. Click on the user.  This will open a new browser window with a summary of the user. &#x20;
 
 4\. This will open a new window.  Select the "Security credentials" tab in the middle of the screen:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-11-02 at 11.12.37 AM.jpg" alt=""><figcaption><p>IAM user summary with the security credentials tab selected</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-11-02 at 11.12.37 AM (1).jpg" alt=""><figcaption><p>IAM user summary with the security credentials tab selected</p></figcaption></figure>
 
 5\. Click "Create access key" . This will generate your key/secret key. Copy them from the page, and insert them into your unSkript credentials.
 

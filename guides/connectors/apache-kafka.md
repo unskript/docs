@@ -1,6 +1,6 @@
 # Apache Kafka
 
-### [Listing of all Kafka Actions](../../lists/Action\_list.md#kafka)
+### [Listing of all Kafka Actions](broken-reference)
 
 ### Authentication
 
