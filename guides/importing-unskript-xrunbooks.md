@@ -24,7 +24,7 @@ All of the pre-configured xRunBooks are shown on the Welcome.ipynb.  Simply clic
 {% tab title="Sandbox/SAAS" %}
 Importing xRunBooks is identical in the free sandbox and in our SAAS offering.
 
-
+{% embed url="https://www.youtube.com/watch?index=2&list=PLG7TPzTSJYkeOIAOj9iaxCaczKHX_qwZ_&v=NwzgbLTOgxg" %}
 
 
 
@@ -33,6 +33,8 @@ Importing xRunBooks is identical in the free sandbox and in our SAAS offering.
 * Sort them using the tags, or search for a sepcific keyword.  Once you find a xRunBook you'd like to use, click the three dots to the right of the row.  Click `Import xRunBook`.
 * You'll be prompted to name your version of the xRunBook, and assign a proxy.  This will import the xRunBook into your workspace for editing. &#x20;
 * You can now edit the [Actions](actions/action-configuration/), [Parameters](xrunbooks/create-a-parameter.md) so modify the xRunBook to exactly your needs.
+
+{% embed url="https://www.youtube.com/watch?index=3&list=PLG7TPzTSJYkeOIAOj9iaxCaczKHX_qwZ_&v=11Ni2opN9X4" %}
 {% endtab %}
 {% endtabs %}
 

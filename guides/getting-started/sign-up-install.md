@@ -70,7 +70,7 @@ unSkript offers a free cloud sandbox that can be easily accessed in your browser
 1. Visit [unSkript.com](https://unskript.com), and click the signup button at the top right of the page
 2. On the sign up  screen, you may either use Google to sign in, or you can use your email address to create an account (this will require email verification).
 
-
+{% embed url="https://www.youtube.com/watch?list=PLG7TPzTSJYkeOIAOj9iaxCaczKHX_qwZ_&v=QjqAcJEiQNo" %}
 
 Once you have verified your account, you'll be walked through a overview of the platform where you will create a xRunBook in three steps:
 
