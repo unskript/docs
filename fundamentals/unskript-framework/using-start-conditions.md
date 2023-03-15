@@ -8,7 +8,7 @@ You can use this feature in combination of `Output from Previous Action` to deci
 
 Examples:
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2022-09-27 at 8.43.08 PM.png" alt=""><figcaption><p>Creating a Start Condition</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screen Shot 2022-09-27 at 8.43.08 PM (1).png" alt=""><figcaption><p>Creating a Start Condition</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/Screen Shot 2022-09-27 at 8.43.01 PM.png" alt=""><figcaption><p>Skipping the Execution due to start condition not met</p></figcaption></figure>
 

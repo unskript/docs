@@ -28,4 +28,8 @@ When adding a Credential, a serviceID can be added. ServiceID is a variable abst
 
 When a xRunBook is run in multiple environments, different credentials might be used (for example - the AWS connection in dev might be different than the one used in production). &#x20;
 
-It would be possible to have 2 instances of the xRunBook - one for deva and one for production - but this could introduce errors.  Instead, if the dev & prod credentials share a serviceID, and the xRunBook can be configured to use the serviceID for the credentials.  Now, the xRunbook can be run in either environment without any changes, using the correct credentials in both environments.
+To use a serviceID:
+
+1. For your credentials - give them a serviceID (that is the same across all environments).  For example: AWS\_ServiceID.
+2. Open your xRunbook, and for each Action, change the credential Slider to ServiceID, and choose the serviceId.
+3. Now, when you run the RunBook, you'll be prompted to choose an environment, and unSkript will use the credentials (via the serviceId) for that environment.

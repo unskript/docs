@@ -37,6 +37,7 @@
     * [Action Start Condition](guides/actions/action-configuration/action-start-condition.md)
   * [Anatomy of an Action](guides/actions/anatomy-of-an-action.md)
 * [Proxies](guides/proxies/README.md)
+  * [Environment](fundamentals/unskript-framework/connect-your-environment.md)
   * [unSkript Proxy](guides/proxies/unskript-proxy.md)
   * [AWS Proxy](guides/proxies/aws-proxy.md)
   * [GCP Proxy](guides/proxies/gcp-proxy.md)

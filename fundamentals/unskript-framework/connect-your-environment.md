@@ -7,12 +7,12 @@ description: Use the same xRunBook in different settings with environments
 ## # unSkript Environments
 
 {% hint style="info" %}
-NOTE: Environments are only available in our Cloud SAAS offering. Contact us for a demonstration.
+NOTE: Environments are only available online, and not in the Docker deployment.
 {% endhint %}
 
-It is pretty common to have multiple environments for your cloud (dev, staging, production, etc.), each using similar infrastructure, but wth different credentials.
+It is pretty common to have multiple environments for your cloud (dev, staging, production, etc.), each using similar infrastructure, but with different credentials.
 
-With unSkript environments you can configure each of your xRunBooks to run in all of your environments with no modifications.  By using the same xRunBook in each environment, you are assured the same results.
+With unSkript environments you can configure your xRunBooks to run in all of your environments with no modifications. This ensures that the XRunBook is the source of truth, and there is no worry about source control across your environments.
 
 ### Creating an Environment
 
@@ -26,7 +26,7 @@ With unSkript environments you can configure each of your xRunBooks to run in al
 
 3\. Your environment will be created.  Now, it is time to edit your Connectors.  In the list of environments, click your new environment, and "Open Details."
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-12-23 at 15.14.42.jpg" alt="screenshot of a new environment"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-12-23 at 15.14.42 (1).jpg" alt="screenshot of a new environment"><figcaption></figcaption></figure>
 
 Now, we will edit each Connection with the credentials needed to connect to the service.  We have [detailed instructions](../../guides/connectors/) for each connection type.  Additionally, add a ServiceId to each Connection.  In this case, we'll use ServiceId with the format "\<appname>\_\<connection>" - meaning that we'll  use 2 ServiceIds here: "test\_aws" and "test\_slack":
 
