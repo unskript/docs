@@ -26,6 +26,7 @@
   * [Schedules](guides/xrunbooks/schedules.md)
   * [Alarms](guides/xrunbooks/alarms/README.md)
     * [Attaching runbooks to alarms](guides/xrunbooks/alarms/attaching-runbooks-to-alarms.md)
+    * [Getting alerts via webhook for onprem](guides/xrunbooks/alarms/getting-alerts-via-webhook-for-onprem.md)
 * [Actions](guides/actions/README.md)
   * [Create Custom Actions](guides/actions/create-custom-actions.md)
   * [Action Configuration](guides/actions/action-configuration/README.md)
@@ -78,7 +79,7 @@
 ## Fundamentals
 
 * [unSkript Framework](fundamentals/unskript-framework/README.md)
-  * [Proxy Environments](fundamentals/unskript-framework/connect-your-environment.md)
+  *
   * [Using Iterators](fundamentals/unskript-framework/using-iterators.md)
   * [Using Poll](fundamentals/unskript-framework/using-poll.md)
   * [Using Start Conditions](fundamentals/unskript-framework/using-start-conditions.md)
