@@ -123,7 +123,3 @@
 
 * [List of Actions](lists/Action\_list.md)
 * [AWS Service Quota list](lists/test.md)
-
-***
-
-* [Page 1](page-1.md)
