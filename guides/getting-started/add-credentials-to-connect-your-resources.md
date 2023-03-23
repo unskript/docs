@@ -12,18 +12,14 @@ unSkript supports a large selection of resource types that you can connect into.
 
 {% tabs %}
 {% tab title="Open Source" %}
-{% hint style="info" %}
-Note that there is no persistence of credentials in the open source Docker Client. If you restart your client, you'll have to re-add your credentials.
-{% endhint %}
-
 1. Click the Credentials tab at the top of the page.  It will probably say "There are no added Credentials yet."  Click the "Add Credential" button.
 2. A list of predefined Services will appear. These will simplify your ability to connect to popular services securely with fewer clicks.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2022-10-24 at 12.55.11.png" alt="a list of the credential services prepopulated in unSkript"><figcaption><p>The credential services built into unSkript</p></figcaption></figure>
 
-If you do not see your service here, you can connect via REST for APIs or via SSH for servers.
+If you do not see your service here, you can connect via REST for APIs or via SSH for servers. For.a direct connection, [open an Issue](https://github.com/unskript/Awesome-CloudOps-Automation/issues/new?assignees=\&labels=Credential%2Ctriage\&template=add\_credential.yml\&title=%5BCredential%5D%3A+), and we can add your service.
 
-3\.  The UI will walk you through the required steps to establish your credential.
+3\.  The UI will walk you through the required steps to establish your credential. If you run into issues, there are detailed instructions for each [Connector](../connectors/).
 {% endtab %}
 
 {% tab title="Cloud" %}

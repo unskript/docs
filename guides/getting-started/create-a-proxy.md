@@ -18,4 +18,8 @@ We currently offer the ability to install proxies in your:
 * [onPrem](../proxies/#on-premises)
 * [unSkript Hosted](../proxies/unskript-proxy.md)
 
+{% hint style="info" %}
+The Free Trial only allows for one unSkript Hosted Proxy. &#x20;
+{% endhint %}
+
 Please contact support@unskript.com to schedule an onboarding call.

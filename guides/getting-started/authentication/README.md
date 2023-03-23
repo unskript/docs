@@ -1,3 +1,7 @@
+---
+description: For our Cloud/Free Trial, you must create an account.
+---
+
 # Authentication
 
 Currently we support 3 ways to login:

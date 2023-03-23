@@ -26,12 +26,23 @@ The fastest way to get the open source version of unSkript running is via our Do
 
 With Docker, you can get up and running in two steps (and just one if you already have Docker up and running!)
 
-1. Install [Docker](https://docs.docker.com/engine/install/), and start the Docker Client.
-2. In the terminal, run the following command:\
-   `docker run -it -p 8888:8888`\
-   `-v $HOME/.unskript:/data`\
-   `--user root`\
-   `docker.io/unskript/awesome-runbooks:latest`
+1.  Clone out GitHub Repository (In this case we are installing in $HOME.)
+
+    ```
+    cd $HOME
+    git clone https://github.com/unskript/Awesome-CloudOps-Automation 
+    cd Awesome-CloudOps-Automation
+    ```
+2.  In the terminal, run the following command (if you installed the GitHub in a different location - change line 2 appropriately):\
+
+
+    ```
+    docker run -it -p 8888:8888 \
+     -v $HOME/Awesome-CloudOps-Automation/custom:/data \
+     -v $HOME/.unskript:/unskript \
+     --user root \
+     docker.io/unskript/awesome-runbooks:latest
+    ```
 
 ``
 
