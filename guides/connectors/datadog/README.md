@@ -17,19 +17,30 @@
 
 #### &#x20;API key or client token:
 
-1. Navigate to Organization settings, then click the **API keys** or **Client Tokens** tab.
-2. Click the **New Key** or **New Client Token** button, depending on which you’re creating.
+1.  Navigate to Organization settings, then click the **API keys** tab.\
+
+
+    <figure><img src="../../../.gitbook/assets/API Key.png" alt=""><figcaption></figcaption></figure>
+2. Click the **New Key** button.
 3. Enter a name for your key or token.
-4. Click **Create API key** or **Create Client Token**.
+4. Click **Create API key**.
 
 **Notes:**
 
 1. Your org must have at least one API key and at most 50 API keys.
 2. Key names must be unique across your organization.
 
-#### Appplication key <a href="#add-application-keys" id="add-application-keys"></a>
+#### Appplication key: <a href="#add-application-keys" id="add-application-keys"></a>
 
-To add a Datadog application key, navigate to **Organization Settings** > **Application Keys**. If you have the [permission](https://docs.datadoghq.com/account\_management/rbac/permissions) to create application keys, click **New Key**.
+1.  To add a Datadog application key, navigate to **Organization Settings** > **Application Keys**. \
+
+
+    <figure><img src="../../../.gitbook/assets/app key.png" alt=""><figcaption></figcaption></figure>
+2. If you have the [permission](https://docs.datadoghq.com/account\_management/rbac/permissions) to create application keys, click **New Key**.
+3.  Please ensure that the key has the following scopes:\
+
+
+    <figure><img src="../../../.gitbook/assets/Screen_Shot_2023-03-23_at_2_11_13_PM.png" alt=""><figcaption></figcaption></figure>
 
 **Notes:**
 
