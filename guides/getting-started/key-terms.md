@@ -8,7 +8,7 @@ description: Some definitions to help you get started with unSkript xRunBooks
 
 ### Key Concepts
 
-1. **Credentials**: allow you to easily configure connections to external systems like databases and APIs. Currently, unSkript supports connections to many sources like MySQL, Snowflake, MongoDB, Grafana, Datadog, JIRA, GitHub, AWS, GCP, Kubernetes, SSH, REST APIs, Slack and Airflow.
-2. **xRunBooks:** a multi-step workflow that can be composed out of multiple Actions. For example- customer onboarding workflow. xRunBooks are written in Python.&#x20;
-3. **Actions:** The atomic units of a xRunBook.  Actions are connected together to create a full xRunBook.  There are hundreds of pre-built Actions in unSkript that can be easily configured, or you can create your own.
-4. **Environment:** a collection of credentials and xRunBooks that your workflow uses to complete the tasks.
+1. [**Credentials**](../connectors/): allow you to easily configure connections to external systems like databases and APIs. Currently, unSkript supports connections to many sources like MySQL, Snowflake, MongoDB, Grafana, Datadog, JIRA, GitHub, AWS, GCP, Kubernetes, SSH, REST APIs, Slack and Airflow.
+2. [**xRunBooks**](../xrunbooks/)**:** a multi-step workflow that can be composed out of multiple Actions. For example- customer onboarding workflow. xRunBooks are written in Python.&#x20;
+3. [**Actions**](../actions/)**:** The atomic units of a xRunBook.  Actions are connected together to create a full xRunBook.  There are hundreds of pre-built Actions in unSkript that can be easily configured, or you can create your own.
+4. [**Environment**](../../fundamentals/unskript-framework/connect-your-environment.md)**:** a collection of credentials and xRunBooks that your workflow uses to complete the tasks.

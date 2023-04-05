@@ -39,7 +39,7 @@ If you do not see your service here, you can connect via REST for APIs or via SS
 {% hint style="info" %}
 **Credential Parameterization using ServiceID**
 
-You can execute a xRunBook across different environments without having to duplicate it in each environment. Learn More about ServiceIDs
+You can execute a xRunBook across different environments without having to duplicate it in each environment. [Learn More about ServiceIDs](../proxies/connect-your-environment/runbooks-across-environments-serviceids.md)
 {% endhint %}
 
 ![Step 4 - Add details of your connection](<../../.gitbook/assets/Screenshot 2022-08-12 at 5.38.25 PM.png>)
