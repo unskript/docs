@@ -1,3 +1,3 @@
 # unSkript Framework
 
-unSkript Framework provides an abstration for Credential management, Action's management, Worfklow Configuration and Task Configuration. &#x20;
+unSkript Framework provides an abstraction for Credential management, Action management, Workflow Configuration and Task Configuration. &#x20;

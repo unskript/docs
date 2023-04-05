@@ -26,7 +26,7 @@ then the output has the following keys
 
 `'[3, 4]'`
 
-``
+
 
 For a multi-way iterator where multiple Task inputs are populated from the list, the dictionary is keyed on string representation of individual dict.
 

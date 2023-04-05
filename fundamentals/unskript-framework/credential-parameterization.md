@@ -37,7 +37,7 @@ We can enable environment selection by checking the box in Runbook details-
 
 While configuring the actions, enable the Search using ServiceID option to allow this runbook to execute in multiple environment-
 
-![](<../../.gitbook/assets/56B34840-9814-45EB-B8BE-78D13A3326D8 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
+![](<../../.gitbook/assets/56B34840-9814-45EB-B8BE-78D13A3326D8 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png>)
 
 Then we can trigger the execution by clicking on the <mark style="color:orange;background-color:yellow;">`Run`</mark> button-
 

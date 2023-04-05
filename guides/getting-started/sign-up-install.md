@@ -44,7 +44,7 @@ With Docker, you can get up and running in two steps (and just one if you alread
      docker.io/unskript/awesome-runbooks:latest
     ```
 
-``
+
 
 Your installation will be available to use at: [http://127.0.0.1:8888/doc/workspaces/auto-t/tree/Welcome.ipynb](http://127.0.0.1:8888/doc/workspaces/auto-t/tree/Welcome.ipynb)
 
@@ -85,8 +85,8 @@ unSkript offers a free cloud sandbox that can be easily accessed in your browser
 
 Once you have verified your account, you'll be walked through a overview of the platform where you will create a xRunBook in three steps:
 
-1. ****[**Establish a proxy environment**](create-a-proxy.md) (these are used to store your credentials and xRunBooks). In the cloud demo, you can only have unSkript hosted proxies.
-2. ****[**Connect a Resource/Add Credentials**](add-credentials-to-connect-your-resources.md) **** We'll connect your environment to a MongoDb database for the demo. &#x20;
+1. [**Establish a proxy environment**](create-a-proxy.md) (these are used to store your credentials and xRunBooks). In the cloud demo, you can only have unSkript hosted proxies.
+2. [**Connect a Resource/Add Credentials**](add-credentials-to-connect-your-resources.md) We'll connect your environment to a MongoDb database for the demo. &#x20;
 3. **Create a xRunBook** This step will walk you through the creation of a xRunBook
    1. First you'll create a xRunBook with a name, optional description and the Proxy you created in the first step.
    2. Next we'll open the editor to begin creating the xRunBook.
