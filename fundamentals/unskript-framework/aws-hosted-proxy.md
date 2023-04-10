@@ -16,7 +16,7 @@ Step 2 of the Proxy Deployment Instructions as on the AWS CloudFormation console
 
 Step 3 can be filled out this way-
 
-![Part 1 of the stack details](<../../.gitbook/assets/Screenshot 2022-08-09 at 3.15.42 PM (1).png>)
+![Part 1 of the stack details](<../../.gitbook/assets/Screenshot 2022-08-09 at 3.15.42 PM.png>)
 
 ![Part 2 of the stack details](../../.gitbook/assets/F5C2A6FB-AD12-40CB-AD6C-979E3209823C.png)
 
@@ -32,7 +32,7 @@ Please note-
 
 There is no need to additionally configure the stack options so you can skip to reviewing the details of the stack.
 
-![](<../../.gitbook/assets/Screenshot 2022-08-09 at 3.16.21 PM.png>)
+![](<../../.gitbook/assets/Screenshot 2022-08-09 at 3.16.21 PM (1).png>)
 
 And voilà, once the proxy is successfully deployed in the client environment, you should see the status <mark style="color:green;background-color:yellow;">`READY`</mark> for your proxy.
 
