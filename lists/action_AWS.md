@@ -1,7 +1,7 @@
 # Actions By Connector:
 | | | | | | 
  | ---| ---| ---| ---| ---| 
- | [AWS](lists/action_AWS.md) | [Airflow](lists/action_Airflow.md) | [Azure](lists/action_Azure.md) | [ChatGPT](lists/action_ChatGPT.md) | [Datadog](lists/action_Datadog.md) | [ElasticSearch](lists/action_ElasticSearch.md) |
+ | [AWS](action_AWS.md) | [Airflow](action_Airflow.md) | [Azure](action_Azure.md) | [ChatGPT](lists/action_ChatGPT.md) | [Datadog](lists/action_Datadog.md) | [ElasticSearch](lists/action_ElasticSearch.md) |
  | [GCP](lists/action_GCP.md) | [Github](lists/action_Github.md) | [Grafana](lists/action_Grafana.md) | [Hadoop](lists/action_Hadoop.md) | [Jenkins](lists/action_Jenkins.md) | [Jira](lists/action_Jira.md) |
  | [Kafka](lists/action_Kafka.md) | [Kubernetes](lists/action_Kubernetes.md) | [Mantishub](lists/action_Mantishub.md) | [Mongo](lists/action_Mongo.md) | [MsSQL](lists/action_MsSQL.md) | [MySQL](lists/action_MySQL.md) |
  | [Netbox](lists/action_Netbox.md) | [Nomad](lists/action_Nomad.md) | [Pingdom](lists/action_Pingdom.md) | [Postgresql](lists/action_Postgresql.md) | [Prometheus](lists/action_Prometheus.md) | [Redis](lists/action_Redis.md) |
