@@ -60,6 +60,7 @@
       * [AWS S3 Actions](lists/action\_AWS\_S3.md)
       * [AWS VPC Actions](lists/action\_AWS\_VPC.md)
   * [Apache Kafka](guides/connectors/apache-kafka.md)
+  * [Azure](guides/connectors/azure.md)
   * [Datadog](guides/connectors/datadog/README.md)
     * [Configuring webhook in Datadog](guides/connectors/datadog/configuring-webhook-in-datadog.md)
     * [Datadog Actions](lists/action\_DATADOG.md)
