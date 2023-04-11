@@ -131,6 +131,7 @@
 * [Notifications](guides/notifications.md)
 * [Role Based Access Control](guides/role-based-access-control/README.md)
   * [RBAC Roles](guides/role-based-access-control/rbac-roles.md)
+* [Command Line Tool](guides/command-line-tool.md)
 * [Contribute to Open Source](guides/contribute-to-open-source.md)
 
 ## Fundamentals
