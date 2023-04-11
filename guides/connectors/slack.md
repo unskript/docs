@@ -4,7 +4,7 @@ description: Connect your xRunBook Actions to Slack. Message your team!
 
 # Slack
 
-### [List of Slack Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#slack)
+
 
 ### Authenticate
 

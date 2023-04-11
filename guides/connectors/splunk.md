@@ -1,6 +1,6 @@
 # Splunk
 
-### [List of Splunk Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#splunk)
+### [List of Splunk Actions](splunk/splunk-actions.md)
 
 ### Authentication
 

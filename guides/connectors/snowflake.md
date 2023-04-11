@@ -1,6 +1,6 @@
 # Snowflake
 
-### [List of Snowflake Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#snowflake)
+### [List of Snowflake Actions](../../lists/action\_SNOWFLAKE.md)
 
 ### Authentication
 
