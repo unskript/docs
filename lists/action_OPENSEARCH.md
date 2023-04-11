@@ -1,3 +1,9 @@
+# Actions in the OPENSEARCH category
+* **opensearch**: [Opensearch Get Handle](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/opensearch/legos/opensearch_get_handle/README.md): Opensearch Get Handle
+
+* **opensearch**: [Opensearch search](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/opensearch/legos/opensearch_search/README.md): Opensearch Search
+
+
 # Actions By Connector:
 | | | | 
  | ---| ---| ---| 
@@ -41,16 +47,5 @@
  | [SLACK](action_SLACK.md) | [SNOWFLAKE](action_SNOWFLAKE.md) | [STRIPE](action_STRIPE.md) | [STRIPE_CHARGE](action_STRIPE_CHARGE.md) |
  | [STRIPE_DISPUTE](action_STRIPE_DISPUTE.md) | [STRIPE_REFUND](action_STRIPE_REFUND.md) | [TERRAFORM](action_TERRAFORM.md) | [INFRA](action_INFRA.md) |
  | [OPENSEARCH](action_OPENSEARCH.md) | 
-
-
- # Actions in the MYSQL QUERY category
-* **MySQL**: [MySQl Get Long Running Queries](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/MySQL/legos/mysql_get_long_run_queries/README.md): MySQl Get Long Running Queries
-
-* **MySQL**: [MySQl Kill Query](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/MySQL/legos/mysql_kill_query/README.md): MySQl Kill Query
-
-* **MySQL**: [Run MySQL Query](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/MySQL/legos/mysql_read_query/README.md): Run MySQL Query
-
-* **MySQL**: [Create a MySQL Query](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/MySQL/legos/mysql_write_query/README.md): Create a MySQL Query
-
-* **Netbox**: [Netbox Get Handle](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/Netbox/legos/netbox_get_handle/README.md): Get Netbox Handle
+ 
 
