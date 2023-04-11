@@ -178,7 +178,7 @@
 
 ## Lists
 
-* [List of all Actions](lists/action_list.md)
+* [List of all Actions](lists/Action_list.md)
 * [AWS](lists/action_AWS.md) 
 * [Airflow](lists/action_AIRFLOW.md) 
 * [Azure](lists/action_AZURE.md) 
