@@ -21,7 +21,7 @@ Reusability of a runbook with certain actions can be achieved with the use of Cr
 
 #### xRunbook purpose
 
-&#x20;To fetch and display a graph of the server statistics for servers A and B
+To fetch and display a graph of the server statistics for servers A and B
 
 #### Steps
 
@@ -37,16 +37,16 @@ We can enable environment selection by checking the box in Runbook details-
 
 While configuring the actions, enable the Search using ServiceID option to allow this runbook to execute in multiple environment-
 
-![](<../../.gitbook/assets/56B34840-9814-45EB-B8BE-78D13A3326D8 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/56B34840-9814-45EB-B8BE-78D13A3326D8 (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png>)
 
 Then we can trigger the execution by clicking on the <mark style="color:orange;background-color:yellow;">`Run`</mark> button-
 
 ![unSkript can run xRunBooks interactively or non-interactively](<../../.gitbook/assets/Screenshot 2022-08-17 at 6.29.02 PM.png>)
 
-This creates an execution of the xRunBook which will then ask for the environment(s) in which this runbook has to execute-&#x20;
+This creates an execution of the xRunBook which will then ask for the environment(s) in which this runbook has to execute-
 
 ![xRunBooks needs parameters](<../../.gitbook/assets/Screenshot 2022-08-17 at 6.29.28 PM.png>)
 
-Here we have 2 environments in which this runbook can be executed under the same Service ID.&#x20;
+Here we have 2 environments in which this runbook can be executed under the same Service ID.
 
 The execution progress can be checked in the Executions tab.
