@@ -1,6 +1,6 @@
 # Grafana
 
-### [List of Grafana Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#grafana)
+### [List of Grafana Actions](../../lists/action\_GRAFANA.md)
 
 
 

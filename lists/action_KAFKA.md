@@ -1,4 +1,4 @@
-# AWS\_NAT\_GATEWAY
+# Kafka Actions
 
 ## Actions By Connector:
 
@@ -45,7 +45,10 @@
 | [STRIPE\_DISPUTE](action\_STRIPE\_DISPUTE.md)           | [STRIPE\_REFUND](action\_STRIPE\_REFUND.md)           | [TERRAFORM](action\_TERRAFORM.md)                 |
 | [OPENSEARCH](action\_OPENSEARCH.md)                     |                                                       |                                                   |
 
-## Actions in the AWS NAT GATEWAY category
+## Actions in the KAFKA category
 
-* **AWS**: [AWS Find Unused NAT Gateways](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/AWS/legos/aws\_filter\_unused\_nat\_gateway/README.md): This action to get all of the Nat gateways that have zero traffic over those
-* **AWS**: [AWS Get Private Address from NAT Gateways](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/AWS/legos/aws\_get\_private\_address\_from\_nat\_gateways/README.md): This action is used to get private address from NAT gateways.
+* **Kafka**: [Kafka Check In-Sync Replicas](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/Kafka/legos/kafka\_check\_in\_sync\_replicas/README.md): Checks number of actual min-isr for each topic-partition with configuration for that topic.
+* **Kafka**: [Kafka Check Replicas Available](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/Kafka/legos/kafka\_check\_replicas\_available/README.md): Checks if the number of replicas not available for communication is equal to zero.
+* **Kafka**: [Get Kafka Producer Handle](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/Kafka/legos/kafka\_get\_handle/README.md): Get Kafka Producer Handle
+* **Kafka**: [Kafka Publish Message](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/Kafka/legos/kafka\_publish\_message/README.md): Publish Kafka Message
+* **Kafka**: [Run a Kafka command using kafka CLI](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/Kafka/legos/kafka\_run\_command/README.md): Run a Kafka command using kafka CLI. Eg kafka-topics.sh --list --exclude-internal

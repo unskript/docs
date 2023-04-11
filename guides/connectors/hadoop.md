@@ -1,6 +1,6 @@
 # Hadoop
 
-### [List of Hadoop Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#hadoop)
+
 
 ### Authentication
 

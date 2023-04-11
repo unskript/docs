@@ -1,6 +1,6 @@
 # Prometheus
 
-### [List of Prometheus Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#prometheus)
+### [List of Prometheus Actions](../../lists/action\_PROMETHEUS.md)
 
 ### Authentication
 

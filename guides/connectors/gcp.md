@@ -1,6 +1,6 @@
 # GCP
 
-### [List of GCP Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#gcp)
+### [List of GCP Actions](../../lists/action\_GCP.md)
 
 ### Authentication
 

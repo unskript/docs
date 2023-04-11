@@ -1,5 +1,7 @@
 # Nomad
 
+### Authentication Steps:
+
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-04-11 at 10.15.16.jpg" alt="nomad credentials"><figcaption></figcaption></figure>
 
 | Name             | Desription                                        |

@@ -1,6 +1,6 @@
 # MongoDB
 
-### [List of MongoDB Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#mongo)
+
 
 ### Authentication
 

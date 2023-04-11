@@ -1,6 +1,6 @@
 # Jira
 
-### [List of Jira Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#jira)
+### [List of Jira Actions](../../lists/action\_JIRA.md)
 
 ### Authentication
 

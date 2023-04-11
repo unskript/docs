@@ -1,6 +1,6 @@
 # Redis
 
-### [List of Redis Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#redis)
+### [List of Redis Actions](../../lists/action\_REDIS.md)
 
 ### Authentication
 

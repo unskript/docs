@@ -1,10 +1,10 @@
 # Kafka
 
-### [Listing of all Kafka Actions](action\_kafka.md)
+### [Listing of all Kafka Actions](../../lists/action\_KAFKA.md)
 
 ### Authentication
 
-![Information needed to onboard RAFKA connector](<../../../.gitbook/assets/Screen Shot 2022-06-14 at 7.19.29 PM.png>)
+![Information needed to onboard RAFKA connector](<../../.gitbook/assets/Screen Shot 2022-06-14 at 7.19.29 PM.png>)
 
 | Name          | Description                                                                                               |
 | ------------- | --------------------------------------------------------------------------------------------------------- |

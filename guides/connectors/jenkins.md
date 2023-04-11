@@ -1,8 +1,8 @@
 # Jenkins
 
-### [List of Jenkins xRunBooks](broken-reference)
+### [List of Jenkins xRunBooks](../../lists/xRunBook\_list.md#jenkins)
 
-### [List of Jenkins Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#jenkins)
+### [List of Jenkins Actions](../../lists/action\_JENKINS.md)
 
 ### Authentication
 

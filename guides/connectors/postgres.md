@@ -1,8 +1,8 @@
 # Postgres
 
-### [List of Postgres xRunBooks](broken-reference)
+### [List of Postgres xRunBooks](../../lists/xRunBook\_list.md#postgresql)
 
-### [List of Postgres Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#postgresql)
+### [List of Postgres Actions](postgres/postgres-actions.md)
 
 ### Authentication
 

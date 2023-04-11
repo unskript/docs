@@ -1,6 +1,6 @@
 # Datadog
 
-### [List of Datadog Actions](broken-reference)
+### [List of Datadog Actions](../../../lists/action\_DATADOG.md)
 
 ### Authentication
 
