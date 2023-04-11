@@ -6,7 +6,7 @@ Actions in a workflow are specific to performing tasks depending on the Resource
 
 unSkript supports the following Connectors-
 
-* Data services like [Redis](redis.md), [MySQL](mysql.md), Snowflake, [MongoDB](mongodb.md), [Kafka](apache-kafka.md), [Postgresql](postgres.md), [Hadoop](hadoop.md), [MSSQL](ms-sql.md), Splunk
+* Data services like [Redis](redis.md), [MySQL](mysql.md), Snowflake, [MongoDB](mongodb.md), [Kafka](apache-kafka/), [Postgresql](postgres.md), [Hadoop](hadoop.md), [MSSQL](ms-sql.md), Splunk
 * Observability services like [Grafana](grafana.md), [Datadog](datadog/), [Zabbix](zabbix.md), [Pingdom](pingdom.md), [OpenSearch](opensearch.md), [Elasticsearch](elasticsearch.md), [Prometheus](prometheus.md)
 * CI/CD platforms such as [Jenkins](jenkins.md), [Jira](jira.md), [GitHub](github.md)
 * Infrastructure services such as [AWS](aws.md), [GCP](gcp.md), [Kubernetes](kubernetes.md)
