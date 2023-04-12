@@ -300,7 +300,7 @@
  | [GCP](action_GCP.md) | [Github](action_GITHUB.md) | [Grafana](action_GRAFANA.md) |
  | [Hadoop](action_HADOOP.md) | [Jenkins](action_JENKINS.md) | [Jira](action_JIRA.md) |
  | [Kafka](action_KAFKA.md) | [Kubernetes](action_K8S.md) | [Mantishub](action_MANTISHUB.md) |
- | [Mongo](action_MONGO.md) | [MsSQL](action_MSSQL.md) | [MySQL](action_MYSQL.md) |
+ | [Mongo](action_MONGODB.md) | [MsSQL](action_MSSQL.md) | [MySQL](action_MYSQL.md) |
  | [Netbox](action_NETBOX.md) | [Nomad](action_NOMAD.md) | [Pingdom](action_PINGDOM.md) |
  | [Postgresql](action_POSTGRESQL.md) | [Prometheus](action_PROMETHEUS.md) | [Redis](action_REDIS.md) |
  | [Rest](action_REST.md) | [SSH](action_SSH.md) | [SalesForce](action_SALESFORCE.md) |
