@@ -18,7 +18,6 @@
     * [xRunBooks for Cost Optimization](lists/runbook_COST_OPT.md)
     * [xRunBooks for DevOps](lists/runbook_DEVOPS.md)
     * [xRunBooks for IAM](lists/runbook_IAM.md)
-    * [xRunBooks for ElasticSearch](lists/runbook_ES.md)
     * [xRunBooks for SecOps](lists/runbook_SECOPS.md)
     * [xRunBooks for SRE](lists/runbook_SRE.md)
     * [xRunBooks for Troubleshooting](lists/runbook_TROUBLESHOOTING.md)
@@ -185,7 +184,7 @@
 
 ## Lists
 
-*[All Actions](lists/Action_list.md)
+* [All Actions](lists/Action_list.md)
   * [Azure](lists/action\_AZURE.md)
   * [ChatGPT](lists/chatgpt.md)
   * [ElasticSearch](lists/elasticsearch.md)
