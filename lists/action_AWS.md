@@ -293,6 +293,7 @@
 
 
 # Actions By Connector:
+
 | | | 
  | ---| ---| 
  | [AWS](lists/action_AWS.md) | [Airflow](lists/action_AIRFLOW.md) | [Azure](lists/action_AZURE.md) |
@@ -307,6 +308,7 @@
  | [Slack](lists/action_SLACK.md) | [Snowflake](lists/action_SNOWFLAKE.md) | [Splunk](lists/action_SPLUNK.md) |
  | [Stripe](lists/action_STRIPE.md) | [Terraform](lists/action_TERRAFORM.md) | [Zabbix](lists/action_ZABBIX.md) |
  | [infra](lists/action_INFRA.md) | [opensearch](lists/action_OPENSEARCH.md) | 
+
 
  
  # Actions By Category: 
