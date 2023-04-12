@@ -25,18 +25,18 @@
 # Actions By Connector:
 | | | 
  | ---| ---| 
- | [AWS](lists/action_AWS.md) | [Airflow](lists/action_AIRFLOW.md) | [Azure](lists/action_AZURE.md) |
- | [ChatGPT](lists/action_CHATGPT.md) | [Datadog](lists/action_DATADOG.md) | [ElasticSearch](lists/action_ES.md) |
- | [GCP](lists/action_GCP.md) | [Github](lists/action_GITHUB.md) | [Grafana](lists/action_GRAFANA.md) |
- | [Hadoop](lists/action_HADOOP.md) | [Jenkins](lists/action_JENKINS.md) | [Jira](lists/action_JIRA.md) |
- | [Kafka](lists/action_KAFKA.md) | [Kubernetes](lists/action_K8S.md) | [Mantishub](lists/action_MANTISHUB.md) |
- | [Mongo](lists/action_MONGO.md) | [MsSQL](lists/action_MSSQL.md) | [MySQL](lists/action_MYSQL.md) |
- | [Netbox](lists/action_NETBOX.md) | [Nomad](lists/action_NOMAD.md) | [Pingdom](lists/action_PINGDOM.md) |
- | [Postgresql](lists/action_POSTGRESQL.md) | [Prometheus](lists/action_PROMETHEUS.md) | [Redis](lists/action_REDIS.md) |
- | [Rest](lists/action_REST.md) | [SSH](lists/action_SSH.md) | [SalesForce](lists/action_SALESFORCE.md) |
- | [Slack](lists/action_SLACK.md) | [Snowflake](lists/action_SNOWFLAKE.md) | [Splunk](lists/action_SPLUNK.md) |
- | [Stripe](lists/action_STRIPE.md) | [Terraform](lists/action_TERRAFORM.md) | [Zabbix](lists/action_ZABBIX.md) |
- | [infra](lists/action_INFRA.md) | [opensearch](lists/action_OPENSEARCH.md) | 
+ | [AWS](action_AWS.md) | [Airflow](action_AIRFLOW.md) | [Azure](action_AZURE.md) |
+ | [ChatGPT](action_CHATGPT.md) | [Datadog](action_DATADOG.md) | [ElasticSearch](action_ES.md) |
+ | [GCP](action_GCP.md) | [Github](action_GITHUB.md) | [Grafana](action_GRAFANA.md) |
+ | [Hadoop](action_HADOOP.md) | [Jenkins](action_JENKINS.md) | [Jira](action_JIRA.md) |
+ | [Kafka](action_KAFKA.md) | [Kubernetes](action_K8S.md) | [Mantishub](action_MANTISHUB.md) |
+ | [Mongo](action_MONGO.md) | [MsSQL](action_MSSQL.md) | [MySQL](action_MYSQL.md) |
+ | [Netbox](action_NETBOX.md) | [Nomad](action_NOMAD.md) | [Pingdom](action_PINGDOM.md) |
+ | [Postgresql](action_POSTGRESQL.md) | [Prometheus](action_PROMETHEUS.md) | [Redis](action_REDIS.md) |
+ | [Rest](action_REST.md) | [SSH](action_SSH.md) | [SalesForce](action_SALESFORCE.md) |
+ | [Slack](action_SLACK.md) | [Snowflake](action_SNOWFLAKE.md) | [Splunk](action_SPLUNK.md) |
+ | [Stripe](action_STRIPE.md) | [Terraform](action_TERRAFORM.md) | [Zabbix](action_ZABBIX.md) |
+ | [infra](action_INFRA.md) | [opensearch](action_OPENSEARCH.md) | 
 
  
  # Actions By Category: 
