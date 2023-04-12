@@ -112,7 +112,7 @@
   * [Pingdom](guides/connectors/pingdom.md)
     * [Pingdom Actions](lists/action\_PINGDOM.md)
   * [Postgres](guides/connectors/postgres.md)
-    * [Postgres Actions](lists/action\_POSTGRESSQL.md)
+    * [Postgres Actions](lists/action\_POSTGRESQL.md)
   * [Prometheus](guides/connectors/prometheus.md)
     * [Prometheus Actions](lists/action\_PROMETHEUS.md)
   * [Redis](guides/connectors/redis.md)
