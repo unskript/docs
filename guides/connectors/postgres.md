@@ -2,7 +2,7 @@
 
 ### [List of Postgres xRunBooks](../../lists/xRunBook\_list.md#postgresql)
 
-### [List of Postgres Actions](postgres/postgres-actions.md)
+### [List of Postgres Actions](broken-reference)
 
 ### Authentication
 

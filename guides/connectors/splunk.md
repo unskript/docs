@@ -1,6 +1,6 @@
 # Splunk
 
-### [List of Splunk Actions](splunk/splunk-actions.md)
+### [List of Splunk Actions](broken-reference)
 
 ### Authentication
 
