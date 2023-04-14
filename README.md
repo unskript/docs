@@ -4,7 +4,17 @@ description: Open, Intelligent, Interactive CloudOps Automation
 
 # What is unSkript?
 
-[![image-text](https://img.shields.io/github/stars/unskript/Awesome-CloudOps-Automation?style=social)](https://github.com/unskript/Awesome-CloudOps-Automation)
+<figure><img src="https://img.shields.io/github/stars/unskript/Awesome-CloudOPs-Automation?color=orange&#x26;style=for-the-badge" alt=""><figcaption></figcaption></figure>
+
+<div>
+
+<figure><img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/unskript/Awesome-CloudOps-Automation/master/.github/images/runbookShield.json&#x26;style=for-the-badge" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/unskript/Awesome-CloudOps-Automation/master/.github/images/actionShield.json&#x26;style=for-the-badge" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 {% embed url="https://www.youtube.com/watch?v=e12Cy_TPifo" %}
 Building a simple runbook with unSkript

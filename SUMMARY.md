@@ -185,4 +185,3 @@
 ## Lists
 
 * [AWS Service Quota list](lists/test.md)
-*
