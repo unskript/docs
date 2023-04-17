@@ -14,23 +14,11 @@ The Three dot menu:
 
 <figure><img src="../.gitbook/assets/Screenshot 2022-12-14 at 20.54.17.jpg" alt="menu screenshot"><figcaption></figcaption></figure>
 
-Now that your file is downloaded,  we'll need to make a few edits.\
+There is no need to edit your RunBook to remove your credentials, a GitHub Action will strip out these values during our Pull Request.
 
+#### RunBook JSON file
 
-#### Edit the RunBook
-
-In each Action of the runbook, there are a number of task.configure blocks.&#x20;
-
-\
-1\. Delete all blocks with credential data.  Users will enter their own credentials, and do not need to see yours.
-
-2\. For any inputs that are "hardcoded" meaning you enter inputs as values, and not as variables - delete these inputs.  If your inputs \&outputs are variables that are defined and used elseqhere - leave them in.\
-\
-Once the edits are saved, copy the xRunBook into the folder for the connector your xRunBook uses (for example GCP or AWS).
-
-#### Runbook JSON file
-
-You'll need to create a \<runbook name>.json file.  This JSON has several attributes:
+You'll need to create a \<RunBook name>.json file.  This JSON has several attributes:
 
 * **Name**: the name of your xRunBook
 * **Description:** a detailed description of your runbook.
@@ -64,7 +52,7 @@ To submit a custom Action, first create a working version in unSkript.  To creat
             title='Region',
             description='AWS Region of the ECS service')
     ```
-4. Now Edit the JSON file:
+4. Now Edit the JSON file (this is created for you when you save from Docker):
    1. Name: the Name of your Action,
    2. Description: the Description
    3. Type: what connector will it use (ex: "LEGO\_TYPE\_AWS")
@@ -73,5 +61,5 @@ To submit a custom Action, first create a working version in unSkript.  To creat
    6. Output\_Type: Dict, Array, String
    7. Supports polling: Boolean
    8. Supports Iteration: Boolean
-5. Write a readme file.  Attach images (save in the same directory) if helpful.
+5. Write a readme file (a template is created on save from Docker).  Attach images (save in the same directory) if helpful.
 6. Once these files are completed, create a fork of the repo, and submit a PR to the Master branch. The unSkript team will promptly review your Action and provide comments, or accept your submission.

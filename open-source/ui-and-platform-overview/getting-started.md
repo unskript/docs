@@ -42,7 +42,7 @@ The links given above will redirect you to the chosen sample Jupyter Notebook. F
 
 After opening the link you will see-
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-09-03 at 9.04.56 PM (1).png" alt=""><figcaption><p>Starting page of the notebook</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-09-03 at 9.04.56 PM.png" alt=""><figcaption><p>Starting page of the notebook</p></figcaption></figure>
 
 {% hint style="info" %}
 In general, the URL will look like this - <mark style="color:orange;background-color:yellow;">`http://127.0.0.1:8888/doc/tree/`</mark>_<mark style="color:orange;background-color:yellow;">`<Sample_Notebook_Name>`</mark>_<mark style="color:orange;background-color:yellow;">`.ipynb`</mark>
@@ -60,11 +60,11 @@ Some of the connectors supported by unSkript are MySQL, Snowflake, MongoDB, Grap
 
 For this example, we need to create a connection to AWS. To do so, click on the <mark style="color:orange;background-color:yellow;">`Credentials`</mark> button and then click on <mark style="color:orange;background-color:yellow;">`Add Credential`</mark>-
 
-<figure><img src="../../.gitbook/assets/4492C210-21B6-4552-A50E-9EEED8DC85B8.png" alt=""><figcaption><p>Add Credentials button</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/4492C210-21B6-4552-A50E-9EEED8DC85B8 (1).png" alt=""><figcaption><p>Add Credentials button</p></figcaption></figure>
 
 Click on the resource's tile for which you want to create the credential-
 
-<figure><img src="../../.gitbook/assets/0D7C42AB-4CF3-4723-8F37-F6A65D72AACF (1).png" alt=""><figcaption><p>Choose a resource</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/0D7C42AB-4CF3-4723-8F37-F6A65D72AACF.png" alt=""><figcaption><p>Choose a resource</p></figcaption></figure>
 
 Let's create a credential for **AWS** for now, but you can select from any one of the available options and add details as requested for that resource-
 
@@ -82,7 +82,7 @@ Navigate to the <mark style="color:orange;background-color:yellow;">`Parameters`
 
 Fill in the required details for the connection as shown in the dialog box and click on save-
 
-<figure><img src="../../.gitbook/assets/194D6E7A-CC9B-4647-A281-80ED7E75C9E8 (1).png" alt=""><figcaption><p>Save parameter values</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/194D6E7A-CC9B-4647-A281-80ED7E75C9E8.png" alt=""><figcaption><p>Save parameter values</p></figcaption></figure>
 
 {% hint style="info" %}
 This should turn <mark style="color:orange;background-color:yellow;">`Parameters⚠️`</mark> button to <mark style="color:orange;background-color:yellow;">`Parameters✅`</mark>
