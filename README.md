@@ -16,9 +16,7 @@ description: Open, Intelligent, Interactive CloudOps Automation
 
 </div>
 
-{% embed url="https://www.youtube.com/watch?v=e12Cy_TPifo" %}
-Building a simple runbook with unSkript
-{% endembed %}
+{% embed url="https://www.youtube.com/watch?v=3h4BI4oAr8c" %}
 
 unSkript is a low-code automation platform that enables DevOps/SRE teams to automate repetitive manual tasks.  Sign up for a [free Sandbox Account](https://us.app.unskript.io/signup), or try our [Open Source Docker](https://github.com/unskript/Awesome-CloudOps-Automation) instance to get started quickly!\
 

@@ -20,6 +20,8 @@ You can scroll through the results if needed. Once you find an Action that you w
 
 **Custom Actions**
 
+{% embed url="https://youtu.be/gorMpBJVFxU" %}
+
 You can also create a custom Action. Click on the Add button and select Action from the drop-down. This will generate an empty Action in your xRunBook that you can use to create your own custom Action.
 
 ![](<../../.gitbook/assets/Screenshot 2022-08-02 at 10.53.07 PM.png>)

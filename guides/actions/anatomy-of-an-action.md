@@ -1,6 +1,6 @@
 # Anatomy of an Action
 
-Each Action has a number of files. In this document, we'll walk through each file, and how to build your own action from the "bottom up."
+When You create (and save) a new Action in unSkript, a directory will be created with a number of files. In this document, we describe  each file, and how they work.
 
 Each Action is in a directory.  The directory is a descriptive name of the Action, with "\_" replacing spaces.  Inside this directory are the files that make up the Action:
 
@@ -11,13 +11,15 @@ Each Action is in a directory.  The directory is a descriptive name of the Actio
 
 ### init.py
 
-This is an empty file that is required to distibguesh the module/sub-module.  If you are creating a new action - copy one of these from an existing Action.
+This is an empty file that is required to distinguish the module/sub-module. &#x20;
 
 ### README.md
 
+The README.md explains what the Action is supposed to do.  When you create a new action - a skeleton README is created, but you will need to fill in a few details to create a full README.
 
 
-The README.md explains what the Action is supposed to do. It should contain:
+
+It should contain:
 
 1.  **Action Title**
 
@@ -70,7 +72,8 @@ The JSON file lists Example:
     "action_needs_credential": true,
     "action_output_type": "ACTION_OUTPUT_TYPE_LIST",
     "action_supports_poll": true,
-    "action_supports_iteration": true
+    "action_supports_iteration": true,
+    "action_categories": [  "CATEGORY_TYPE_DEVOPS", "CATEGORY_TYPE_SRE","CATEGORY_TYPE_AWS","CATEGORY_TYPE_AWS_EBS"]
   }
   
 ```
@@ -90,9 +93,42 @@ All of these fields are Mandatory.
   * ACTION\_OUTPUT\_TYPE\_DICT
   * ACTION\_OUTPUT\_TYPE\_BYTES
   * ACTION\_OUTPUT\_TYPE\_NONE
-* **Action Supports Poll**: (not used)
+* **Action Supports Poll**: Can this Action be polled?
+* **Action Supports Iteration:** Can the Action be used to iterate over a list of values?
+* **Action Categories:** List of categories that fit the Action - used for discoverability.
 
 ### py file
 
-This is the Python file that runs the Action in the xRunBook. Examples can be found in the various Lego directories in this repository.
+This is the Python file that runs the Action in the xRunBook.&#x20;
 
+The python code has several Classes and Functions that are required to run in unSkript:
+
+#### InputSchema
+
+```python
+class InputSchema(BaseModel):
+```
+
+The InputSchema lists all of the input parameters for the Action.
+
+#### Printer
+
+```python
+def aws_service_quota_limits_vpc_printer(output):
+```
+
+The Printer Function defines what is printed into the Jupyter Notebook as output of the Action
+
+#### Function
+
+```python
+def aws_service_quota_limits_vpc(handle, region: str, warning_percentage: float) -> List:
+```
+
+The function is what "does the work" for the action.  The example above has the following inputs:
+
+* handle: The Credentials used to make calls to the Connector. handle does the authentication for you.
+* region - a String input parameter
+* warning\_percentage: a float input parameter.
+
+The output of this function will be a List.
