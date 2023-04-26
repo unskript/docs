@@ -8,19 +8,23 @@ description: >-
 
 A xRunBook is a sequence of Actions put together to form a multi-step workflow. A given step in the xRunBook may be executed individually and interactively providing a Human-in-loop interface.
 
-Start by visiting the xRunBooks tab and click the Create button.
+### [Pre-Built RunBooks](./#pre-built-runbooks)
 
-![Create a new xRunBook](<../../.gitbook/assets/Screen Shot 2022-05-16 at 12.44.29 AM.png>)
+<figure><img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/unskript/Awesome-CloudOps-Automation/master/.github/images/runbookShield.json&#x26;style=for-the-badge" alt=""><figcaption></figcaption></figure>
 
-Fill in the required information and you will be dropped into the xRunBook details page.  This page will be a lot more useful once you've created the xRunBook.
+unSkript offers pre-built RunBooks that allow you to begin automation immediately.  With these RunBooks, you'll need to add input parameters for the RunBook, and credentials for each Action, and you'll be ready to go!
 
-![](<../../.gitbook/assets/Screen Shot 2022-05-16 at 12.46.02 AM.png>)
+### Build your Own RunBook
 
-To begin adding parameters and Actions to your xRunBook, click the Editor button to be dropped into the editor view.
+1. [Create a RunBook](create-a-xrunbook.md)
+2. [Add Input Parameters](create-a-parameter.md)
+3. [Add an Action](add-an-action.md)
+4. [Connect Your Actions](connecting-actions.md)
+5. [Run Your RunBook](running-xrunbooks.md)
 
 
 
-![](<../../.gitbook/assets/Screen Shot 2022-05-16 at 12.47.50 AM.png>)
+
 
 
 
