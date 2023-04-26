@@ -41,7 +41,8 @@
     * [Configure Action Inputs](guides/actions/action-configuration/configure-action-inputs.md)
     * [Add Action Inputs](guides/actions/action-configuration/action-inputs.md)
     * [Action Output](guides/actions/action-configuration/action-output.md)
-    * [Action Iterator](guides/actions/action-configuration/action-iterator.md)
+    * [Action Iterator](guides/actions/action-configuration/action-iterator/README.md)
+      * [Using Iterators](guides/actions/action-configuration/action-iterator/using-iterators.md)
     * [Action Poll](guides/actions/action-configuration/action-poll.md)
     * [Action Start Condition](guides/actions/action-configuration/action-start-condition.md)
   * [Anatomy of an Action](guides/actions/anatomy-of-an-action.md)
@@ -144,8 +145,6 @@
 ## Fundamentals
 
 * [unSkript Framework](fundamentals/unskript-framework/README.md)
-  * [Using Iterators](fundamentals/unskript-framework/using-iterators.md)
-  * [Using Start Conditions](fundamentals/unskript-framework/using-start-conditions.md)
   * [Saving output from Action](fundamentals/unskript-framework/saving-output-from-action.md)
   * [Using outputs from previous Actions](fundamentals/unskript-framework/using-outputs-from-previous-actions.md)
   * [Credential Parameterization](fundamentals/unskript-framework/credential-parameterization.md)

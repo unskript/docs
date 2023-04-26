@@ -14,11 +14,11 @@ Action input parameters are often set for a single value: for example, an Action
 
 Example: This Action gives an array of Public AWS EC2 instances for a given region.  Configured as below, it will list the instances for "us-west-2":
 
-<figure><img src="../../../.gitbook/assets/configuration.jpg" alt="screenshot of an Action&#x27;s input configuration."><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/configuration.jpg" alt="screenshot of an Action&#x27;s input configuration."><figcaption></figcaption></figure>
 
 However, we can run this across multiple regions by changing the Region input to an iterator:
 
-<figure><img src="../../../.gitbook/assets/iteration.jpg" alt="screenshot of an iteration configuration"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iteration.jpg" alt="screenshot of an iteration configuration"><figcaption></figcaption></figure>
 
 We set the Loop Parameter to region &#x20;
 
@@ -28,7 +28,7 @@ Note, the List Item can also be a variable.
 
 When the Action is run with the above iterator, it will run twice:
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2022-12-29 at 17.28.49.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2022-12-29 at 17.28.49.jpg" alt=""><figcaption></figcaption></figure>
 
 The values of the iteration are stored in a Dict:
 

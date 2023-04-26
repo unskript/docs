@@ -6,7 +6,7 @@ Using the iterator feature on the "namespace" input variable allows you to send 
 
 
 
-![](<../../.gitbook/assets/Screen Shot 2022-05-28 at 10.25.19 AM.png>)
+![](<../../../../.gitbook/assets/Screen Shot 2022-05-28 at 10.25.19 AM.png>)
 
 Rather than run one time, this Action will now run two times: once with the namespace 'ns1' and the second time with 'ns2.'  The output of these multiple runs will be saved in a Dictionary for later use.
 

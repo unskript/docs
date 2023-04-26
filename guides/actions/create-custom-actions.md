@@ -22,4 +22,4 @@ Fill out the details to save the new Action.
 
 You can view all your Custom Actions in the Actions tab under myActions.
 
-![](../../.gitbook/assets/image.png)
+![](<../../.gitbook/assets/image (4).png>)

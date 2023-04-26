@@ -10,7 +10,7 @@ The following items can be configured for each Action:
 2. [Credential](./#credential)
 3. [Input](action-inputs.md)
 4. [Output](action-output.md)
-5. [Iterator](action-iterator.md)
+5. [Iterator](action-iterator/)
 6. [Poll](./#polls)
 7. [Start Condition](./#start-condition)
 
