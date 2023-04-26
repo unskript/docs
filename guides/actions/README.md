@@ -22,3 +22,17 @@ Create your own Actions! &#x20;
 Here's an example Action where the existing data is charted using matplotlib:
 
 ![](<../../.gitbook/assets/image (1).png>)
+
+
+
+### [Configuring Actions](action-configuration/)
+
+The following items can be configured for each Action:
+
+1. [Name](./#name)
+2. [Credential](../../fundamentals/unskript-framework/credential-parameterization.md)
+3. [Input](action-configuration/action-inputs.md)
+4. [Output](action-configuration/action-output.md)
+5. [Iterator](action-configuration/action-iterator/)
+6. [Poll](action-configuration/action-poll.md)
+7. [Start Condition](action-configuration/action-start-condition.md)
