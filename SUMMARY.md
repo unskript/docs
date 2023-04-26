@@ -34,7 +34,7 @@
   * [Alarms](guides/xrunbooks/alarms/README.md)
     * [Attaching runbooks to alarms](guides/xrunbooks/alarms/attaching-runbooks-to-alarms.md)
     * [Getting alerts via webhook for onprem](guides/xrunbooks/alarms/getting-alerts-via-webhook-for-onprem.md)
-  * [Folders](guides/xrunbooks/folders.md)
+  * [Folders](fundamentals/platform/folders.md)
 * [Actions](guides/actions/README.md)
   * [Create Custom Actions](guides/actions/create-custom-actions.md)
   * [All Pre-built Actions](lists/Action\_list.md)
@@ -171,9 +171,6 @@
 ## Open source
 
 * [CloudOps Automation with unSkript](open-source/cloudops-automation-with-unskript.md)
-* [UI and Platform Overview](open-source/ui-and-platform-overview/README.md)
-  * [Prerequisites](open-source/ui-and-platform-overview/prerequisites.md)
-  * [Getting Started](open-source/ui-and-platform-overview/getting-started.md)
 
 ## Lists
 
