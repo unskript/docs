@@ -10,7 +10,7 @@ You can modify the source code of a built-in Action to create your custom action
 
 Here is an example which uses the built-in Get boto3 handle Action which is modified to fetch all EC2 instances for that region.
 
-![](<../../.gitbook/assets/image (1).png>)
+![](<../../.gitbook/assets/image (1) (1).png>)
 
 The custom action can be renamed and saved as a new Action to fit your Task.&#x20;
 
