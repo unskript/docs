@@ -1,6 +1,10 @@
+---
+description: Keeping your credentials safe
+---
+
 # Secret store
 
-The credentials are stored in the customer's configured secret store. We support the following secret stores:
+Credentials for your connectors are stored a secret store. We support the following secret stores:
 
 * AWS Secrets Manager
 * [Vault](vault.md)
@@ -8,5 +12,5 @@ The credentials are stored in the customer's configured secret store. We support
 * Google Cloud Secrets Manager
 
 {% hint style="info" %}
-Note that the secret store is not supported in OSS or the Sandbox versions of unSkript.  To use secret variables in the OSS, use your local filestore to host variables.
+Note that the secret store is not supported in the Docker versions of unSkript.  Your credentials are stored in the local file directory.
 {% endhint %}
