@@ -145,8 +145,6 @@
 ## Fundamentals
 
 * [unSkript Framework](fundamentals/unskript-framework/README.md)
-  * [Saving output from Action](fundamentals/unskript-framework/saving-output-from-action.md)
-  * [Using outputs from previous Actions](fundamentals/unskript-framework/using-outputs-from-previous-actions.md)
   * [Credential Parameterization](fundamentals/unskript-framework/credential-parameterization.md)
   * [AWS hosted Proxy](fundamentals/unskript-framework/aws-hosted-proxy.md)
 * [Folders](fundamentals/platform/folders.md)
