@@ -1,10 +1,14 @@
 # Using Iterators
 
-A Task can be configured to run using an iterator. This means that one or more of the input parameters of the Task will be supplied by a list.
+There may be occasions where you'd like to run an unSkript Action multiple times.  Perhaps the Action takes one value as an input (for example one Kubernetes Namespace), but you need to run the Action across multiple K8s Namespaces.
+
+Using the iterator feature on the "namespace" input variable allows you to send multiple requests to the same Action.  In the screenshot below, the list \['ns1', 'ns2'] is being sent to the Kubernetes Action.
+
+
 
 ![](<../../.gitbook/assets/Screen Shot 2022-05-28 at 10.25.19 AM.png>)
 
-In the example above, the input parameter `namespace` is being filled up from the list`['ns1', 'ns2']`. When this task is run, the output will show the summary of execution when detailed printing is disabled.&#x20;
+Rather than run one time, this Action will now run two times: once with the namespace 'ns1' and the second time with 'ns2.'  The output of these multiple runs will be saved in a Dictionary for later use.
 
 
 

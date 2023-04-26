@@ -18,7 +18,7 @@ In order to run a runbook automatically when an alert comes in, we should be abl
 * Select the runbook you want to attach and click **Next**
 * It will show the list of parameters for that runbook. Beside each parameter, you will see a toggle as shown below:
 
-<figure><img src="../../../.gitbook/assets/Screen Shot 2022-12-08 at 11.20.35 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screen Shot 2022-12-08 at 11.20.35 AM (1).png" alt=""><figcaption></figcaption></figure>
 
 * Note that some of the parameters can be constant too, that means they don't need to be derived from the payload. For eg, **Size** is a constant.
 * **cluster\_id** needs to be derived from the payload. You can hover over the payload and select the field (lets say you chose **state**) you want to attach to cluster\_id and click on **Attach xrunbook.**

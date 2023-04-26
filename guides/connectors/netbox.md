@@ -2,7 +2,7 @@
 
 ### Authentication Steps:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-11 at 10.12.07 (1).jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-04-11 at 10.12.07.jpg" alt=""><figcaption></figcaption></figure>
 
 | Name        | Description                    |
 | ----------- | ------------------------------ |

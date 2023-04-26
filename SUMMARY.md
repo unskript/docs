@@ -145,11 +145,9 @@
 
 * [unSkript Framework](fundamentals/unskript-framework/README.md)
   * [Using Iterators](fundamentals/unskript-framework/using-iterators.md)
-  * [Using Poll](fundamentals/unskript-framework/using-poll.md)
   * [Using Start Conditions](fundamentals/unskript-framework/using-start-conditions.md)
   * [Saving output from Action](fundamentals/unskript-framework/saving-output-from-action.md)
   * [Using outputs from previous Actions](fundamentals/unskript-framework/using-outputs-from-previous-actions.md)
-  * [Defining xRunBook Parameters](fundamentals/unskript-framework/defining-xrunbook-parameters.md)
   * [Credential Parameterization](fundamentals/unskript-framework/credential-parameterization.md)
   * [AWS hosted Proxy](fundamentals/unskript-framework/aws-hosted-proxy.md)
 * [Folders](fundamentals/platform/folders.md)
