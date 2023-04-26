@@ -54,7 +54,7 @@
   * [AWS Proxy](guides/proxies/aws-proxy.md)
   * [GCP Proxy](guides/proxies/gcp-proxy.md)
 * [Connectors](guides/connectors/README.md)
-  * [Credentials in Multiple Proxies](fundamentals/unskript-framework/connect-your-environment.md)
+  *
   * [Airflow](guides/connectors/airflow.md)
     * [Airflow Actions](lists/action\_AIRFLOW.md)
   * [AWS](guides/connectors/aws.md)
