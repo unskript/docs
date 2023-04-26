@@ -30,7 +30,7 @@ Here are the steps in the RunBook:
 
 If the RunBook has a Region supplied as input - there is no reason to run Step 1 - **AWS List all Regions**.  So we can enable a start Condition:
 
-![](../../../.gitbook/assets/image.png)
+![](<../../../.gitbook/assets/image (5).png>)
 
 This Action will run if there is no value in the region variable. If there is a value in region - we can skip this step.
 

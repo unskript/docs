@@ -21,7 +21,7 @@ Create your own Actions! &#x20;
 
 Here's an example Action where the existing data is charted using matplotlib:
 
-![](<../../.gitbook/assets/image (1).png>)
+![](<../../.gitbook/assets/image (1) (2).png>)
 
 
 
