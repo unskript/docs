@@ -43,6 +43,6 @@ With just a few steps, you can begin your RunBook automation journey:
 
 Learn the fundamentals of unSkript to get a deeper understanding of our main features:
 
-{% content-ref url="fundamentals/unskript-framework/" %}
-[unskript-framework](fundamentals/unskript-framework/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}

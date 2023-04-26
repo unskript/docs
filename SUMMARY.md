@@ -34,6 +34,7 @@
   * [Alarms](guides/xrunbooks/alarms/README.md)
     * [Attaching runbooks to alarms](guides/xrunbooks/alarms/attaching-runbooks-to-alarms.md)
     * [Getting alerts via webhook for onprem](guides/xrunbooks/alarms/getting-alerts-via-webhook-for-onprem.md)
+  * [Folders](guides/xrunbooks/folders.md)
 * [Actions](guides/actions/README.md)
   * [Create Custom Actions](guides/actions/create-custom-actions.md)
   * [All Pre-built Actions](lists/Action\_list.md)
@@ -53,6 +54,7 @@
   * [AWS Proxy](guides/proxies/aws-proxy.md)
   * [GCP Proxy](guides/proxies/gcp-proxy.md)
 * [Connectors](guides/connectors/README.md)
+  * [Credentials in Multiple Proxies](fundamentals/unskript-framework/connect-your-environment.md)
   * [Airflow](guides/connectors/airflow.md)
     * [Airflow Actions](lists/action\_AIRFLOW.md)
   * [AWS](guides/connectors/aws.md)
@@ -144,10 +146,6 @@
 
 ## Fundamentals
 
-* [unSkript Framework](fundamentals/unskript-framework/README.md)
-  * [Credential Parameterization](fundamentals/unskript-framework/credential-parameterization.md)
-  * [AWS hosted Proxy](fundamentals/unskript-framework/aws-hosted-proxy.md)
-* [Folders](fundamentals/platform/folders.md)
 * [Jupyter Notebook 101](fundamentals/jupyter-notebooks-101.md)
 
 ***

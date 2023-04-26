@@ -30,7 +30,7 @@ Here's an example Action where the existing data is charted using matplotlib:
 The following items can be configured for each Action:
 
 1. [Name](./#name)
-2. [Credential](../../fundamentals/unskript-framework/credential-parameterization.md)
+2. [Credential](broken-reference)
 3. [Input](action-configuration/action-inputs.md)
 4. [Output](action-configuration/action-output.md)
 5. [Iterator](action-configuration/action-iterator/)

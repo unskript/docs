@@ -7,7 +7,7 @@ To configure an Action, click on the configurations button for the Action in you
 The following items can be configured for each Action:
 
 1. [Name](./#name)
-2. [Credential](../../../fundamentals/unskript-framework/credential-parameterization.md)
+2. [Credential](broken-reference)
 3. [Input](action-inputs.md)
 4. [Output](action-output.md)
 5. [Iterator](action-iterator/)
@@ -18,7 +18,7 @@ The following items can be configured for each Action:
 
 The name of the Action. You can click the Edit icon next to the name on the right side bar and change the name as desired.
 
-### [Credential](../../../fundamentals/unskript-framework/credential-parameterization.md)
+### [Credential](broken-reference)
 
 If your Action is connecting to an external resource, it will likely require a credential to authenticate the connection. These are created in the Environments page. If you need to add a credential, you can [Create a Credential](../../xrunbooks/create-a-credential.md).
 
