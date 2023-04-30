@@ -54,7 +54,6 @@
   * [AWS Proxy](guides/proxies/aws-proxy.md)
   * [GCP Proxy](guides/proxies/gcp-proxy.md)
 * [Connectors](guides/connectors/README.md)
-  *
   * [Airflow](guides/connectors/airflow.md)
     * [Airflow Actions](lists/action\_AIRFLOW.md)
   * [AWS](guides/connectors/aws.md)

@@ -1,6 +1,6 @@
 # REST
 
-### [List of REST Actions](https://docs.unskript.com/unskript-product-documentation/lists/action\_list#rest)
+### [List of REST Actions](../../lists/action\_REST.md)
 
 ### Authentication with REST
 
