@@ -6,6 +6,10 @@ Parameters are the input key:value pairs that must be submitted with your xRunBo
 
 In this step we will define the key for an input (in the example below, we create a `customer` input key).  You can imagine that you might run a xRunBook with the key:value pair `customer: John Doe.`
 
+{% hint style="info" %}
+As a best practice, use snake case for parameter names.
+{% endhint %}
+
 To add a parameter to your xRunBook, click the Parameters button to reveal the drop down.&#x20;
 
 ![Adding a \`customer\` input parameter.](<../../.gitbook/assets/Screen Shot 2022-05-16 at 12.48.07 AM.png>)

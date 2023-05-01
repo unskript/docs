@@ -8,15 +8,11 @@ To create a xRunBook, please follow these instructions:
 {% tab title="Open Source" %}
 ### Copy an existing template xRunBook:
 
-{% embed url="https://youtu.be/TfO8aLtMNKE" %}
-
 All custom RunBooks are saved in `$HOME/Awesome-CloudOps-Automation/custom/runbooks.`
 
 1. Copy an existing RunBook into this directory.&#x20;
 2. Restart your Docker instance.
 3. Navigate to `http://127.0.0.1:8888:8888/lab/tree/<yourFileName>.ipynb`
-
-
 
 ### Save an existing Jupyter Notebook
 
