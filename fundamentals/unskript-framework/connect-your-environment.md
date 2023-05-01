@@ -26,7 +26,7 @@ With unSkript environments you can configure your xRunBooks to run in all of you
 
 3\. Your environment will be created. Now, it is time to edit your Connectors. In the list of environments, click your new environment, and "Open Details."
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-12-23 at 15.14.42 (1).jpg" alt="screenshot of a new environment"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-12-23 at 15.14.42.jpg" alt="screenshot of a new environment"><figcaption></figcaption></figure>
 
 Now, we will edit each Connection with the credentials needed to connect to the service. We have [detailed instructions](../../guides/connectors/) for each connection type. Additionally, add a ServiceId to each Connection. In this case, we'll use ServiceId with the format "\<appname>\_\<connection>" - meaning that we'll use 2 ServiceIds here: "test\_aws" and "test\_slack":
 

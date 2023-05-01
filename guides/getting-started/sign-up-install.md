@@ -40,13 +40,21 @@ With Docker, you can get up and running in two steps (and just one if you alread
     docker run -it -p 8888:8888 \
      -v $HOME/Awesome-CloudOps-Automation/custom:/data \
      -v $HOME/.unskript:/unskript \
+     -e ACA_AWESOME_MODE=1 \
      --user root \
      docker.io/unskript/awesome-runbooks:latest
     ```
 
 
 
-Your installation will be available to use at: [http://127.0.0.1:8888/doc/workspaces/auto-t/tree/Welcome.ipynb](http://127.0.0.1:8888/doc/workspaces/auto-t/tree/Welcome.ipynb)
+Your installation will be available to use at:&#x20;
+
+[http://127.0.0.1:8888/awesome](http://127.0.0.1:8888/awesome)
+
+Note: the -`e ACA_AWESOME_MODE=1` allows for syncing data between docker and your local machine, and the two -v commands indicate where the data (RunBooks and Actions) and unskript (credentials) will be stored.\
+
+
+`Omitting these three lines will result in a "read-only" version of unSkript.`
 
 ### Kubernetes:
 
