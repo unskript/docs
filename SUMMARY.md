@@ -97,7 +97,7 @@
   * [Kafka](guides/connectors/apache-kafka.md)
     * [Kafka Actions](lists/action\_KAFKA.md)
   * [Kubernetes](guides/connectors/kubernetes.md)
-    * [K8s Actions](guides/connectors/kubernetes/k8s-actions.md)
+    * [K8s Actions](lists/action\_K8S.md)
   * [MongoDB](guides/connectors/mongodb.md)
     * [MongoDB Actions](lists/action\_MONGODB.md)
   * [MS SQL](guides/connectors/ms-sql.md)
