@@ -1,6 +1,6 @@
 # Postgres
 
-### [List of Postgres xRunBooks](../../lists/xRunBook\_list.md#postgresql)
+### [List of Postgres xRunBooks](../xrunbook\_list/#postgresql)
 
 ### [List of Postgres Actions](broken-reference)
 

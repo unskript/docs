@@ -4,7 +4,7 @@ description: Use our pre-configured xRunBooks
 
 # Importing unSkript xRunBooks
 
-The unSkript GitHub repository has many [prebuilt xRunBooks](../../lists/xRunBook\_list.md) that are open source and available for your use.
+The unSkript GitHub repository has many [prebuilt xRunBooks](../xrunbook\_list/) that are open source and available for your use.
 
 {% tabs %}
 {% tab title="Open Source" %}

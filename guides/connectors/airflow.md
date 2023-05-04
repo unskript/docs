@@ -1,10 +1,10 @@
 # Airflow
 
-### [Listing of all Airflow Actions](../../lists/action\_AIRFLOW.md)
+### [Listing of all Airflow Actions](broken-reference)
 
 ### Authentication
 
-![Information needed to onboard Airflow connector](<../../.gitbook/assets/Screen Shot 2022-06-15 at 8.24.23 PM (1).png>)
+![Information needed to onboard Airflow connector](<../../.gitbook/assets/Screen Shot 2022-06-15 at 8.24.23 PM.png>)
 
 | Name     | Description                                               |
 | -------- | --------------------------------------------------------- |

@@ -1,8 +1,8 @@
 # Kubernetes
 
-### [List of K8s xRunBooks](../../lists/xRunBook\_list.md#kubernetes)
+### [List of K8s xRunBooks](../xrunbook\_list/#kubernetes)
 
-### [List of K8s Actions](kubernetes/k8s-actions.md)
+### [List of K8s Actions](broken-reference)
 
 ### Authentication
 

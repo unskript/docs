@@ -1,6 +1,6 @@
 # Jenkins
 
-### [List of Jenkins xRunBooks](../../lists/xRunBook\_list.md#jenkins)
+### [List of Jenkins xRunBooks](../xrunbook\_list/#jenkins)
 
 ### [List of Jenkins Actions](../../lists/action\_JENKINS.md)
 
