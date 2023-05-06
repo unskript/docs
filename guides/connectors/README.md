@@ -1,9 +1,7 @@
 # Connectors
 
-In order to interact with your cloud infrastructure, unSkript provides Connectors that securely handle your credentials, and allow the RunBooks to interact with your systems.  \
+In order to interact with your cloud infrastructure, unSkript provides Connectors that securely handle your credentials, and allow RunBooks to interact with your systems.  \
 
-
-Actions in a RunBook perform tasks in your cloud infrastructure.  Thus, each Action must have access to a credential that provides enough access to complete the task at hand.&#x20;
 
 unSkript supports the following Connectors-
 
@@ -14,9 +12,11 @@ unSkript supports the following Connectors-
 * Utilities like [Airflow](airflow.md), [Slack](slack.md), [Stripe](stripe.md)
 * Any API or application with a [REST API](rest.md) or [SSH](ssh.md) connectivity
 
+The full list can be seen in the left navigation, and the links point to set up instructions to establish your connection.
+
 ### Credentials
 
-Each Connector will have at least one set credentials to authenticate with the Connector.  The type of credential will vary depending on the Authentication pathways provided by the connector: API tokens, keys & secrets, JSON config files. etc.  Each Connector page has details on how to add your credentials for that platform.
+Each Connector will have at least one set of credentials for authentication.  You may have multiple credentials in order to satisfy the Principle of Lease Privilege.  The type of credential will vary depending on the Authentication pathways provided by the connector: API tokens, keys & secrets, JSON config files. etc.  Each Connector page has details on how to add your credentials for that platform.
 
 There may be times where there are multiple credentials to one Connector (Some xRunBooks or Actions may require different permissions, and using the [principles of least privilege](https://unskript.com/automate-the-creation-of-least-privileged-aws-security-profiles/), it may be better to have different credentials.
 
