@@ -23,9 +23,9 @@ unSkript is a low-code automation platform that enables DevOps/SRE teams to auto
 
 ### Using unSkript
 
-unSkript allows you to effortlessly convert internal API calls, existing scripts, SQL queries (and more!) into shared, executable xRunBooks using pre-built (and customizable) Actions. &#x20;
+unSkript allows you to effortlessly convert existing scripts, API calls, SQL queries (and more!) into shared, executable xRunBooks using pre-built (and customizable) Actions. Combine Actions into interconnected steps in a RunBook, and use the RunBooks to increase observability, monitor cloud costs, remediate issues and more!
 
-unSkript xRunBooks are built in Python, and run on top of Jupyter Notebooks. This provides teams using unSkript unparalleled flexibility and usability to automate their DevOps workflows. Built on top of open source - we are building an open ecosystem of Actions and xRunBooks to better serve every person in the DevOps community.
+unSkript xRunBooks are built in Python, and run on top of Jupyter Notebooks. With hundreds of drag & drop Actions, sometimes there is no coding required to build your automation. The unSkript framework provides teams unparalleled flexibility and usability to automate DevOps workflows. Built on top of open source - we are building an open ecosystem of Actions and xRunBooks to better serve every person in the DevOps community.
 
 ### Guides: Jump right in
 
@@ -39,10 +39,14 @@ With just a few steps, you can begin your RunBook automation journey:
 [xrunbooks](guides/xrunbooks/)
 {% endcontent-ref %}
 
+{% content-ref url="guides/actions/" %}
+[actions](guides/actions/)
+{% endcontent-ref %}
+
 ### Fundamentals: Dive a little deeper
 
 Learn the fundamentals of unSkript to get a deeper understanding of our main features:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="fundamentals/jupyter-notebooks-101.md" %}
+[jupyter-notebooks-101.md](fundamentals/jupyter-notebooks-101.md)
 {% endcontent-ref %}
