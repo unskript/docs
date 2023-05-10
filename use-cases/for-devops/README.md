@@ -1,14 +1,22 @@
+---
+description: Automate away your Toil with RunBooks
+---
+
 # For DevOps
 
-One of the core principles of DevOps is empowering teams to work collaboratively.&#x20;
+Collaborative automation for your Cloud.
 
-**With unSkript:**
+* Get started in minutes with our [Pre-Built RunBooks for DevOps Teams](../../guides/xrunbook\_list/runbook\_devops.md).
+* Build your own bespoke RunBooks with our Drag and Drop interface and [Pre-built Actions](../../guides/action\_list.md).
+* [Create Actions](../../guides/actions/create-custom-actions.md) with Python with easy [connectivity to dozens of Could services](../../guides/connectors/).
 
-* All your RunBooks and Actions are in one place for easy collaboration, sharing, and updating.
-* &#x20;With Role Based Access Control -give teams run access only to resolve issues.
-* For sensitive RunBooks - require an approval before the RunBook can be processed.
-* Schedule RunBooks for regular tasks.
-* Connect the same RunBook to multiple environments - dev, staging and production using ServiceIds.  No issues with version control in different environments.
+### **With unSkript:**
+
+* One server for your team's RunBooks and Actions - simplifying  collaboration, sharing, and updating.
+* [Role Based Access Control](../../guides/role-based-access-control/rbac-roles.md) - allows you to give additional teams access your RunBooks.
+* For sensitive RunBooks - enable a [request/approval ](../../guides/role-based-access-control/rbac-roles.md)process.
+* [Schedule](../../guides/xrunbooks/schedules.md) RunBooks for regular tasks.
+* Connect the same RunBook to multiple [environments](../../fundamentals/unskript-framework/connect-your-environment.md) - dev, staging and production.  No issues with version control in different environments.
 * RunBooks can be completely automated, or run interactively in a step-by-step process.
 
 
@@ -21,8 +29,3 @@ One of the core principles of DevOps is empowering teams to work collaboratively
 * Manage costs
 * and more
 
-
-
-{% hint style="info" %}
-**Good to know:** depending on the product you're building, it can be useful to explicitly document use cases. Got a product that can be used by a bunch of people in different ways? Maybe consider splitting it out!
-{% endhint %}
