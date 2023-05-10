@@ -4,7 +4,7 @@ If you are using cloud based observability applications like Grafana Cloud or Da
 
 We provide a terraform to create a lambda function URL in the vpc where unSkript is installed. Follow the steps below to deploy the lambda function URL
 
-1. Please check out the repo [**unskript/onprem**](https://github.com/unskript/onprem)
+1. If you need this service, reach out to the team, and we can give you access to the GitHub repository that you'll need.
 2. Now to install the lambda, please ensure that you have python 3.8 version, you can create a virtual environment with [conda](https://conda.io/projects/conda/en/latest/commands/install.html) using the following command:\
    `conda create --name python3.8  python=3.8`
 3. ```
