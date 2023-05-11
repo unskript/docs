@@ -14,7 +14,12 @@ The Three dot menu:
 
 <figure><img src="../.gitbook/assets/Screenshot 2022-12-14 at 20.54.17.jpg" alt="menu screenshot"><figcaption></figcaption></figure>
 
-There is no need to edit your RunBook to remove your credentials, a GitHub Action will strip out these values during our Pull Request.
+In the repository, there is a sanitize.py script that will remove all of your parameters, credentials and outputs.  Run this script against your RunBook:\
+
+
+```
+python3 sanitize.py -f <ipynb file> 
+```
 
 #### RunBook JSON file
 
