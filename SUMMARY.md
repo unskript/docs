@@ -161,9 +161,6 @@
 
 * [DevOps](use-cases/for-devops.md)
 * [SRE](use-cases/for-sre.md)
-* [Chaos Engineering](use-cases/chaos-engineering.md)
-* [For Customer Support](use-cases/for-customer-support/README.md)
-  * [Automate Customer Onboarding](use-cases/for-customer-support/automate-customer-onboarding.md)
 
 ## Open source
 
