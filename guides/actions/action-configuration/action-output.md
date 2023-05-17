@@ -12,5 +12,5 @@ For example, this Action **AWS List All Regions** places its output in the varia
 
 In the next Action, we can refer to the region variable to access the values. &#x20;
 
-![printing the value of a variable](../../../.gitbook/assets/image.png)
+![printing the value of a variable](<../../../.gitbook/assets/image (6).png>)
 

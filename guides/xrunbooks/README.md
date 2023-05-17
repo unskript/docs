@@ -4,7 +4,7 @@ description: >-
   xRunbook.
 ---
 
-# xRunBooks
+# Creating xRunBooks
 
 A xRunBook is a sequence of Actions put together to form a multi-step workflow. A given step in the xRunBook may be executed individually and interactively providing a Human-in-loop interface.
 
@@ -20,7 +20,7 @@ unSkript offers pre-built RunBooks that allow you to begin automation immediatel
 2. [Add Input Parameters](create-a-parameter.md)
 3. [Add an Action](add-an-action.md)
 4. [Connect Your Actions](connecting-actions.md)
-5. [Run Your RunBook](running-xrunbooks.md)
+5. [Run Your RunBook](running-xrunbooks/)
 
 
 
