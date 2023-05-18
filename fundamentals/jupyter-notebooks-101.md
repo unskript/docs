@@ -18,6 +18,12 @@ A Jupyter Notebook is a document that helps with creating and sharing computatio
 
 [Jupyter](https://jupyter.org/) is an open source project. Many organizations and universities use it for data science, data discovery, and visualization workflows, and it is the most popular data science interface for code execution.&#x20;
 
+
+
+Accessed via a browser, it is has a kernel (in the video below it is Python) and has a UI to access the file system:
+
+{% embed url="https://www.youtube.com/watch?index=1&list=PLG7TPzTSJYkdIy0aSBcPR6CYD8l2z7utq&pp=gAQBiAQB&t=10s&v=WFHMJ726aP0" %}
+
 ### How does a Jupyter Notebook work?
 
 Jupyter Notebooks are built on the IPython kernel, famous for its REPL (Read-Eval-Print-Loop) capabilities. REPL interfaces take user inputs, execute the code, and presents the result to the user. This feedback loop can be repeated multiple times in each Notebook. IPython is a command line terminal through which we can interactively execute python commands.&#x20;
@@ -30,12 +36,16 @@ Jupyter Notebooks contain cells that contain atomic commands. Each cell can be e
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-05-18 at 10.16.10.jpg" alt="screenshot of a Jupyter task"><figcaption><p>A cell with one line of code. The evaluation is printed below the cell.</p></figcaption></figure>
 
+{% embed url="https://www.youtube.com/watch?index=2&list=PLG7TPzTSJYkdIy0aSBcPR6CYD8l2z7utq&pp=gAQBiAQB&v=-v50jsIpyLU" %}
+
 \
 
 
 In addition to code cells, you can add text content (in Markdown format!)
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-05-18 at 10.22.18.jpg" alt="Notebook markdown cell"><figcaption><p>Markdown cell</p></figcaption></figure>
+
+{% embed url="https://www.youtube.com/watch?index=3&list=PLG7TPzTSJYkdIy0aSBcPR6CYD8l2z7utq&pp=gAQBiAQB&v=JNrepLxDRPQ" %}
 
 When the Markdown cell is Run - it will display the text inside the Notebook:
 
@@ -48,6 +58,16 @@ Variables created in a cell are stored in the notebook kernel, and are available
 <figure><img src="../.gitbook/assets/Screenshot 2023-05-18 at 10.28.20.jpg" alt="Variable in the first cell can be referred to in the second cell"><figcaption><p>Variable in the first cell can be referred to in the second cell</p></figcaption></figure>
 
 Cells in the notebook build on the results of previously run cells.  One way to think of a cell is as a microservice.  The microservices are called in order, and complete a full application when the Notebook is completed.
+
+In the video below, we access a JSON file for an API key, and then make an API call for weather data:
+
+{% embed url="https://www.youtube.com/watch?index=4&list=PLG7TPzTSJYkdIy0aSBcPR6CYD8l2z7utq&pp=gAQBiAQB&v=Dt-ANGHETfM" %}
+
+Once we have collected the API data, we can load it into a dataframe and visualize the data.
+
+{% embed url="https://www.youtube.com/watch?index=5&list=PLG7TPzTSJYkdIy0aSBcPR6CYD8l2z7utq&pp=gAQBiAQB&v=d3QQhNCSO60" %}
+
+
 
 ### Why use Jupyter Notebooks for runbook automation?
 
