@@ -2,47 +2,63 @@
 description: An introduction to Jupyter Notebooks
 ---
 
-# Jupyter Notebooks 101
+# Jupyter Notebook 101
 
 ### What are Jupyter Notebooks?
 
-Jupyter Notebook is a document that helps with creating and sharing computational documents. You can imagine a Jupyter Notebook like a Google Doc or a Microsoft word; the difference is it has a different file extension (.ipynb) and the code executed in a REPL (Read-Eval-Print-Loop) fashion. \
+A Jupyter Notebook is a document that helps with creating and sharing computational documents. Just like Google Docs are an online version of Microsoft Word, Jupyter Notebooks are documents that can execute code online.  Notebooks have the file extension .ipynb (**I**nteractive **PY**thon **NO**tebook), and each cell of code is executed in a REPL (Read-Eval-Print-Loop) fashion.&#x20;
 
+> **What is REPL**? Read-Eval-Print-Loop is an interactive programming environment.&#x20;
+>
+> 1. Read in: The user creates some code and sends it to be processed.
+> 2. Eval: The code is evaluated.
+> 3. Print: The results are printed out for the user.
+> 4. Loop.  The ability to repeat steps 1-3 as an iterative method. \
+>
 
-[Jupyter Notebook](https://jupyter.org/) is an open source project. Many organizations and universities use it for data science, data discovery, and visualization workflows. It is the most popular data science interface.&#x20;
+[Jupyter](https://jupyter.org/) is an open source project. Many organizations and universities use it for data science, data discovery, and visualization workflows, and it is the most popular data science interface for code execution.&#x20;
 
 ### How does a Jupyter Notebook work?
 
-Jupyter Notebooks are built on the IPython kernel, famous for its REPL (Read-Eval-Print-Loop) capabilities. IPython is a command line terminal through which we can interactively execute python commands.&#x20;
+Jupyter Notebooks are built on the IPython kernel, famous for its REPL (Read-Eval-Print-Loop) capabilities. REPL interfaces take user inputs, execute the code, and presents the result to the user. This feedback loop can be repeated multiple times in each Notebook. IPython is a command line terminal through which we can interactively execute python commands.&#x20;
 
 
 
-Jupyter Notebooks contain cells that contain atomic commands, which get executed to get the result from a programming environment, for example, from a server where your app is running or an API from a third-party system.&#x20;
+Jupyter Notebooks contain cells that contain atomic commands. Each cell can be executed to get the result from a programming environment. For example, a cell might make a request to an API from a third-party system, and then return the result.&#x20;
 
 
 
-<figure><img src="https://lh4.googleusercontent.com/Gt2ihOSdixEcyJ-DDM4v7DLnc_OURwe31fhv2NMdegQ3GR2x7imezJdahX6IHY0fZYDWggVXyD1GP-IdiMDChzOgzkdLO7HcJitMEzFLpnPPkiOBpOw29gKvEg2cgWZZVb5rzDvRugdPIfEgESZsCe4GvKMxFVWVxJZqCWTKGMGR8SMZbJCkpa5D89EVfA" alt="screenshot of a Jupyter task"><figcaption></figcaption></figure>
-
-\
-
-
-Like in any other text document, you can add text content (in Markdown format!)
-
-<figure><img src="https://lh5.googleusercontent.com/d4YbDW7r3-XT2jV-GVcIUy1Y7cvcQNu3PCGSPlVVKGIYdPLnuzb4oC1HhJag78KV7yABUxLTUposmJtOMvLPUv8oSQgQY7kT-AQMnqrgecMca5PAmHgVWWx88tpbnwNEwHqK-DT56mFoRIt-XTva67CdUXOx6-IobFFKHZjtRqMzlaaElaE_LMfmcFQeMQ" alt="markdown in a Jupyter Note"><figcaption></figcaption></figure>
-
-### What help do they do in runbook automation?
+<figure><img src="../.gitbook/assets/Screenshot 2023-05-18 at 10.16.10.jpg" alt="screenshot of a Jupyter task"><figcaption><p>A cell with one line of code. The evaluation is printed below the cell.</p></figcaption></figure>
 
 \
 
 
-The cloud community and the DevOps/SRE groups increasingly interact with complex systems. Also, DevOps/SRE groups mainly write bash/Perl scripts to automate their workflows, aka Runbooks.&#x20;
+In addition to code cells, you can add text content (in Markdown format!)
 
-\
+<figure><img src="../.gitbook/assets/Screenshot 2023-05-18 at 10.22.18.jpg" alt="Notebook markdown cell"><figcaption><p>Markdown cell</p></figcaption></figure>
+
+When the Markdown cell is Run - it will display the text inside the Notebook:
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-05-18 at 10.22.25.jpg" alt="rendering the markdown inside the notebook"><figcaption><p>Rendering the markdown inside the notebook</p></figcaption></figure>
+
+### Building on previous cells
+
+Variables created in a cell are stored in the notebook kernel, and are available for use in subsequent cells:
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-05-18 at 10.28.20.jpg" alt="Variable in the first cell can be referred to in the second cell"><figcaption><p>Variable in the first cell can be referred to in the second cell</p></figcaption></figure>
+
+Cells in the notebook build on the results of previously run cells.  One way to think of a cell is as a microservice.  The microservices are called in order, and complete a full application when the Notebook is completed.
+
+### Why use Jupyter Notebooks for runbook automation?
+
+
+
+DevOps/SRE groups create Runbooks to automate their workflows. Runbooks are comprised of steps that must be completed in order to complete a task.  Many of these steps are accompanied by scripts that help in completeing the step.  By placing the Runbook inside a Notebook container - the code can actually be evaluated while the Runbook is being used!
+
 
 
 By applying the Jupyter Notebook concept to automate the infrastructure workflows simplifies the task of a DevOps/SRE. It also aids in decoupling and debugging various systems quickly.&#x20;
 
-\
 
 
 PS: Unskript uses Jupyter Notebook under the hood. You could build or consume some knowledge shared by many engineers at the [awesome-cloud-ops](https://github.com/unskript/Awesome-CloudOps-Automation) repo and run it via the [Docker container](https://hub.docker.com/unskript).&#x20;
@@ -51,14 +67,10 @@ PS: Unskript uses Jupyter Notebook under the hood. You could build or consume so
 
 #### Installation
 
-There are many ways to install and run Jupyter Notebooks. Over the years, cloud platforms and several new-age startups have implemented Jupyter Notebooks - [Google Collab](https://colab.research.google.com/), [Deepnote](https://deepnote.com/), and [Naas.ai](https://www.naas.ai/).
-
-\
+There are many ways to install and run Jupyter Notebooks. Over the years, cloud platforms and several new-age startups have implemented Jupyter Notebooks - [Google Collab](https://colab.research.google.com/), [Deepnote](https://deepnote.com/), and [Naas.ai](https://www.naas.ai/).\
 
 
 I’m using the Anaconda Distribution of Jupyter Notebook. Search for “anaconda download”; the first link you find is probably from Anaconda.com, which distributes the Jupyter Notebooks and several other products like Anaconda Server.&#x20;
-
-
 
 1. Download and Install the [Anaconda Opensource Distribution](https://www.anaconda.com/products/distribution); it fits our use case to build and run a basic Jupyter Notebook.
 2. Open the Anaconda Navigator
@@ -91,7 +103,6 @@ Each Jupyter notebook contains multiple cells, which contain Python code. Python
 
 <figure><img src="https://lh3.googleusercontent.com/Juz4LOeEIOP-noFA7qwa82e0ffIw02s-PSxC2XH-2kWZin8MwOJ7sxnXCJ3jWWpJDRxyQFfbEkLlah6gySbNca5VsK-V8ZiwYQ95IYuKX0KPjkiZH-3jNXwgIHmNf9WzKweHcfeAjtkeBp20rbmLzXXG7o7Wpxj1oB2FfqFUyfut5IwcuuB64ZLxVgJXdw" alt="cell menu showing configuration options"><figcaption></figcaption></figure>
 
-\
 \
 
 
