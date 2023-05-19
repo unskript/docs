@@ -15,3 +15,7 @@ To add a parameter to your xRunBook, click the Parameters button to reveal the d
 ![Adding a \`customer\` input parameter.](<../../.gitbook/assets/Screen Shot 2022-05-16 at 12.48.07 AM.png>)
 
 Fill in the required information and click `CREATE`. Once created, the parameter is available to be used as a Python variable of the same name. You can use this in code for custom Actions that you create, or as arguments to the Actions you are using.
+
+{% embed url="https://youtu.be/08L2CpWGWdg" %}
+Example of adding an inpout parameter to a RunBook and Reusing it in Actions.
+{% endembed %}
