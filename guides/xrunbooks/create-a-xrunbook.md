@@ -27,5 +27,7 @@ If you have an existing Jupyter Notebook:
 1. Click xRunBooks from the top navigation.
 2. Click the `+ Create` button to create your xRunBook.
 3. Add the name, description and the proxy, and click `CREATE XRUNBOOK.`
+
+{% embed url="https://youtu.be/xI8K1GJwkWk" %}
 {% endtab %}
 {% endtabs %}

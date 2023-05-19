@@ -34,7 +34,7 @@ When you click this button, you will enter the input values, and your Runbook wi
 
 Under "Requests" in the top navigation, there is a page listing all RunBook requests:
 
-![](../../../.gitbook/assets/image.png)
+![](<../../../.gitbook/assets/image (8).png>)
 
 An [authorized approver](../../role-based-access-control/rbac-roles.md) must approve (or reject) the RunBook execution.  Using the User Management, add users to a group with "Approver" permissions for the directory with the RunBook.  Those users will be able to approve the execution
 
