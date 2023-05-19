@@ -26,7 +26,7 @@ Now your Credential will be saved. It'll be ready for use in a few seconds.
 
 When adding a Credential, a serviceID can be added. ServiceID is a variable abstraction of the Credential. &#x20;
 
-When a xRunBook is run in multiple environments, different credentials might be used (for example - the AWS connection in dev might be different than the one used in production). &#x20;
+When a xRunBook is run in multiple [environments](../../fundamentals/unskript-framework/connect-your-environment.md), different credentials might be used (for example - the AWS connection in dev might be different than the one used in production). &#x20;
 
 To use a serviceID:
 

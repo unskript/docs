@@ -20,3 +20,6 @@ Use the **Add Action** drop down to select **Add Notes** Option. This will open 
 * Comment on each Action on how it works. A sample output helps others understand what data is coming from each Action.
 * Conclude with a description of the output. Including a sample output is also quite beneficial
 
+{% embed url="https://youtu.be/3tPHPRtFmtY" %}
+Example video on adding Comments/Nots to a RunBook
+{% endembed %}
