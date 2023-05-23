@@ -37,7 +37,7 @@
     * [Attaching runbooks to alarms](guides/xrunbooks/alarms/attaching-runbooks-to-alarms.md)
     * [Getting alerts via webhook for onprem](guides/xrunbooks/alarms/getting-alerts-via-webhook-for-onprem.md)
   * [Folders](fundamentals/platform/folders.md)
-* [Prebuilt Actions](lists/action\_list.md)
+* [Prebuilt Actions](lists/action\_AWS.md)
    * [AWS Actions](lists/action\_AWS.md)
 * [Actions](guides/actions/README.md)
   * [Create Custom Actions](guides/actions/create-custom-actions.md)
