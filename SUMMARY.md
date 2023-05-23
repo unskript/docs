@@ -72,6 +72,7 @@
       * [AWS VPC Actions](lists/action\_AWS\_VPC.md)
   * [Azure](guides/connectors/azure.md)
     * [Azure Actions](lists/action\_AZURE.md)
+  * [ChatGPT](guides/connectors/chatgpt.md)
   * [Datadog](guides/connectors/datadog/README.md)
     * [Configuring webhook in Datadog](guides/connectors/datadog/configuring-webhook-in-datadog.md)
     * [Datadog Actions](lists/action\_DATADOG.md)
