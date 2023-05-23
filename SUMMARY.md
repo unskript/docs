@@ -39,7 +39,6 @@
   * [Folders](fundamentals/platform/folders.md)
 * [Prebuilt Actions](lists/action-LIST.md)
 * [Actions](guides/actions/README.md)
-  * [Prebuilt Actions](guides/actions/prebuilt-actions.md)
   * [Create Custom Actions](guides/actions/create-custom-actions.md)
   * [Action Configuration](guides/actions/action-configuration/README.md)
     * [Configure Action Inputs](guides/actions/action-configuration/configure-action-inputs.md)
