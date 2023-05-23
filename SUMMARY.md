@@ -38,6 +38,7 @@
     * [Getting alerts via webhook for onprem](guides/xrunbooks/alarms/getting-alerts-via-webhook-for-onprem.md)
   * [Folders](fundamentals/platform/folders.md)
 * [Prebuilt Actions](lists/action_list.md)
+* [Prebuilt Actions2](lists/action_list.md)
 * [Actions](guides/actions/README.md)
   * [Create Custom Actions](guides/actions/create-custom-actions.md)
   * [Action Configuration](guides/actions/action-configuration/README.md)
