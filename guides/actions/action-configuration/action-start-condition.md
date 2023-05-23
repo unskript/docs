@@ -14,7 +14,7 @@ There may be times during a RunBook execution that a step can be skipped - based
 
 ### Example
 
-Let's look at the "[Delete Old EBS Snapshots](https://unskript.com/automate-aws-costs-delete-old-ebs-snapshots/)" RunBook (this is a built in RunBook that is part of every unSkript install).&#x20;
+Let's look at the [`Delete Old EBS Snapshots`](https://github.com/unskript/Awesome-CloudOps-Automation/blob/master/AWS/AWS\_Delete\_Old\_EBS\_Snapshots.ipynb) RunBook (this is a built in RunBook that is part of every unSkript install).&#x20;
 
 There are 3 input parameters for this RunBook:&#x20;
 

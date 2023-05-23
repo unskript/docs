@@ -1,6 +1,6 @@
 # Elasticsearch
 
-### [Listing of Elasticsearch xRunBooks](../xrunbook\_list/#elasticsearch)
+### [Listing of Elasticsearch xRunBooks](broken-reference)
 
 ### [Listing of Elasticsearch Actions](../../lists/action\_ES.md)
 

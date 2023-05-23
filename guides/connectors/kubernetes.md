@@ -1,6 +1,6 @@
 # Kubernetes
 
-### [List of K8s xRunBooks](../xrunbook\_list/#kubernetes)
+### [List of K8s xRunBooks](broken-reference)
 
 ### [List of K8s Actions](broken-reference)
 
