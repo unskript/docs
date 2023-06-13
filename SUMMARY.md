@@ -5,6 +5,7 @@
 
 ## Guides
 
+* [Contribute to Open Source](guides/contribute-to-open-source.md)
 * [Getting started](guides/getting-started/README.md)
   * [Sign Up/Install](guides/getting-started/sign-up-install.md)
   * [Authentication](guides/getting-started/authentication/README.md)
@@ -146,7 +147,6 @@
 * [Role Based Access Control](guides/role-based-access-control/README.md)
   * [RBAC Roles](guides/role-based-access-control/rbac-roles.md)
 * [Command Line Tool](guides/command-line-tool.md)
-* [Contribute to Open Source](guides/contribute-to-open-source.md)
 
 ## Fundamentals
 
@@ -168,7 +168,8 @@
 
 ## Open source
 
-* [CloudOps Automation with unSkript](open-source/cloudops-automation-with-unskript.md)
+* [Runbooks.sh](http://runbooks.sh)
+* [Contribute to Open Source](https://docs.unskript.com/unskript-product-documentation/guides/contribute-to-open-source)
 
 ## Lists
 
