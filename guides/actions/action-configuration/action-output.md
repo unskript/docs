@@ -1,8 +1,10 @@
 # Action Output
 
-The Output of an Action may be referenced later in the xRunBook. It will be saved in the variable name provided in the output configuration.
+The Output of an Action may be referenced later in the xRunBook. To name the output of the action, click configurations to open the Action settings in the right nav.  The OutPUt tab will give a text box where you can bane the output.
 
-The string entered in this dialogue is the name of the output variable, and will contain the output of this task. You can use this variable as an input in any subsequent Action.&#x20;
+
+
+The string entered in this dialogue is the name of the output variable, and will contain the output of this task (The output type is defined in the function of the Action.) You can use this variable as an input in any subsequent Action.&#x20;
 
 
 
