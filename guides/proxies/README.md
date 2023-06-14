@@ -6,15 +6,15 @@ Proxies contain all of your environment and connector credentials.  We offer sev
 
 ### [unSkript Hosted](unskript-proxy.md)
 
-Hosted at unSkript, this can connect to any publicly available service. (This is the only Proixy available in the [Free Trial](https://us.app.unskript.io/).)
+Hosted at unSkript, this can connect to any publicly available service. (This is the only Proxy available in the [Free Trial](https://us.app.unskript.io/).)
 
 ### [AWS Proxy](aws-proxy.md)
 
-Allows unSkript to to connect and interface with AWS infrastructure not exposed to the public internet.
+Installed in your AWS environment behind your firewalls, the AWS Proxy allows unSkript to to connect and interface with AWS infrastructure not exposed to the public internet.
 
 ### [GCP Proxy](gcp-proxy.md)
 
-Allows unSkript to to connect and interface with Google Cloud infrastructure not exposed to the public internet.
+Installed inside your GCP environment, the GCP proxy allows unSkript to to connect and interface with Google Cloud infrastructure not exposed to the public internet.
 
 ### Private Cloud
 
