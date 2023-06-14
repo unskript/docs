@@ -8,13 +8,15 @@ description: Run the same action multiple times with different input parameters
 
 {% embed url="https://youtu.be/7id_TS9EK_c?t=149" %}
 
-Action input parameters are often set for a single value: for example, an Action might require _**AWS Region**_ - as a single value.  However, it is possible to image a xRunBook where you might wish to run an Action against multiple regions (or even a varying number of regions in each invocation of the xRunBook).  Rather than hardcoding multiple instances of the same action, you can use the Iterator.
+Action inputs are generally designed for a single value. For example, an input named _**AWS Region**_ will accept a string like "us-west-2". &#x20;
+
+But what if you need to test the same action across \*many regions\*? Rather than hardcoding multiple instances of the same action, you can use the Iterator to execute the same action multiple times.
 
 
 
 Example: This Action gives an array of Public AWS EC2 instances for a given region.  Configured as below, it will list the instances for "us-west-2":
 
-<figure><img src="../../../../.gitbook/assets/configuration.jpg" alt="screenshot of an Action&#x27;s input configuration."><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/configuration.jpg" alt="screenshot of an Action&#x27;s input configuration." width="375"><figcaption><p>Action using a single reagion as input</p></figcaption></figure>
 
 However, we can run this across multiple regions by changing the Region input to an iterator:
 
