@@ -22,7 +22,7 @@
   * [xRunBooks for SecOps](lists/runbook\_SECOPS.md)
   * [xRunBooks for SRE](lists/runbook\_SRE.md)
   * [xRunBooks for Troubleshooting](lists/runbook\_TROUBLESHOOTING.md)
-* [Creating xRunBooks](guides/xrunbooks/README.md)
+* [Creating RunBooks](guides/xrunbooks/README.md)
   * [Importing unSkript xRunBooks](guides/xrunbooks/importing-unskript-xrunbooks.md)
   * [Create a xRunBook](guides/xrunbooks/create-a-xrunbook.md)
   * [Add an Action](guides/xrunbooks/add-an-action.md)

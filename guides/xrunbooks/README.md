@@ -1,18 +1,22 @@
 ---
-description: >-
-  This section describes everything you need to build and customize your
-  xRunbook.
+description: Build and customize your RunBook.
 ---
 
-# Creating xRunBooks
+# Creating RunBooks
 
-A xRunBook is a sequence of Actions put together to form a multi-step workflow. A given step in the xRunBook may be executed individually and interactively providing a Human-in-loop interface.
+RunBooks are at the heart of unSkript.  RunBooks outline a stepwise process that can be run either interactively or automatically.  Learn how to use and create RunBooks!
+
+
+
+A RunBook is a sequence of Actions put together to form a multi-step workflow. A given step in the xRunBook may be executed individually and interactively providing a Human-in-loop interface.
 
 ### [Pre-Built RunBooks](./#pre-built-runbooks)
 
 <figure><img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/unskript/Awesome-CloudOps-Automation/master/.github/images/runbookShield.json&#x26;style=for-the-badge" alt=""><figcaption></figcaption></figure>
 
-unSkript offers pre-built RunBooks that allow you to begin automation immediately.  With these RunBooks, you'll need to add input parameters for the RunBook, and credentials for each Action, and you'll be ready to go!
+unSkript offers pre-built RunBooks that allow you to begin automation immediately.  With these RunBooks, you can get started quickly by just adding your [cloud credentials](../connectors/), and the RunBook [input parameters](create-a-parameter.md).&#x20;
+
+This is a great way to learn how unSkript works, but everyone's cloud is different, and you'll soon want to customize and create your own RunBooks.
 
 ### Build your Own RunBook
 
