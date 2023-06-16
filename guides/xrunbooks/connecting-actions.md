@@ -31,7 +31,7 @@ Next, we'll configure this action with credentials (to access our AWS account). 
 
 When we run this Action, the list of users will be saved in the List `users`.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>A partial listing of the users in the list.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>A partial listing of the users in the list.</p></figcaption></figure>
 
 We can now use the data in `users` to build on our RunBook.
 
