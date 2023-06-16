@@ -1,13 +1,18 @@
 # Folders
 
-Folders can be used to organize RunBooks as per business needs. unSkript allows users to create Folders to organize multiple xRunBooks for a particular workflow.  Folders are also used for [Role Based Access Control](../../guides/role-based-access-control/) -where all permissions are based at the folder level.
+Folders can be used to organize RunBooks.  Folders are also used for [Role Based Access Control](../../guides/role-based-access-control/) -where all permissions are based at the folder level.
 
+## Create a Folder
 
-
-To create a Folder, navigate to the xRunBooks tab and click on the Create button.
+To create a Folder, navigate to the xRunBooks tab and click on the Create button, pick Folder, and give your new Folder a name.
 
 ![](<../../.gitbook/assets/Screenshot 2022-08-02 at 5.55.42 PM.png>)
 
-Here is an example of an Incident Response folder which contains two xRunBooks to restart unhealthy instances in a Target Group and then duplicate unhealthy instances without the credentials. Each of the xRunBook has multiple actions which are configured to create a workflow.
+Here is an example of an Incident Response folder which contains two xRunBooks. &#x20;
 
 ![](<../../.gitbook/assets/Screenshot 2022-08-02 at 6.02.25 PM.png>)
+
+Since these RunBooks are in the same folder, we can apply [RBAC](../../guides/role-based-access-control/) controls that limit which team members can run or edit the RunBooks.  We could also require that some users "request access" to run these Runbooks.
+
+
+
