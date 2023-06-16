@@ -1,6 +1,8 @@
 # Connectors
 
-In order to interact with your cloud infrastructure, unSkript provides Connectors that securely handle your credentials, and allow RunBooks to interact with your systems.  \
+In order to interact with your cloud infrastructure, unSkript has to be able to connect to your cloud tooling. &#x20;
+
+Connectors securely handle your Cloud credentials without exposing them in the code.  Using credentials allows unSkript's RunBooks to interact with your systems.  \
 
 
 unSkript supports the following Connectors-
@@ -16,15 +18,17 @@ The full list can be seen in the left navigation, and the links point to set up 
 
 ### Credentials
 
-Each Connector will have at least one set of credentials for authentication.  You may have multiple credentials in order to satisfy the Principle of Lease Privilege.  The type of credential will vary depending on the Authentication pathways provided by the connector: API tokens, keys & secrets, JSON config files. etc.  Each Connector page has details on how to add your credentials for that platform.
+Credential types vary depending on the Authentication pathways provided by the connector: API tokens, keys & secrets, JSON config files. etc.  Each Connector page has details on how to add your credentials for that platform.
 
 There may be times where there are multiple credentials to one Connector (Some xRunBooks or Actions may require different permissions, and using the [principles of least privilege](https://unskript.com/automate-the-creation-of-least-privileged-aws-security-profiles/), it may be better to have different credentials.
 
 ### Credentials as a Variable
 
-To reuse an xRunBook across multiple environments, the credential can be set as a serviceID.  When the xRunBook is run in an environment - the credential with that serviceID is used to run the Actions.
+To reuse an xRunBook across multiple environments, the credential can be set as a serviceID.  This of a serviceID as a variable. In each unSkript environment, assign a credential to the serviceID.  When the xRunBook is run in an environment - the credential with that serviceID is used to run the Actions.
 
-For example, if there are 2 environments: _dev_ and _production,_ each with different AWS credentials (but the credentials use the same serviceID), a xRunBook can be run in either environment with zero modifications. Head to the section on [environments](../../fundamentals/unskript-framework/connect-your-environment.md) to learn more.
+For example, if there are 2 environments: _dev_ and _production,_ each with different AWS credentials. If the credentials in dev and production have the same serviceID, each Action in a RunBook can use the serviceId variable for authentication. A new Runbook input parameter "environment" is added.  Specifying "Dev" will use the dev credentials, while using "production will use the production serviceID credentials.
+
+Head to the section on [environments](../../fundamentals/unskript-framework/connect-your-environment.md) to learn more.
 
 
 
