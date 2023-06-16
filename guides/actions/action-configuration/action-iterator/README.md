@@ -20,7 +20,7 @@ Example: This Action gives an array of Public AWS EC2 instances for a given regi
 
 However, we can run this across multiple regions by changing the Region input to an iterator:
 
-<figure><img src="../../../../.gitbook/assets/iteration.jpg" alt="screenshot of an iteration configuration"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iteration.jpg" alt="screenshot of an iteration configuration" width="375"><figcaption></figcaption></figure>
 
 We set the Loop Parameter to region &#x20;
 
