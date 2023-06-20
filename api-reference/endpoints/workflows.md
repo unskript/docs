@@ -1,5 +1,7 @@
 # Workflows
 
+## List Workflows
+
 {% swagger src="../../.gitbook/assets/openapi2 (1).json" path="/v1alpha1/workflows" method="get" %}
 [openapi2 (1).json](<../../.gitbook/assets/openapi2 (1).json>)
 {% endswagger %}
@@ -20,6 +22,8 @@ https://tenant-staging.alpha.unskript.io/v1alpha1/workflows?pageSize=100&isUnskr
 
 ```
 
+## Get Workflow Details
+
 {% swagger src="../../.gitbook/assets/openapi2 (1).json" path="/v1alpha1/workflows/{workflowId}" method="get" %}
 [openapi2 (1).json](<../../.gitbook/assets/openapi2 (1).json>)
 {% endswagger %}
@@ -32,6 +36,8 @@ This example gets the details of an unSkript XRunBook.  To get a custom/personal
 'https://<domain>/v1alpha1/workflows/79c167af0209e60fc45455bf4943b733904d4ab8654028d8434d193d1bf8c16c?isUnskript=true' \
       -H "X-unSkript-API-Key:<apy key>" 
 ```
+
+## Run a Workflow
 
 {% swagger src="../../.gitbook/assets/openapi2 (1).json" path="/v1alpha1/workflows/{workflowId}/run" method="post" %}
 [openapi2 (1).json](<../../.gitbook/assets/openapi2 (1).json>)
