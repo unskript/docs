@@ -27,7 +27,7 @@ Our first step is to get a list of all the IAM users in our AWS account.  Drag t
 
 Next, we'll configure this action with credentials (to access our AWS account).  There are no required inputs for this action, but let's name the output of the Action "users."
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p>Configuring the Credentials and output of the Action</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Configuring the Credentials and output of the Action</p></figcaption></figure>
 
 When we run this Action, the list of users will be saved in the List `users`.
 
@@ -43,7 +43,7 @@ This code loops through all of the users, and creates another list of the users 
 
 Finally, let's send a message to Slack:
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption><p>Slack Configuration</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption><p>Slack Configuration</p></figcaption></figure>
 
 This Action takes the list of doug\_users, finds the length of the list and sends a message to the "devrel\_doug\_test1" channel announcing the number of users.
 
