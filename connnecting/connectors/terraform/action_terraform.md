@@ -1,4 +1,4 @@
-* [Execute Terraform Command](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/Terraform/legos/terraform_exec_command/README.md): Execute Terraform Command
+# Terraform Actions
 
-* [Get terraform handle](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/Terraform/legos/terraform_get_handle/README.md): Get terraform handle
-
+* [Execute Terraform Command](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/Terraform/legos/terraform\_exec\_command/README.md): Execute Terraform Command
+* [Get terraform handle](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/Terraform/legos/terraform\_get\_handle/README.md): Get terraform handle

@@ -1,4 +1,4 @@
-* [Opensearch Get Handle](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/opensearch/legos/opensearch_get_handle/README.md): Opensearch Get Handle
+# opensearch Actions
 
-* [Opensearch search](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/opensearch/legos/opensearch_search/README.md): Opensearch Search
-
+* [Opensearch Get Handle](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/opensearch/legos/opensearch\_get\_handle/README.md): Opensearch Get Handle
+* [Opensearch search](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/opensearch/legos/opensearch\_search/README.md): Opensearch Search

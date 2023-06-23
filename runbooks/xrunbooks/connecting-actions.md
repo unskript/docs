@@ -27,11 +27,11 @@ Our first step is to get a list of all the IAM users in our AWS account.  Drag t
 
 Next, we'll configure this action with credentials (to access our AWS account).  There are no required inputs for this action, but let's name the output of the Action "users."
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Configuring the Credentials and output of the Action</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p>Configuring the Credentials and output of the Action</p></figcaption></figure>
 
 When we run this Action, the list of users will be saved in the List `users`.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>A partial listing of the users in the list.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>A partial listing of the users in the list.</p></figcaption></figure>
 
 We can now use the data in `users` to build on our RunBook.
 

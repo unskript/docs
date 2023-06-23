@@ -44,6 +44,7 @@
 
 ## Actions
 
+* [What is an Action?](actions/what-is-an-action.md)
 * [Actions](actions/actions/README.md)
   * [Create Custom Actions](actions/actions/create-custom-actions.md)
   * [Action Configuration](actions/actions/action-configuration/README.md)
@@ -56,6 +57,14 @@
     * [Action Start Condition](actions/actions/action-configuration/action-start-condition.md)
   * [Anatomy of an Action](actions/actions/anatomy-of-an-action.md)
 * [Prebuilt Actions](actions/action-list.md)
+
+## Healthchecks
+
+* [What is a HealthCheck?](healthchecks/what-is-a-healthcheck.md)
+* [Create a Healthheck](healthchecks/create-a-healthheck/README.md)
+  * [Create a HealthCheck Folder](healthchecks/create-a-healthheck/create-a-healthcheck-folder.md)
+  * [Adding Checks](healthchecks/create-a-healthheck/adding-checks.md)
+* [HealthCheck Parameters](healthchecks/healthcheck-parameters.md)
 
 ## Connnecting
 
