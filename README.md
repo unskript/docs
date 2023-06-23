@@ -35,12 +35,12 @@ With just a few steps, you can begin your RunBook automation journey:
 [getting-started](guides/getting-started/)
 {% endcontent-ref %}
 
-{% content-ref url="guides/xrunbooks/" %}
-[xrunbooks](guides/xrunbooks/)
+{% content-ref url="runbooks/xrunbooks/" %}
+[xrunbooks](runbooks/xrunbooks/)
 {% endcontent-ref %}
 
-{% content-ref url="guides/actions/" %}
-[actions](guides/actions/)
+{% content-ref url="actions/actions/" %}
+[actions](actions/actions/)
 {% endcontent-ref %}
 
 ### Fundamentals: Dive a little deeper

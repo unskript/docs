@@ -8,15 +8,15 @@ Collaborative automation for your Cloud.
 
 * Get started in minutes with our [Pre-Built RunBooks for DevOps Teams](broken-reference).
 * Build your own bespoke RunBooks with our Drag and Drop interface and [Pre-built Actions](broken-reference).
-* [Create Actions](../guides/actions/create-custom-actions.md) with Python with easy [connectivity to dozens of Could services](../guides/connectors/).
+* [Create Actions](../actions/actions/create-custom-actions.md) with Python with easy [connectivity to dozens of Could services](../connnecting/connectors/).
 
 ### **With unSkript:**
 
 * One location for all of your team's RunBooks and Actions - simplifying  collaboration, sharing, and updating.
-* [Role Based Access Control](../guides/role-based-access-control/rbac-roles.md) - allows you to give additional teams access your RunBooks.
-* For sensitive RunBooks - enable a [request/approval ](../guides/role-based-access-control/rbac-roles.md)process.
-* [Schedule](../guides/xrunbooks/schedules.md) RunBooks for regular tasks.
-* Connect the same RunBook to multiple [environments](../fundamentals/unskript-framework/connect-your-environment.md) - dev, staging and production.  No issues with version control in different environments.
+* [Role Based Access Control](../tooling/role-based-access-control/rbac-roles.md) - allows you to give additional teams access your RunBooks.
+* For sensitive RunBooks - enable a [request/approval ](../tooling/role-based-access-control/rbac-roles.md)process.
+* [Schedule](../runbooks/xrunbooks/schedules.md) RunBooks for regular tasks.
+* Connect the same RunBook to multiple [environments](../connnecting/proxies/connect-your-environment/) - dev, staging and production.  No issues with version control in different environments.
 * RunBooks can be completely automated, or run interactively in a step-by-step process.
 
 
@@ -28,7 +28,7 @@ Collaborative automation for your Cloud.
 * [k8s: Get kube system config map](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/Kubernetes/Get\_Kube\_System\_Config\_Map.ipynb): This runbook fetches the kube system config map for a k8s cluster and publishes the information on a Slack channel.
 * [Display long running queries in a PostgreSQL database](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/Postgresql/Postgresql\_Display\_Long\_Running.ipynb): This runbook displays collects the long running queries from a database and sends a message to the specified slack channel. Poorly optimized queries and excessive connections can cause problems in PostgreSQL, impacting upstream services.
 * [Full list of DevOps RunBooks](broken-reference)
-* [Create your own](../guides/xrunbooks/)
+* [Create your own](../runbooks/xrunbooks/)
 
 
 

@@ -12,11 +12,11 @@ unSkript needs a dedicated runtime environment where xRunBook workflows can be s
 
 We currently offer the ability to install proxies in your:
 
-* [AWS Cloud](../proxies/aws-proxy.md)
-* [GCP Cloud](../proxies/gcp-proxy.md)
-* [Private Cloud](../proxies/#private-cloud)
-* [onPrem](../proxies/#on-premises)
-* [unSkript Hosted](../proxies/unskript-proxy.md)
+* [AWS Cloud](../../connnecting/proxies/aws-proxy.md)
+* [GCP Cloud](../../connnecting/proxies/gcp-proxy.md)
+* [Private Cloud](../../connnecting/proxies/#private-cloud)
+* [onPrem](../../connnecting/proxies/#on-premises)
+* [unSkript Hosted](../../connnecting/proxies/unskript-proxy.md)
 
 {% hint style="info" %}
 The Free Trial only allows for one unSkript Hosted Proxy. &#x20;

@@ -22,5 +22,5 @@ unSkript pulls the Okta groups info by using Okta API Token. We would need the f
 <figure><img src="../../../../.gitbook/assets/Снимок_экрана_2023-02-13_в_19_57_40.jpg" alt=""><figcaption></figcaption></figure>
 
 * With the Okta group sync enabled, users **CANNOT** create groups inside the unSkript app.
-* To trigger the Okta groups sync, go to **More->User Management->User Groups** and click on **Sync Okta Groups**. These groups can be assigned unSkript roles as explained here[role-based-access-control](../../../role-based-access-control/ "mention")
+* To trigger the Okta groups sync, go to **More->User Management->User Groups** and click on **Sync Okta Groups**. These groups can be assigned unSkript roles as explained here[role-based-access-control](../../../../tooling/role-based-access-control/ "mention")
 * However, users still need to be invited to the unSkript app, by the admin. Go to **More->User Management->Invite User**. Since the groups are already pulled in from Okta and unSkript has the user->group mapping, user will get the role corresponding to the Okta groups, user is part of.

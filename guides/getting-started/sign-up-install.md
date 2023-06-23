@@ -99,7 +99,7 @@ Once you have verified your account, you'll be walked through a overview of the 
    1. First you'll create a xRunBook with a name, optional description and the Proxy you created in the first step.
    2. Next we'll open the editor to begin creating the xRunBook.
    3. xRunBooks are built by combining Actions. In the walkthrough we'll add the `MongoDB Find Document` Action from the installed Actions, by searching for the term, and then dragging the Action into our xRunbook.
-   4. Configure your Action.  Each Action can be [configured in many ways](../actions/action-configuration/). We've created a default configuration for this Action, but you'll need to add Credentials to the MongoDB.
+   4. Configure your Action.  Each Action can be [configured in many ways](../../actions/actions/action-configuration/). We've created a default configuration for this Action, but you'll need to add Credentials to the MongoDB.
    5. Now you are ready to run your first xRunBook.  Click `Run Action` to just run the Action, or you can click the `Run XRunBook` to run the entire RunBook.  A list of movies will be the output.
    6. Now you are ready to create your own xRunBooks!
 {% endtab %}

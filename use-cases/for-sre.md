@@ -7,10 +7,10 @@ description: Automate away your Toil with RunBooks
 **With unSkript:**
 
 * All your RunBooks and Actions are in one place for easy collaboration, sharing, and updating.
-* &#x20;With [Role Based Access Control](../guides/role-based-access-control/) -give teams run access only to resolve issues.
-* For sensitive RunBooks - require an [approval](../guides/role-based-access-control/rbac-roles.md) before the RunBook can be processed.
-* [Schedule](../guides/xrunbooks/schedules.md) RunBooks for regular tasks.
-* Connect the same RunBook to multiple [environments](../fundamentals/unskript-framework/connect-your-environment.md) - dev, staging and production using ServiceIds.  No issues with version control in different environments.
+* &#x20;With [Role Based Access Control](../tooling/role-based-access-control/) -give teams run access only to resolve issues.
+* For sensitive RunBooks - require an [approval](../tooling/role-based-access-control/rbac-roles.md) before the RunBook can be processed.
+* [Schedule](../runbooks/xrunbooks/schedules.md) RunBooks for regular tasks.
+* Connect the same RunBook to multiple [environments](../connnecting/proxies/connect-your-environment/) - dev, staging and production using ServiceIds.  No issues with version control in different environments.
 * RunBooks can be completely automated, or run interactively in a step-by-step process.
 
 
@@ -23,4 +23,4 @@ description: Automate away your Toil with RunBooks
 * [Visualize Jira Ticket Time to Resolution](https://github.com/unskript/Awesome-CloudOps-Automation/blob/master/Jira/jira\_visualize\_time\_to\_resolution.ipynb):  Using the Panel Library - visualize the time it takes for issues to close over a specifict timeframe
 * [Rollback Kubernetes Deployment](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/Kubernetes/Rollback\_k8s\_Deployment\_and\_Update\_Jira.ipynb): This runbook can be used to rollback Kubernetes Deployment
 * [Full List of SRE RunBooks](broken-reference)
-* [Create your own RunBook](../guides/xrunbooks/)
+* [Create your own RunBook](../runbooks/xrunbooks/)

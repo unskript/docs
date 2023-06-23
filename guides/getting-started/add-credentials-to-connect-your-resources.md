@@ -19,7 +19,7 @@ unSkript supports a large selection of resource types that you can connect into.
 
 If you do not see your service here, you can connect via REST for APIs or via SSH for servers. For.a direct connection, [open an Issue](https://github.com/unskript/Awesome-CloudOps-Automation/issues/new?assignees=\&labels=Credential%2Ctriage\&template=add\_credential.yml\&title=%5BCredential%5D%3A+), and we can add your service.
 
-3\.  The UI will walk you through the required steps to establish your credential. If you run into issues, there are detailed instructions for each [Connector](../connectors/).
+3\.  The UI will walk you through the required steps to establish your credential. If you run into issues, there are detailed instructions for each [Connector](../../connnecting/connectors/).
 {% endtab %}
 
 {% tab title="Cloud" %}
@@ -39,7 +39,7 @@ If you do not see your service here, you can connect via REST for APIs or via SS
 {% hint style="info" %}
 **Credential Parameterization using ServiceID**
 
-You can execute a xRunBook across different environments without having to duplicate it in each environment. [Learn More about ServiceIDs](../proxies/connect-your-environment/runbooks-across-environments-serviceids.md)
+You can execute a xRunBook across different environments without having to duplicate it in each environment. [Learn More about ServiceIDs](../../connnecting/proxies/connect-your-environment/runbooks-across-environments-serviceids.md)
 {% endhint %}
 
 ![Step 4 - Add details of your connection](<../../.gitbook/assets/Screenshot 2022-08-12 at 5.38.25 PM.png>)

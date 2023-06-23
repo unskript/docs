@@ -27,8 +27,8 @@ As described above, RunBooks are a type of checklist - a series of steps, that w
 
 Here are the basic steps to build (or execute) a RunBook:
 
-1. **Start with** [**Inputs**](../guides/xrunbooks/)**.** You have some known parameters to feed into the RunBook, so create input parameters for these values.  They can then be used during the steps of the workflow/RunBook to create your desired outcome.
-2. **Build** [**Action**](../guides/actions/) **Steps:** Build on your input parameters.  Make queries into your infrastructure based on the inputs to gain more knowledge or information.  Take that gained information and build on it to reach your desired outcome.
+1. **Start with** [**Inputs**](../runbooks/xrunbooks/)**.** You have some known parameters to feed into the RunBook, so create input parameters for these values.  They can then be used during the steps of the workflow/RunBook to create your desired outcome.
+2. **Build** [**Action**](../actions/actions/) **Steps:** Build on your input parameters.  Make queries into your infrastructure based on the inputs to gain more knowledge or information.  Take that gained information and build on it to reach your desired outcome.
    1. RunBooks can have as many steps as you need to complete the task.  With unSkript's drag & drop interface, you can easily search for Actions, drag them into the RunBook, and the configure the input/output variables.
    2. Need to skip a step? unSkript's Start Condition can skip a step if certain conditions are met.
 3. **Output:** Your RunBook will output the variables you request as an output.  Additionally, add Actions to "send to slack" for additional notifications.
@@ -41,9 +41,9 @@ Once you've built the RunBook, you'll want to execute it.  There are a number of
 
 * **Interactively**: Open the RunBook in unSkript and run each step individually, examining each step as it is completed.
 * **From the UI:** Rather than run interactively, just kick of the run with a click of a button.
-* [**Scheduled**](../guides/xrunbooks/schedules.md)**:** Collect data. run healthchecks on a schedule. Just configure the schedule in the UI.
-* [**API call**](../api-reference/)**:** Use your API token, and send the input parameters via a REST call.
-* [**Alarm**](../guides/xrunbooks/alarms/)**:** If your infrastructure fires an alarm - have a RunBook execute automatically to remediate the situation.&#x20;
+* [**Scheduled**](../runbooks/xrunbooks/schedules.md)**:** Collect data. run healthchecks on a schedule. Just configure the schedule in the UI.
+* [**API call**](../tooling/api-reference/)**:** Use your API token, and send the input parameters via a REST call.
+* [**Alarm**](../runbooks/xrunbooks/alarms/)**:** If your infrastructure fires an alarm - have a RunBook execute automatically to remediate the situation.&#x20;
 
 ### Playbooks: A Collection of RunBooks
 
