@@ -22,7 +22,7 @@ Create your own Actions! &#x20;
 * Create a small Python Script to manipulate the data you already have collected.
   * For example: Here's an Action where data collected from an Action in the RunBook converted into a chart using matplotlib:
 
-![](<../../.gitbook/assets/image (1) (2).png>)
+![](<../../.gitbook/assets/image (1) (2) (1).png>)
 
 
 

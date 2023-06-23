@@ -65,6 +65,8 @@
   * [Create a HealthCheck Folder](healthchecks/create-a-healthheck/create-a-healthcheck-folder.md)
   * [Adding Checks](healthchecks/create-a-healthheck/adding-checks.md)
 * [HealthCheck Parameters](healthchecks/healthcheck-parameters.md)
+* [Running HealthChecks](healthchecks/running-healthchecks.md)
+* [HealthCheck Remediation](healthchecks/healthcheck-remediation.md)
 
 ## Connnecting
 

@@ -14,7 +14,7 @@ You can modify the source code of a built-in Action to create your custom action
 
 > For example, Perhaps the **List all AWS IAM Users** returns a list of usernames:
 >
-> ![](<../../.gitbook/assets/image (4).png>)
+> ![](<../../.gitbook/assets/image (13).png>)
 
 What if we'd like to also retrieve the Arn for each user? We can just modify the existing code:
 
@@ -36,11 +36,11 @@ Each Connector has a "handle" Action that has the basic connectivity built in.  
 
 In the example below, the AWS boto3 handle Action is used as a base to create a new AWS Action to fetch all EC2 instances for that region.
 
-![](<../../.gitbook/assets/image (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (1) (1).png>)
 
 The custom action can be renamed and saved as a new Action to fit your Task.&#x20;
 
-![Save As](<../../.gitbook/assets/image (3) (1).png>)
+![Save As](<../../.gitbook/assets/image (3).png>)
 
 Fill out the details to save the new Action.
 
@@ -48,4 +48,4 @@ Fill out the details to save the new Action.
 
 You can view all your Custom Actions in the Actions tab under myActions.
 
-![](<../../.gitbook/assets/image (4) (1).png>)
+![](<../../.gitbook/assets/image (4).png>)
