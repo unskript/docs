@@ -4,7 +4,7 @@ description: One of your HealthChecks has failed. Let's remediate the issue.
 
 # HealthCheck Remediation
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>A failed Check</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>A failed Check</p></figcaption></figure>
 
 Your HealthCheck has failed. Each check has a remediation RunBook that can work to resolve the issue.
 
