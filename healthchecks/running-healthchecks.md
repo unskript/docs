@@ -12,7 +12,9 @@ New boxes showing that the Checks are in Progress will appear:\
 
 Once the Checks have completed running, each check will have a status:
 
-* Passed: No action needed.![](<../.gitbook/assets/image (9).png>)
-* Failed: There is an issue.![](<../.gitbook/assets/image (5) (2).png>)
+* Passed: No action needed.
+* ![](<../.gitbook/assets/image (9).png>)
+* Failed: There is an issue.
+* ![](<../.gitbook/assets/image (5) (2).png>)
 
 If a check has failed, you will want to remediate the Check. Each failed Action has a "Click here to Fix" button.  Learn how to [remediate a Check](healthcheck-remediation.md).
