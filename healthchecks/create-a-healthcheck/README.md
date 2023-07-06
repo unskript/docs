@@ -1,10 +1,12 @@
 ---
-description: The steps required to create a Healthcheck
+description: The steps required to create a HealthCheck
 ---
 
-# Create a Healthheck
+# Create a HealthCheck
 
 A step by step guide to creating a Healthcheck.
+
+{% embed url="https://youtu.be/IKy5Tp8fbMM" %}
 
 1. From the top navigation, click "HealthCheck" to navigate to the list of created HealthChecks.
 2. A group of checks is called a Suite.  To create a HealthCheck Suite, click the "**+ Create Suite**" button. You'll be prompted to name your Suite.
@@ -18,9 +20,9 @@ A step by step guide to creating a Healthcheck.
 
 Your HealthCheck Suite is created!
 
-The next steps will be to
+The next steps will be to:
 
-* Create a Folder
-* Add Checks
-* Run a HealthCheck
+* [Create a Folder](create-a-healthcheck-folder.md)
+* [Add Checks](adding-checks.md)
+* [Run a HealthCheck](../running-healthchecks.md)
 

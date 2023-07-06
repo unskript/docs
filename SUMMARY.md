@@ -61,9 +61,9 @@
 ## Healthchecks
 
 * [What is a HealthCheck?](healthchecks/what-is-a-healthcheck.md)
-* [Create a Healthheck](healthchecks/create-a-healthheck/README.md)
-  * [Create a HealthCheck Folder](healthchecks/create-a-healthheck/create-a-healthcheck-folder.md)
-  * [Adding Checks](healthchecks/create-a-healthheck/adding-checks.md)
+* [Create a HealthCheck](healthchecks/create-a-healthcheck/README.md)
+  * [Create a HealthCheck Folder](healthchecks/create-a-healthcheck/create-a-healthcheck-folder.md)
+  * [Adding Checks](healthchecks/create-a-healthcheck/adding-checks.md)
 * [HealthCheck Parameters](healthchecks/healthcheck-parameters.md)
 * [Running HealthChecks](healthchecks/running-healthchecks.md)
 * [HealthCheck Remediation](healthchecks/healthcheck-remediation.md)
