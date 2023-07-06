@@ -68,6 +68,10 @@
 * [Running HealthChecks](healthchecks/running-healthchecks.md)
 * [HealthCheck Remediation](healthchecks/healthcheck-remediation.md)
 
+## Workflows
+
+* [What is a Workflow?](workflows/what-is-a-workflow.md)
+
 ## Connnecting
 
 * [Connectors](connnecting/connectors/README.md)
