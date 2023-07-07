@@ -14,7 +14,7 @@ You can modify the source code of a built-in Action to create your custom action
 
 > For example, Perhaps the **List all AWS IAM Users** returns a list of usernames:
 >
-> ![](<../../.gitbook/assets/image (13).png>)
+> ![](<../../.gitbook/assets/image (13) (2).png>)
 
 What if we'd like to also retrieve the Arn for each user? We can just modify the existing code:
 

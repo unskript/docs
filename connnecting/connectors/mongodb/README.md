@@ -27,7 +27,7 @@ You will need to supply either a username/password, or a public/private API keys
 #### Connect
 
 Under DEPLOYMENT, click Database\
-![](<../../../.gitbook/assets/image (4).png>)
+![](../../../.gitbook/assets/image.png)
 
 On this page, click the COnnect button, and then the Drivers:\
 \
