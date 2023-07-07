@@ -48,3 +48,16 @@ If you do not have an Access Key or a Secret Access Key, you will need to create
 | Role ARN          | ARN of the role to be assumed                                     |
 | Role Session Name | Unique identifier for the session when the above role is assumed  |
 | External ID       | A unique identifier that might be required when you assume a role |
+
+## Create an AWS Cloudwatch Webhook
+
+Your AWS Cloudwatch alerts can be used to start RunBooks or Workflows.  This requires a webhook listener in your unSkript installation. These instructions assume you have already created a credential into your Grafana instance.
+
+1. In your unSkript installation, click \*Proxies\* from the top menu. &#x20;
+2. Find the Environment where your AWS credential is stored, and open this proxy.&#x20;
+3. In your list of credentials, find your AWS credential:
+4.
+
+    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+5. In the "webhook URL" column, Click the Generate button.
+6. Copy your url/Username and password.  These will be available on this page if you need them again.
