@@ -20,7 +20,7 @@ The full list can be seen in the left navigation, and the links point to set up 
 
 Credential types vary depending on the Authentication pathways provided by the connector: API tokens, keys & secrets, JSON config files. etc.  Each Connector page has details on how to add your credentials for that platform.
 
-There may be times where there are multiple credentials to one Connector (Some xRunBooks or Actions may require different permissions, and using the [principles of least privilege](https://unskript.com/automate-the-creation-of-least-privileged-aws-security-profiles/), it may be better to have different credentials.
+There may be times where there are multiple credentials to one Connector (Some xRunBooks or Actions may require different permissions, and using the [principles of least privilege](https://unskript.com/blog/automate-the-creation-of-least-privileged-aws-security-profiles), it may be better to have different credentials.
 
 ### Credentials as a Variable
 
