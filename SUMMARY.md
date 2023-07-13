@@ -42,6 +42,7 @@
     * [Getting alerts via webhook for onprem](runbooks/xrunbooks/alarms/getting-alerts-via-webhook-for-onprem.md)
     * [Creating an Alarm](runbooks/xrunbooks/alarms/creating-an-alarm.md)
   * [Folders](runbooks/xrunbooks/folders.md)
+  * [RunBook Outputs](runbooks/xrunbooks/runbook-outputs.md)
 
 ## Actions
 

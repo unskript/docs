@@ -27,13 +27,13 @@ You will need to supply either a username/password, or a public/private API keys
 #### Connect
 
 Under DEPLOYMENT, click Database\
-![](../../../.gitbook/assets/image.png)
+![](<../../../.gitbook/assets/image (6).png>)
 
 On this page, click the COnnect button, and then the Drivers:\
 \
 ![](<../../../.gitbook/assets/image (8).png>)
 
-![](<../../../.gitbook/assets/image (1).png>)
+![](<../../../.gitbook/assets/image (1) (1).png>)
 
 This page will show you the URI to add:
 
@@ -44,7 +44,7 @@ Enter mongodb+srv://\<the URL after the @> into your credential
 #### Create Users
 
 In your dashboard, create a user by clicking "Database Access" under SECURITY.  Here you can add and remove users, and retrieve the password for your users.\
-![](<../../../.gitbook/assets/image (5).png>)
+![](<../../../.gitbook/assets/image (5) (1).png>)
 
 #### Access
 
