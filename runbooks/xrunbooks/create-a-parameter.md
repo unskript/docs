@@ -1,6 +1,6 @@
-# Create a Parameter
+# Create a RunBook Input Parameter
 
-Parameters are the input key:value pairs that must be submitted with your xRunBook in order to run. Let's walk through the steps to create a Parameter for your xRunBook.
+Parameters are the input key:value pairs that can be submitted with your xRunBook in order to run. Let's walk through the steps to create a Parameter for your xRunBook.
 
 ## Add Parameter
 
@@ -17,5 +17,14 @@ To add a parameter to your xRunBook, click the Parameters button to reveal the d
 Fill in the required information and click `CREATE`. Once created, the parameter is available to be used as a Python variable of the same name. You can use this in code for custom Actions that you create, or as arguments to the Actions you are using.
 
 {% embed url="https://youtu.be/08L2CpWGWdg" %}
-Example of adding an inpout parameter to a RunBook and Reusing it in Actions.
+Example of adding an input parameter to a RunBook and Reusing it in Actions.
 {% endembed %}
+
+## Input Types
+
+* string
+* number
+* boolean
+* array
+* object
+* secret (string obfuscated with \*)

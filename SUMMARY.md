@@ -30,7 +30,7 @@
   * [Create a xRunBook](runbooks/xrunbooks/create-a-xrunbook.md)
   * [Add an Action](runbooks/xrunbooks/add-an-action.md)
   * [Connecting Actions](runbooks/xrunbooks/connecting-actions.md)
-  * [Create a Parameter](runbooks/xrunbooks/create-a-parameter.md)
+  * [Create a RunBook Input Parameter](runbooks/xrunbooks/create-a-parameter.md)
   * [Create a Credential](runbooks/xrunbooks/create-a-credential.md)
   * [Writing Notes](runbooks/xrunbooks/writing-notes.md)
   * [Running XRunBooks](runbooks/xrunbooks/running-xrunbooks/README.md)
