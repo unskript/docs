@@ -8,6 +8,10 @@ description: >-
 
 RunBooks are able to publish output data.  The output is a JSON collection of data collected from the Actions inside your RunBook.
 
+
+
+{% embed url="https://youtu.be/1l-giACuYPI" %}
+
 ## Define Output Parameters
 
 To define your output parameters (these will be the "key" in the output JSON):
