@@ -16,7 +16,7 @@ The parameters for the folder are broken into two sections:
 
 * **Global:** Global parameters can be applied to all of the Checks in the folder.  For example, when using the AWS Connector, "**Region**" is a Global parameter.  If specified, all of the healthchecks will be run in that region.
 
-<figure><img src="../.gitbook/assets/image (12) (2).png" alt=""><figcaption><p>By specifying a region, all of the checks will be run in us-west-2.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption><p>By specifying a region, all of the checks will be run in us-west-2.</p></figcaption></figure>
 
 * Connector Specific: These parameters are specific to the Connector.  In this case, we are specifying 14 days and us-west-2.
 * ![](<../.gitbook/assets/image (10) (3).png>)

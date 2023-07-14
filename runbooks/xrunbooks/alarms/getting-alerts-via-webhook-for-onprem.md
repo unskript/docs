@@ -1,4 +1,4 @@
-# Getting alerts via webhook for onprem
+# Webhooks for onprem installations
 
 If you are using cloud based observability applications like Grafana Cloud or Datadog, we need to be able to relay the alert generated to the onprem unSkript url, which is not publicly accessible. To get around this problem, we recommend using [AWS Lambda Function URLs](https://docs.aws.amazon.com/lambda/latest/dg/lambda-urls.html).&#x20;
 

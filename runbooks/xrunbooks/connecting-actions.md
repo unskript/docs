@@ -47,6 +47,6 @@ Finally, let's send a message to Slack:
 
 This Action takes the list of doug\_users, finds the length of the list and sends a message to the "devrel\_doug\_test1" channel announcing the number of users.
 
-<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>The Slack Message</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption><p>The Slack Message</p></figcaption></figure>
 
 By naming the output of our Action, we can use that variable in subsequent Actions to manipulate the data, and complete further tasks. &#x20;
