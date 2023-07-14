@@ -10,7 +10,7 @@ The string entered in this dialogue is the name of the output variable, and will
 
 For example, this Action **AWS List All Regions** places its output in the variable region.
 
-![Action output is saved in the variable 'region'](<../../../.gitbook/assets/image (1) (2).png>)
+![Action output is saved in the variable 'region'](<../../../.gitbook/assets/image (1) (2) (2).png>)
 
 In the next Action, we can refer to the region variable to access the values. &#x20;
 

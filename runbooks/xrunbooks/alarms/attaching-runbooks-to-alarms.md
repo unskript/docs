@@ -1,27 +1,51 @@
+---
+description: >-
+  You've created an alert, and connected to an unSkript Webhook. Let's connect
+  it to a RunBook!
+---
+
 # Attaching runbooks to alarms
 
-Terminology: We will use alarms and rules interchangeably. Alert is an instantiation of an alarm.
+In order to connect an alarm to a RunBook you must have first completed the following steps:
 
-On clicking the **Generate** webhook URL (explained in the Alarms section), unSkript will fetch all the configured alarms/rules for that credential.
+1. [Create an Alarm Webhook](create-an-alarm-webhook/)
+2. Create an alert
+   1. [Create a Grafana Alert](create-a-grafana-alert.md)
+   2. Create a Cloudwatch Alert
+3. [Sync the alerts](create-an-alarm-webhook/#pull-the-alarms) into unSkript
+   1. In your Proxies tab, find the connection with your webhook, and click the "Pull Alarms" options from the 3 dot menu:\
+      ![](<../../../.gitbook/assets/image (10).png>)
+4. The Alarm must have fired at least once.  You can test the alert from [Grafana](create-a-grafana-alert.md#test-the-alarm) or Cloudwatch as a proxy.
+5. Have a RunBook in mind to connect to the alert.
 
-It will show in the **Unattached** tab on the **Events** page as shown here:
+## Attaching your Alarm to a RunBook
 
-<figure><img src="../../../.gitbook/assets/Screen Shot 2022-12-07 at 2.35.27 PM.png" alt=""><figcaption></figcaption></figure>
+1.  **Find your Alarms:** Click the Events button in the top navigation of unSkript. You'll land on the listing of alarms that are already attached to RunBooks (if this is the first alarm, the table will be empty).
 
-**Unattached** lists the alarms which we are configured, however they are not attached to any runbook.
+    <figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+2.  **Alarms not attached to RunBooks:** Since your alarms are not yet attached to a RunBook, click "unattached" on the top right of the table.  This will give you a list of all alarms that have been synced into unSkript, but do not yet have a RunBook connected. You can use the search box to filter the results.  The the screenshot below, we have filtered on the term "docs."
 
-In order to run a runbook automatically when an alert comes in, we should be able to attach which fields from the alert payload(json) map to the runbook parameters. We support[ ](https://stedolan.github.io/jq/)**jq** json processor to achieve this.
+    <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+3. **Attach your alarm:** Click the checkbox to select the alarms you'd like to connect to a RunBook, and then click the "attach RunBook" button that is above the table.
+4.  **Select your RunBook:** Select the RunBook you'd like to connect to the alarm
 
-* Allow at least 1 alert to come in corresponding to the alarm you plan to attach runbook to. This is needed so that we have the alert payload and apply jq expression to map it to the runbook parameters.
-* Once the alert count is greater than 0, we can attach a runbook to that alarm.
-* Click on the checkbox next to the alarm and click on **Attach Runbook**
-* Select the runbook you want to attach and click **Next**
-* It will show the list of parameters for that runbook. Beside each parameter, you will see a toggle as shown below:
+    <figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Screen Shot 2022-12-08 at 11.20.35 AM (1).png" alt=""><figcaption></figcaption></figure>
 
-* Note that some of the parameters can be constant too, that means they don't need to be derived from the payload. For eg, **Size** is a constant.
-* **cluster\_id** needs to be derived from the payload. You can hover over the payload and select the field (lets say you chose **state**) you want to attach to cluster\_id and click on **Attach xrunbook.**
-* Thats it!!! Now, every time an alert comes, **cluster\_id** will be the value of **state** field from the alert payload.
+5. If your alarm has fired, you will be prompted to connect the output of the alarm to the input parameters of your RunBook. &#x20;
 
-\\
+> If your alarm has not fired, you can TEST your alarm. &#x20;
+>
+> * [Send a Grafana test](create-a-grafana-alert.md#test-the-alarm)
+> * Send a Cloudwatch test
+
+6.  To connect alarm parameters to RunBook input parameters, we will use JQ commands:\
+
+
+    <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+7. In the screenshot above, the left side shows the input parameters for the RunBook (in this case "alarm\_name" and "alarm\_value."  The right side shows the 5 most recent alerts from the alarm.
+   1. Use JQ commands to select the items from the JSON to populate the RunBook inputs.
+   2. if you have never used jq, there is an autofill feature.  Type a period into the box, and a set of options will appear. &#x20;
+   3. Once you have chosen the desired path, click return, and the value will appear below the field.
+8. Click attach RunBook to connect the alert to the RunBook.
+

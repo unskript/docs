@@ -36,7 +36,7 @@ Your Grafana alerts can be used to start RunBooks or Workflows.  This requires a
 3. In your list of credentials, find your Grafana credential:
 4.
 
-    <figure><img src="../../../.gitbook/assets/image (13) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 5. In the "webhook URL" column, Click the Generate button.
 6. Copy your url/Username and password.  These will be available on this page if you need them again.
 

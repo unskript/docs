@@ -39,9 +39,9 @@
   * [xRunBook Executions](runbooks/xrunbooks/xrunbook-executions.md)
   * [Alarms](runbooks/xrunbooks/alarms/README.md)
     * [Attaching runbooks to alarms](runbooks/xrunbooks/alarms/attaching-runbooks-to-alarms.md)
-    * [Getting alerts via webhook for onprem](runbooks/xrunbooks/alarms/getting-alerts-via-webhook-for-onprem.md)
     * [Create a Grafana Alert](runbooks/xrunbooks/alarms/create-a-grafana-alert.md)
-    * [Create an Alarm Webhook](runbooks/xrunbooks/alarms/create-an-alarm-webhook.md)
+    * [Create an Alarm Webhook](runbooks/xrunbooks/alarms/create-an-alarm-webhook/README.md)
+      * [Webhooks for onprem installations](runbooks/xrunbooks/alarms/create-an-alarm-webhook/getting-alerts-via-webhook-for-onprem.md)
   * [Folders](runbooks/xrunbooks/folders.md)
   * [RunBook Outputs](runbooks/xrunbooks/runbook-outputs.md)
 

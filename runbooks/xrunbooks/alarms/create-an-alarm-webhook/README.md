@@ -16,13 +16,21 @@ unSkript currently supports webhooks for Grafana and AWS (Cloudwatch). The proce
 
 
 
-<figure><img src="../../../.gitbook/assets/image (28).png" alt="" width="563"><figcaption><p>Connections in a proxy</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (34).png" alt="" width="563"><figcaption><p>Connections in a proxy</p></figcaption></figure>
 
 3. Click Generate to create the webhook:
 
 
 
-<figure><img src="../../../.gitbook/assets/Screenshot_2023-07-14_at_12_20_18.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot_2023-07-14_at_12_20_18.jpg" alt=""><figcaption></figcaption></figure>
 
 Use these credentials to set up the alarming connection.
+
+## Pull the Alarms
+
+This step will sync the alarms you have created at Grafana and Cloudwatch to unSkript. &#x20;
+
+Just to the right of the webhook details button, click the 3 dot menu, and choose "Pull Alarms."
+
+![](<../../../../.gitbook/assets/image (1).png>)
 
