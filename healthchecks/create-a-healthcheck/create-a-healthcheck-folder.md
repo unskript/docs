@@ -12,7 +12,7 @@ Folders are a way to group checks.  Currently, the fodler types are limited by t
 
 You can now add additional folders to the HealthCheck Suite, or begin adding Checks.
 
-![](<../../.gitbook/assets/image (14).png>)
+![](<../../.gitbook/assets/image (14) (1).png>)
 
 
 

@@ -1,17 +1,26 @@
 ---
-description: How to run xRunBooks based on external events such as AWS CloudWatch alarms
+description: Execute RunBooks based on external events such as Grafana or CloudWatch alarms
 ---
 
 # Alarms
 
-xRunBooks can be triggered based on external events such as alerts. We support the following external event sources.
+If an alarm is being fired at Grafana or Cloudwatch, configure a RunBook to run when the alarm fires.&#x20;
+
+Creating a Grafana alert
+
+
+
+To automate this RunBook feature, you'll need:
+
+1. A connection to [Grafana](../../../connnecting/connectors/grafana/) or [AWS](../../../connnecting/connectors/aws/) set up.
+2. A RunBook that you would like to run when the alert is sent from the external party.
+
+
 
 * [AWS CloudWatch Alarms](./#aws-cloudwatch-alarms)
 * [Grafana Alarms](./#grafana-alarms-webhook)
 
 
-
-To enable alarms, you must frist create
 
 
 

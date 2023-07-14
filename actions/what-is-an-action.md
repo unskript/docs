@@ -17,4 +17,4 @@ unSkript comes with hundreds of [Prebuilt Actions](action-list.md) that are read
   * Simplify a data output to a different format.
   * Chart results
   * Build interactive selections
-  * ![Adding a Glue Action](<../.gitbook/assets/image (19).png>)
+  * ![Adding a Glue Action](<../.gitbook/assets/image (19) (1).png>)
