@@ -50,4 +50,4 @@ In your dashboard, create a user by clicking "Database Access" under SECURITY.  
 
 Finally, enter the NAT Gateway for your unSkript installation in the Network Access section, so that unSkript is allowed to connect to Atlas.
 
-![](<../../../.gitbook/assets/image (7).png>)
+![](<../../../.gitbook/assets/image (7) (2).png>)

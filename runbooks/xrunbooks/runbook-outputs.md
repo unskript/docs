@@ -34,7 +34,7 @@ In this example, the output will have the name 'iam\_users', and will be a list.
 
 Each Action has an Output section:
 
-![](<../../.gitbook/assets/image (1) (2).png>)
+![](<../../.gitbook/assets/image (1) (3).png>)
 
 To add the output from this action to the RunBook output, select the "RunBook Output" checkbox.
 

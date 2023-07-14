@@ -10,7 +10,7 @@ description: >-
 
 By Placing your cursor over the folder, a settings gear will appear.  Clicking this will open the folder configurations:
 
-![](<../.gitbook/assets/image (20).png>)
+![](<../.gitbook/assets/image (20) (1).png>)
 
 The parameters for the folder are broken into two sections:
 
@@ -19,6 +19,6 @@ The parameters for the folder are broken into two sections:
 <figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption><p>By specifying a region, all of the checks will be run in us-west-2.</p></figcaption></figure>
 
 * Connector Specific: These parameters are specific to the Connector.  In this case, we are specifying 14 days and us-west-2.
-* ![](<../.gitbook/assets/image (10) (3).png>)
+* ![](<../.gitbook/assets/image (10) (1).png>)
 * Connector parameters override global. &#x20;
   * If the global "Region" is set to "us-west-2", but a check's region is set to "eu-west-1" the check's value will be used.

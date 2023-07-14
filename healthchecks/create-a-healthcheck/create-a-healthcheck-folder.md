@@ -6,13 +6,13 @@ Folders are a way to group checks.  Currently, the fodler types are limited by t
 
 1. Add folder.  Inside the Suite, there is a "+ Add Folder" button.  Click this button to begin the process.
 2. Name your Folder and choose the connectivity for the folder. Click "Add Folder."![](<../../.gitbook/assets/image (15) (1).png>)
-3. Your new Folder will appear on the screen.![](<../../.gitbook/assets/image (21).png>)
+3. Your new Folder will appear on the screen.![](<../../.gitbook/assets/image (21) (1).png>)
 
 
 
 You can now add additional folders to the HealthCheck Suite, or begin adding Checks.
 
-![](<../../.gitbook/assets/image (14) (1).png>)
+![](<../../.gitbook/assets/image (14).png>)
 
 
 
