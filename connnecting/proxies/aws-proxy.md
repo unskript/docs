@@ -6,6 +6,14 @@ description: Instructions on how to create an unSkript proxy in your AWS Cloud
 
 Since much of your infrastructure may be behind an AWS firewall, and not accessible to the public internet, installing an unSkript proxy in your AWS account will allow unSkript RunBooks the ability to connect with your systems.
 
+
+
+### Requirements
+
+* Since the proxy doesnt get a public IP and it should be able to reach internet, it should be deployed in a VPC where there is a NAT gateway.
+* It should be deployed in a private subnet, as the default route in those subnets points to NAT gateway.
+* If you want a single proxy to access multiple VPCs, ensure that you install in a VPC, which has access to the other VPCs (hub and spoke topology)&#x20;
+
 ### Creating the Proxy
 
 Ensure that you have admin rights to your AWS account.
