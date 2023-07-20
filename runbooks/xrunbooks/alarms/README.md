@@ -6,47 +6,41 @@ description: Execute RunBooks based on external events such as Grafana or CloudW
 
 If an alarm is being fired at Grafana or Cloudwatch, configure a RunBook to run when the alarm fires.&#x20;
 
-Creating a Grafana alert
-
 
 
 To automate this RunBook feature, you'll need:
 
-1. A connection to [Grafana](../../../connnecting/connectors/grafana/) or [AWS](../../../connnecting/connectors/aws/) set up.
-2. A RunBook that you would like to run when the alert is sent from the external party.
-
-
+1. A connection to [Grafana](../../../connnecting/connectors/grafana/) or [AWS](../../../connnecting/connectors/aws/).
+   1. A [webhook](create-an-alarm-webhook/) added to your connection.
+2. An alarm set at Cloudwatch or Grafana, configured to send alerts to the webhook:
 
 * [AWS CloudWatch Alarms](./#aws-cloudwatch-alarms)
 * [Grafana Alarms](./#grafana-alarms-webhook)
 
+3. A RunBook that you would like to run when the alert is sent from the external party.
 
 
 
-
-### AWS CloudWatch Alarms
-
-
-
-### Grafana Alarms
-
-unSkript can be attached to Grafana alarms using WebHooks. Here is the sequence of steps to perform to enable the notifications to flow from Grafana into unSkript.
+Once the alarm is created, we [pull the alarms](create-an-alarm-webhook/#pull-the-alarms) into unSkript.  We can then[ attach the alarm to your RunBook](attaching-runbooks-to-alarms.md).
 
 
 
-Use the [Add credentials](../../../guides/getting-started/add-credentials-to-connect-your-resources.md) workflow to add the Grafana credential. If this was already added, then a Generate button shows up automatically in credential listing screen in front of Grafana.
+When the alarm fires at Grafana or Cloudwatch, the webhook will receive the message, and initiate the execution of your RunBook.
 
 
 
-<figure><img src="../../../.gitbook/assets/Screen Shot 2022-09-26 at 1.56.40 PM.png" alt=""><figcaption></figcaption></figure>
+## Using Alarms
 
-On clicking the Generate button, the system will display a Webhook URL which can be copied into clipboard by using the icon. Go to the Grafana console, and click Alerting > Contact Points
+#### Auto-remediate:&#x20;
 
-<figure><img src="../../../.gitbook/assets/Screen Shot 2022-09-26 at 2.13.41 PM.png" alt=""><figcaption></figcaption></figure>
+* Create a RunBook that can automatically remediate the issue. &#x20;
+* Once the issue is remediated, send an alert to the team, and ensure that the alarms are no longer firing.
 
-Click New Contact Point and fill in the required details. Use contact point type as Webhook and fill in the URL from the clipboard. Exit configuration dialogue by hitting Save button.
+#### Diagnose:&#x20;
 
-<figure><img src="../../../.gitbook/assets/Screen Shot 2022-09-26 at 1.59.38 PM.png" alt=""><figcaption></figcaption></figure>
+* Initiate RunBooks to diagnose the alarm.  With diagnostic information provided immedaitely after the alert sounds, the team will have a better idea of how to resolve the problem.
 
-Use the notification policies to attach the unSkript notification to appropriate events.
+
+
+###
 
