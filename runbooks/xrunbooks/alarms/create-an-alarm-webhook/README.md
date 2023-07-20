@@ -1,8 +1,7 @@
 ---
 description: >-
-  Creating an unSkript webhook allows your alerting systems to securely report
-  alarms to unSkript.  In this tutorial, we'll walk through the steps to create
-  a webhook.
+  unSkript webhook in order to connect your alerting systems to securely with
+  unSkript.  In this tutorial, we'll walk through the steps to create a webhook.
 ---
 
 # Create an Alarm Webhook
