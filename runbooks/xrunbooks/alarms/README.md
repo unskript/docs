@@ -29,6 +29,8 @@ When the alarm fires at Grafana or Cloudwatch, the webhook will receive the mess
 
 
 
+{% embed url="https://youtu.be/kfsW7pHRqXc" %}
+
 ## Using Alarms
 
 #### Auto-remediate:&#x20;

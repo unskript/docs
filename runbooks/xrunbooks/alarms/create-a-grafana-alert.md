@@ -19,6 +19,10 @@ The high level steps for creating a Grafana alert:
 4. [Test the Alarm](create-a-grafana-alert.md#test-the-alarm)
    1. Sent test data to unSkript.
 
+
+
+{% embed url="https://youtu.be/kfsW7pHRqXc" %}
+
 Each of these high level steps are described in greater detail in this page:
 
 ## Creating Grafana Rule
