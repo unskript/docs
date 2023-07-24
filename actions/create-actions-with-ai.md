@@ -34,10 +34,14 @@ docker run -it -p 8888:8888 \
 If you do not include the OPENAI\_ORGANIZATION\_ID or OPENAI\_API\_KEY, unSkript will run with all the features and tools, except the ChatGPT GenAI tool.
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="SAAS/Online" %}
+In the online version of unSkript, choose More->Settings from the top navigation.&#x20;
 
+Under Integrations, add your organization and API key.
 {% endtab %}
 {% endtabs %}
+
+
 
 ## Creating an Action with ChatGPT
 
