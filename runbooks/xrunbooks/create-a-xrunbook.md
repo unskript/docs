@@ -35,5 +35,5 @@ If you have an existing Jupyter Notebook:
 Now that you have created the RunBook, we can begin filling in the pieces.
 
 * [Input Parameters](create-a-parameter.md): These are the values that seed the RunBook.  AWS RunBooks may need a Region to operate correctly.  Your K8s RunBook may need a Pod.  Or specify how may days of logs to pull.  These can all be defined programmatically with input parameters.
-* [Add An Action](add-an-action.md): Actions are the stepwise programatic steps of a RunBook.  There are hundreds of [prebuilt actions](../../actions/action-list.md) ready to be dropped into your RunBook.  Or [create your own Action](../../actions/create-custom-actions.md)!
+* [Add An Action](add-an-action.md): Actions are the stepwise programatic steps of a RunBook.  There are hundreds of [prebuilt actions](../../actions/action-list.md) ready to be dropped into your RunBook.  Or [create your own Action](../../actions/actions/create-custom-actions.md)!
 * [Schedule](schedules.md): Schedule your RunBook for regular processing.

@@ -48,9 +48,10 @@ A new text box will appear.  Add the output parameter you wish to connect your A
 
 Glue Actions are Python code without a connector.  You can add output parmeters from glue actions with the following command:
 
-```python
-w.set_output("<output_parameter>", "<variable_to_output>")
-```
+<pre class="language-python"><code class="lang-python"><strong>#place the value you wish to output into a variable
+</strong><strong>variable = "foo"
+</strong><strong>w.set_output("&#x3C;output_parameter>", "variable")
+</strong></code></pre>
 
 For example, If we wanted to output a random IAM user, we could use the following glue Action
 

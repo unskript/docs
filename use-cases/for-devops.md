@@ -8,7 +8,7 @@ Collaborative automation for your Cloud.
 
 * Get started in minutes with our [Pre-Built RunBooks for DevOps Teams](broken-reference).
 * Build your own bespoke RunBooks with our Drag and Drop interface and [Pre-built Actions](broken-reference).
-* [Create Actions](../actions/create-custom-actions.md) with Python with easy [connectivity to dozens of Could services](../connnecting/connectors/).
+* [Create Actions](../actions/actions/create-custom-actions.md) with Python with easy [connectivity to dozens of Could services](../connnecting/connectors/).
 
 ### **With unSkript:**
 

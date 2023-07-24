@@ -10,7 +10,7 @@ description: Expand the functionality of your xRunBook with additional Actions
 The screenshots below are from the Sandbox/SAAS, but addition a built in Action with the Open Source Docker works the same way.
 {% endhint %}
 
-To get started quickly, we'll use one of the built-in unSkript Actions to create your xRunBook (you can write your own [Actions](../../actions/create-custom-actions.md)). From within the xRunBook editor interface, use the search bar on the right to search the available actions.
+To get started quickly, we'll use one of the built-in unSkript Actions to create your xRunBook (you can write your own [Actions](../../actions/actions/create-custom-actions.md)). From within the xRunBook editor interface, use the search bar on the right to search the available actions.
 
 ![Searching for mongo returns all relevant results](<../../.gitbook/assets/Screenshot 2022-08-02 at 10.50.00 PM.png>)
 
@@ -30,5 +30,5 @@ Name the Action and configure it as per your workflow process.&#x20;
 
 ![](<../../.gitbook/assets/Screenshot 2022-08-02 at 10.48.08 PM.png>)
 
-Read more on [Custom Actions](../../actions/create-custom-actions.md) on our dedicated page.
+Read more on [Custom Actions](../../actions/actions/create-custom-actions.md) on our dedicated page.
 

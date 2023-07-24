@@ -2,7 +2,7 @@
 
 While unSkript offers many Actions for your xRunBooks, it's probable that you'll want to create your own, or perhaps modify an existing Action for your specific needs.
 
-For this, you can create a custom Action.
+For this, you can create a custom Action.  You can also create actions with ChatGPT using our [Action GenAI](../create-actions-with-ai.md) feature.
 
 {% embed url="https://youtu.be/gorMpBJVFxU" %}
 

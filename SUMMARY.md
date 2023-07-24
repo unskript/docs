@@ -48,7 +48,8 @@
 ## Actions
 
 * [What is an Action?](actions/what-is-an-action.md)
-* [Create Custom Actions](actions/create-custom-actions.md)
+* [Create Custom Actions](actions/actions/create-custom-actions.md)
+* [Create Actions with AI](actions/create-actions-with-ai.md)
 * [Actions](actions/actions/README.md)
   * [Action Configuration](actions/actions/action-configuration/README.md)
     * [Configure Action Inputs](actions/actions/action-configuration/configure-action-inputs.md)
