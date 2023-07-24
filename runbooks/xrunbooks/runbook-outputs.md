@@ -38,7 +38,7 @@ Each Action has an Output section:
 
 To add the output from this action to the RunBook output, select the "RunBook Output" checkbox.
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (2) (3).png>)
 
 A new text box will appear.  Add the output parameter you wish to connect your Action output to.  In this case, we are connecting the output from "AWS List all IAM Users" to the "iam\_users" output.
 
@@ -66,7 +66,7 @@ w.set_output("random_user", "user")
 
 This code reads in the list of IAM users, and randomly selects one of them.  The last two lines add RunBook outputs - "random\_number" and "random\_user".  For this to run successfully, both of these must be added as output parameters:
 
-![](<../../.gitbook/assets/image (4).png>)
+![](<../../.gitbook/assets/image (4) (2).png>)
 
 
 

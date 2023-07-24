@@ -45,6 +45,23 @@ Under Integrations, add your organization and API key.
 
 ## Creating an Action with ChatGPT
 
+In an open RunBook, Click the **+ Add GenAI Action**.  This will add a new Action in your RunBook.
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>A new GenAI Action</p></figcaption></figure>
+
+In addition to the Configurations and Run Action buttons, there is a new Chat GenAI button.  When this button is clicked, a new interface opens in thr right column of the dashboard:
+
+![](<../.gitbook/assets/image (2).png>)
+
+At the top of this Navigation are two selections:&#x20;
+
+* Action Type: This specifies the Connector to be used in your Action
+* HealthCheck Action: When checked, the Action will be built as a HealthCheck Action.  The output will be a Tuple, first value is Boolean (pass/fail) and the 2nd value is the result.
+
+At the bottom of the Navigation is the chat box where we described the Action that is being built.
+
+
+
 ## Testing your Action
 
 
