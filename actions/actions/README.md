@@ -12,7 +12,7 @@ description: >-
 
 These Actions are open source and ready to be integrated into your RunBooks. In your RunBook, search for the Action you wish to use, and then drag and drop it into your RunBook.  A few configuration steps, and the Action is ready to go!
 
-## [Custom Actions](create-custom-actions.md)
+## [Custom Actions](../create-custom-actions.md)
 
 Create your own Actions! &#x20;
 
