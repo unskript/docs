@@ -47,11 +47,11 @@ Under Integrations, add your organization and API key.
 
 In an open RunBook, Click the **+ Add GenAI Action**.  This will add a new Action in your RunBook.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>A new GenAI Action</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption><p>A new GenAI Action</p></figcaption></figure>
 
 In addition to the Configurations and Run Action buttons, there is a new Chat GenAI button.  When this button is clicked, a new interface opens in thr right column of the dashboard:
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (5).png>)
 
 At the top of this Navigation are two selections:&#x20;
 
@@ -61,6 +61,28 @@ At the top of this Navigation are two selections:&#x20;
 At the bottom of the Navigation is the chat box where we described the Action that is being built.
 
 
+
+### Creating an Action
+
+* Type a complete sentence or two of what you would like your Action to do. &#x20;
+* Describe any input parameters, whether or not they are required or not, and their initial values.
+
+> Example: for an AWS Action, you could say _"list all the S3 buckets that are in region, where region is a required parameter."_  Chat GPT will take this input and generate the Python code to complete this action.  When the code has been created, open the Configurations tab, and add an AWS credential and a region. Upon execution, the Action will return a list of Buckets in the region:
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Results from </p></figcaption></figure>
+
+
+
+### Modifying your Action&#x20;
+
+The code generated may do exactly what you need.  However, you may wish to add another input parameter, or slightly change the output of the Action.  For example, we could make two modifications to the Action above with the following prompt:
+
+> "Return each bucket as a dict with the bucket name and the created date. Add a filter input that returns buckets with that string in the name."
+
+This returns an Action with 2 inputs - Region and Filter.  On running this Action we can get all Buckets with 'unskript' in the name:\
+
+
+<figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
 ## Testing your Action
 

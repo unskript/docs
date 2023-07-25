@@ -20,7 +20,7 @@ To define your output parameters (these will be the "key" in the output JSON):
 2. Choose the submenu "Output."
 3. Select "Add Input Parameter."
 
-![the Output parameter menu](<../../.gitbook/assets/image (5).png>)
+![the Output parameter menu](<../../.gitbook/assets/image (5) (3).png>)
 
 
 
@@ -38,7 +38,7 @@ Each Action has an Output section:
 
 To add the output from this action to the RunBook output, select the "RunBook Output" checkbox.
 
-![](<../../.gitbook/assets/image (2) (3).png>)
+![](<../../.gitbook/assets/image (2) (1).png>)
 
 A new text box will appear.  Add the output parameter you wish to connect your Action output to.  In this case, we are connecting the output from "AWS List all IAM Users" to the "iam\_users" output.
 
