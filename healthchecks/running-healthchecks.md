@@ -13,7 +13,7 @@ New boxes showing that the Checks are in Progress will appear:\
 Once the Checks have completed running, each check will have a status:
 
 * Passed: No action needed.
-* ![](<../.gitbook/assets/image (9).png>)
+* ![](<../.gitbook/assets/image (9) (2).png>)
 * Failed: There is an issue.
 * ![](<../.gitbook/assets/image (5) (2).png>)
 

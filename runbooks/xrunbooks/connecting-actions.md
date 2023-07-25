@@ -31,7 +31,7 @@ Next, we'll configure this action with credentials (to access our AWS account). 
 
 When we run this Action, the list of users will be saved in the List `users`.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>A partial listing of the users in the list.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>A partial listing of the users in the list.</p></figcaption></figure>
 
 We can now use the data in `users` to build on our RunBook.
 
@@ -43,7 +43,7 @@ This code loops through all of the users, and creates another list of the users 
 
 Finally, let's send a message to Slack:
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption><p>Slack Configuration</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption><p>Slack Configuration</p></figcaption></figure>
 
 This Action takes the list of doug\_users, finds the length of the list and sends a message to the "devrel\_doug\_test1" channel announcing the number of users.
 
