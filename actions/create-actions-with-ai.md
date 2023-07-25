@@ -26,12 +26,15 @@ docker run -it -p 8888:8888 \
  -e ACA_AWESOME_MODE=1 \
  -e OPENAI_ORGANIZATION_ID=<your openAI org> \
  -e OPENAI_API_KEY=<your API key> \
+ -e OPENAI_MODEL=GPT-4 \
  --user root \
  docker.io/unskript/awesome-runbooks:1221
 
 ```
 
-If you do not include the OPENAI\_ORGANIZATION\_ID or OPENAI\_API\_KEY, unSkript will run with all the features and tools, except the ChatGPT GenAI tool.
+If you do not include the OPENAI\_ORGANIZATION\_ID or OPENAI\_API\_KEY, unSkript will run with all the features and tools, except the ChatGPT GenAI tool. &#x20;
+
+The default model is GPT-4.  You can find the latest models at [OpenAI](https://platform.openai.com/docs/models/overview).
 {% endtab %}
 
 {% tab title="SAAS/Online" %}
