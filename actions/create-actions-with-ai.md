@@ -6,7 +6,7 @@ description: Use ChatGPT's generative AI to quickly build Actions
 
 If you require an acton that is not yet included in unSkript, you can create your own.  The quickest way to go from Zero to Action is to use ChatGPT's generative AI to create an Action.
 
-
+{% embed url="https://youtu.be/GmxjYQBJxkQ" %}
 
 ## Adding your ChatGPT API Key
 
