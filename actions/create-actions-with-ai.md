@@ -91,9 +91,14 @@ This returns an Action with 2 inputs - Region and Filter.  On running this Actio
 
 ChatGPT is not perfect, and yur Action may not do exactly what you expected.  This is why testing your Action is very important.
 
+{% embed url="https://www.youtube.com/watch?v=QMfR1UIEUJ8" %}
+Resolving Common issues
+{% endembed %}
+
 Common errors:
 
 * AWS: ChatGPT often misses that a query requires a region\_name parameter.  If you know that your AWS query is region specific, include region details in your prompt.
+* Syntax errors: These can often be resolved by feeding the error into the chat.
 * F Strings: ChatGPT can try some elegant things, but sometimes generates code that reuse the same quote, breaking the f statement:
 
 > `print(f' - {dashboard['title']}')`
