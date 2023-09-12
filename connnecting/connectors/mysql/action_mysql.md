@@ -1,7 +1,6 @@
 # MySQL Actions
-
-* [MySQl Get Long Running Queries](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/MySQL/legos/mysql\_get\_long\_run\_queries/README.md): MySQl Get Long Running Queries
-* [MySQl Kill Query](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/MySQL/legos/mysql\_kill\_query/README.md): MySQl Kill Query
-* [Run MySQL Query](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/MySQL/legos/mysql\_read\_query/README.md): Run MySQL Query
-* [Create a MySQL Query](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/MySQL/legos/mysql\_write\_query/README.md): Create a MySQL Query
-* [Netbox Get Handle](https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/Netbox/legos/netbox\_get\_handle/README.md): Get Netbox Handle
+* [Create a MySQL Query](https://github.com/unskript/Awesome-CloudOps-Automation/MySQL/legos/mysql_write_query/README.md) : Create a MySQL Query
+* [Get MySQL Handle](https://github.com/unskript/Awesome-CloudOps-Automation/MySQL/legos/mysql_get_handle/README.md) : Get MySQL Handle
+* [MySQl Get Long Running Queries](https://github.com/unskript/Awesome-CloudOps-Automation/MySQL/legos/mysql_get_long_run_queries/README.md) : MySQl Get Long Running Queries
+* [MySQl Kill Query](https://github.com/unskript/Awesome-CloudOps-Automation/MySQL/legos/mysql_kill_query/README.md) : MySQl Kill Query
+* [Run MySQL Query](https://github.com/unskript/Awesome-CloudOps-Automation/MySQL/legos/mysql_read_query/README.md) : Run MySQL Query

@@ -2,7 +2,7 @@
 
 ### [Listing of all AWS XRunBooks](broken-reference)
 
-### [Listing of all AWS Actions](action\_aws/)
+### [Listing of all AWS Actions](action_aws.md)
 
 ### Authentication
 
