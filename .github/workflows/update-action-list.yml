@@ -20,4 +20,5 @@ jobs:
           cd /tmp
           git clone https://github.com/unskript/Awesome-CloudOps-Automation
           popd
+          cd $HOME/docs
           /usr/bin/env python3 .github/scripts/update-action-list.py
