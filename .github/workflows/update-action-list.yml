@@ -13,6 +13,8 @@ jobs:
     strategy:
       fail-fast: true
     steps:
+      - uses: actions/checkout@v3
+
       - name: "Checkout Awesome Repo"
         run: |
           sudo apt install -y git build-essential
