@@ -12,10 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: true
-    run:
-      sudo apt install -y git build-essential
-      pushd .
-      cd /tmp
-      git clone https://github.com/unskript/Awesome-CloudOps-Automation
-      popd
-      /usr/bin/env python3 .github/scripts/update-action-list.py
+    steps:
+      - name: "Checkout Awesome Repo"
+        run: |
+          sudo apt install -y git build-essential
+          pushd .
+          cd /tmp
+          git clone https://github.com/unskript/Awesome-CloudOps-Automation
+          popd
+          /usr/bin/env python3 .github/scripts/update-action-list.py
