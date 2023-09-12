@@ -1,0 +1,48 @@
+name: Update Action List
+
+on: 
+  workflow_call:
+    inputs:
+      enabled:
+        required: true
+        type: boolean
+
+  workflow_dispatch:
+    inputs:
+      enabled:
+        description: 'Workflow enable flag'
+        required: true
+        default: false
+        type: boolean
+
+concurrency: 
+  group: ${{ github.ref }}-1
+  cancel-in-progress: true
+
+jobs:
+  update-action-list:
+    runs-on: ubuntu-latest
+    if: ${{ inputs.enabled }}
+    strategy:
+      fail-fast: true
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: "Checkout Awesome Repo"
+        run: |
+          sudo apt install -y git build-essential
+          pushd .
+          cd /tmp
+          git clone https://github.com/unskript/Awesome-CloudOps-Automation
+          popd
+          cd `git rev-parse --show-toplevel`/.github/scripts
+          /usr/bin/env python3 ./update-action-list.py
+      
+      - name: Commit Updated Action list
+        run: |
+          git config --global user.name 'runner@github.com'
+          git config --global user.email 'runner@github.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git checkout "${GITHUB_REF:11}"
+          git commit -am "Commiting Changed Action list"
+          git push
