@@ -1,5 +1,5 @@
 ---
-description: Open, Intelligent, Interactive CloudOps Automation
+description: 'Your SRE Co-Pilot: Find, Prioritize and Fix Production Issues'
 ---
 
 # What is unSkript?
