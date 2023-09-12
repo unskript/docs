@@ -22,5 +22,5 @@ jobs:
           cd /tmp
           git clone https://github.com/unskript/Awesome-CloudOps-Automation
           popd
-          cd `git rev-parse --show-toplevel`
-          /usr/bin/env python3 .github/scripts/update-action-list.py
+          cd `git rev-parse --show-toplevel`/.github/scripts
+          /usr/bin/env python3 ./update-action-list.py
