@@ -20,7 +20,7 @@ description: 'Your SRE Co-Pilot: Find, Prioritize and Fix Production Issues'
 
 ### Using unSkript
 
-unSkript allows you to effortlessly convert existing scripts, API calls, SQL queries (and more!) into shared, executable xRunBooks using pre-built (and customizable) Actions. Combine Actions into interconnected steps in a RunBook, and use the RunBooks to increase observability, monitor cloud costs, remediate issues and more!
+unSkript allows you to effortlessly convert existing scripts, API calls, SQL queries (and more!) into automated health checks and executable remediations using pre-built (and customizable) code blocks called [Checks](broken-reference) and  [Actions](actions/actions/). Combine Checks to form a [Suite](healthchecks/create-a-healthcheck/create-a-healthcheck-folder.md) and Actions into interconnected steps in a [Remediation RunBook](broken-reference), and use the combination to increase resolve issue quickly, monitor cloud costs, and more!
 
 unSkript xRunBooks are built in Python, and run on top of Jupyter Notebooks. With hundreds of drag & drop Actions, sometimes there is no coding required to build your automation. The unSkript framework provides teams unparalleled flexibility and usability to automate DevOps workflows. Built on top of open source - we are building an open ecosystem of Actions and xRunBooks to better serve every person in the DevOps community.
 

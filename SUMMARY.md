@@ -1,7 +1,6 @@
 # Table of contents
 
 * [What is unSkript?](README.md)
-  * [What is a RunBook?](readme/what-is-a-runbook.md)
 
 ## Guides
 
