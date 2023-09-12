@@ -4,7 +4,7 @@
 
 |                                                                        |                                                                          |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| [AWS](../connnecting/connectors/aws/action\_aws/)                      | [Airflow](../connnecting/connectors/airflow/action\_airflow.md)          |
+| [AWS](../connnecting/connectors/aws/action\_aws.md)                      | [Airflow](../connnecting/connectors/airflow/action\_airflow.md)          |
 | [ChatGPT](../lists/action\_CHATGPT.md)                                 | [Datadog](../connnecting/connectors/datadog/action\_datadog/)            |
 | [GCP](../connnecting/connectors/gcp/action\_gcp/)                      | [Github](../connnecting/connectors/github/action\_github.md)             |
 | [Hadoop](../connnecting/connectors/hadoop/action\_hadoop.md)           | [Jenkins](../connnecting/connectors/jenkins/action\_jenkins.md)          |
