@@ -107,7 +107,18 @@ def main(repo_path: str):
     local_action_base_dir = "../../connnecting/connectors/"
     for local_dir,connector in readme_to_connector_map.items():
         print(f"Processing {local_dir} for {connector}")
-        update_readme(local_action_base_dir + local_dir + f'/action_{connector.lower()}.md',
+        readme_file_name = local_action_base_dir + local_dir + f'/action_{connector.lower()}.md'
+        # The Document organization is little different for AWS, GCP and Datadog
+        if local_dir == 'aws':
+            readme_file_name = local_action_base_dir + local_dir + '/action_aws/README.md'
+        elif local_dir == "datadog":
+            readme_file_name = local_action_base_dir + local_dir + '/action_datadog/README.md'
+        elif local_dir == "gcp":
+            readme_file_name = local_action_base_dir + local_dir + '/action_gcp/README.md'
+        elif local_dir == "kubernetes":
+            readme_file_name = local_action_base_dir + local_dir + '/action_k8s.md'
+
+        update_readme(readme_file_name,
                       connector,
                       create_action_and_readme_list(os.path.join(repo_path, connector, "legos")))
 
