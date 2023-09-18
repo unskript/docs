@@ -1,6 +1,6 @@
 # Snowflake
 
-### [List of Snowflake Actions](action\_snowflake.md)
+### [List of Snowflake Actions](action\_snowflake/)
 
 ### Authentication
 

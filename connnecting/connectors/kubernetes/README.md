@@ -2,7 +2,7 @@
 
 ### [List of K8s xRunBooks](broken-reference)
 
-### [List of K8s Actions](broken-reference)
+### [List of K8s Actions](action\_kubernetes/)
 
 ### Authentication
 

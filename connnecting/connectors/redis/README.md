@@ -1,6 +1,6 @@
 # Redis
 
-### [List of Redis Actions](action\_redis.md)
+### [List of Redis Actions](action\_redis/)
 
 ### Authentication
 

@@ -107,7 +107,12 @@ def main(repo_path: str):
     local_action_base_dir = "../../connnecting/connectors/"
     for local_dir,connector in readme_to_connector_map.items():
         print(f"Processing {local_dir} for {connector}")
-        update_readme(local_action_base_dir + local_dir + f'/action_{connector.lower()}.md',
+        connector_action_dir = local_action_base_dir + local_dir + f'/action_{connector.lower()}'
+        if os.path.exists(connector_action_dir) == False:
+            print(f"Creating {connector_action_dir}...")
+            os.makedirs(connector_action_dir)
+        readme_file_name = connector_action_dir + f'/README.md'
+        update_readme(readme_file_name,
                       connector,
                       create_action_and_readme_list(os.path.join(repo_path, connector, "legos")))
 

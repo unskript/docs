@@ -4,18 +4,22 @@
 
 |                                                                        |                                                                          |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| [AWS](../connnecting/connectors/aws/action\_aws)                       | [Airflow](../connnecting/connectors/airflow/action\_airflow.md)          |
-| [ChatGPT](../lists/action\_CHATGPT.md)                                 | [Datadog](../connnecting/connectors/datadog/action\_datadog/)            |
+| [AWS](../connnecting/connectors/aws/action\_aws/)                      | [Airflow](../connnecting/connectors/airflow/action\_airflow/)        |
+| [Azure](../connnecting/connectors/azure/action\_azure/)                | [ChatGPT](../lists/action\_CHATGPT.md) |
+| [Datadog](../connnecting/connectors/datadog/action\_datadog/)          | [ElasticSearch](../connnecting/connectors/airflow/action\_elasticsearch/) |
 | [GCP](../connnecting/connectors/gcp/action\_gcp/)                      | [Github](../connnecting/connectors/github/action\_github.md)             |
-| [Hadoop](../connnecting/connectors/hadoop/action\_hadoop.md)           | [Jenkins](../connnecting/connectors/jenkins/action\_jenkins.md)          |
-| [Kafka](../connnecting/connectors/apache-kafka/action\_kafka.md)       | [Kubernetes](../connnecting/connectors/kubernetes/action\_k8s.md)        |
-| [Mongo](../connnecting/connectors/mongodb/action\_mongodb.md)          | [MsSQL](../connnecting/connectors/ms-sql/action\_mssql.md)               |
-| [Netbox](../connnecting/connectors/netbox/action\_netbox.md)           | [Nomad](../connnecting/connectors/nomad/action\_nomad.md)                |
-| [Postgresql](../connnecting/connectors/postgres/action\_postgresql.md) | [Prometheus](../connnecting/connectors/prometheus/action\_prometheus.md) |
-| [Rest](../connnecting/connectors/rest/action\_rest.md)                 | [SSH](../connnecting/connectors/ssh/action\_ssh.md)                      |
-| [Slack](../connnecting/connectors/slack/action\_slack.md)              | [Snowflake](../connnecting/connectors/snowflake/action\_snowflake.md)    |
-| [Stripe](../connnecting/connectors/stripe/action\_stripe.md)           | [Terraform](../connnecting/connectors/terraform/action\_terraform.md)    |
-| [infra](../lists/action\_INFRA.md)                                     | [opensearch](../connnecting/connectors/opensearch/action\_opensearch.md) |
+| [Grafana](../connnecting/connectors/grafana/action\_grafana/)          | [Hadoop](../connnecting/connectors/hadoop/action\_hadoop/)  |
+| [Jenkins](../connnecting/connectors/jenkins/action\_jenkins/)          | [Jira](../connnecting/connectors/jenkins/action\_jira/) |
+| [Kafka](../connnecting/connectors/apache-kafka/action\_kafka/)         | [Kubernetes](../connnecting/connectors/kubernetes/action\_k8s/)        |
+| [Mongo](../connnecting/connectors/mongodb/action\_mongodb/)            | [MsSQL](../connnecting/connectors/ms-sql/action\_mssql/)               |
+| [MySQL](../connnecting/connectors/mysql/action\_mysql/)                | [Netbox](../connnecting/connectors/netbox/action\_netbox/) |
+| [Nomad](../connnecting/connectors/nomad/action\_nomad/)                | [Opensearch](../connnecting/connectors/opensearch/action\_opensearch/) |
+| [Pingdom](../connnecting/connectors/pingdom/action\_pingdom/)          | [[Postgresql](../connnecting/connectors/postgres/action\_postgresql/)  |
+| [Prometheus](../connnecting/connectors/prometheus/action\_prometheus/) | [Redis](../connnecting/connectors/redis/action\_redis/)  |
+| [Rest](../connnecting/connectors/rest/action\_rest/)                   | [Salesforce](../connnecting/connectors/salesforce/action\_salesforce/) |
+| [Splunk](../connnecting/connectors/splunk/action\_splunk/)             | [SSH](../connnecting/connectors/ssh/action\_ssh/)                      |
+| [Slack](../connnecting/connectors/slack/action\_slack/)                | [Snowflake](../connnecting/connectors/snowflake/action\_snowflake/)    |
+| [Stripe](../connnecting/connectors/stripe/action\_stripe/)             | [Terraform](../connnecting/connectors/terraform/action\_terraform/)    |
 
 ## Actions By Category:
 

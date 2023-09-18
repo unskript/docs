@@ -1,6 +1,6 @@
 # Kafka
 
-### [Listing of all Kafka Actions](action\_kafka.md)
+### [Listing of all Kafka Actions](action\_kafka/)
 
 ### Authentication
 

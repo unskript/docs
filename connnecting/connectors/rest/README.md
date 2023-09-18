@@ -1,6 +1,6 @@
 # REST
 
-### [List of REST Actions](action\_rest.md)
+### [List of REST Actions](action\_rest/)
 
 ### Authentication with REST
 

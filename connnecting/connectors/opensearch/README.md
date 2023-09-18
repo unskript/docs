@@ -1,5 +1,8 @@
 # OpenSearch
 
+### [Listing of all OpenSearch Actions](action\_opensearch/)
+
+
 ### Authentication Steps:
 
 ![Information needed to onboard Opensearch connector](<../../../.gitbook/assets/Screen Shot 2022-06-15 at 7.37.53 PM.png>)

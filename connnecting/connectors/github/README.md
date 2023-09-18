@@ -1,6 +1,10 @@
 # Github
 
+### [Listing of all Github Actions](action\_github/)
+
+
 ### Authentication
+
 
 ![Information needed to onboard Github connector](<../../../.gitbook/assets/Screen Shot 2022-06-15 at 8.10.38 PM.png>)
 

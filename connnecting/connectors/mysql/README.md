@@ -1,5 +1,8 @@
 # MySQL
 
+### [Listing of all MySQL Actions](action\_mysql/)
+
+
 ![Information needed to onboard MYSQL connector](<../../../.gitbook/assets/Screen Shot 2022-06-14 at 7.13.44 PM.png>)
 
 | Name     | Description                                               |

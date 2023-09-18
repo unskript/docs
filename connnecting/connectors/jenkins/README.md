@@ -2,7 +2,7 @@
 
 ### [List of Jenkins xRunBooks](broken-reference)
 
-### [List of Jenkins Actions](action\_jenkins.md)
+### [List of Jenkins Actions](action\_jenkins/)
 
 ### Authentication
 
