@@ -6,7 +6,7 @@
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | [AWS](../connnecting/connectors/aws/action\_aws/)                      | [Airflow](../connnecting/connectors/airflow/action\_airflow/)        |
 | [Azure](../connnecting/connectors/azure/action\_azure/)                | [ChatGPT](../connnecting/connectors/chatgpt/action\_CHATGPT.md) |
-| [Datadog](../connnecting/connectors/datadog/action\_datadog/)          | [ElasticSearch](../connnecting/connectors/elastricsearch/action\_elasticsearch/) |
+| [Datadog](../connnecting/connectors/datadog/action\_datadog/)          | [ElasticSearch](../connnecting/connectors/elasticsearch/action\_elasticsearch/) |
 | [GCP](../connnecting/connectors/gcp/action\_gcp/)                      | [Github](../connnecting/connectors/github/action\_github/)             |
 | [Grafana](../connnecting/connectors/grafana/action\_grafana/)          | [Hadoop](../connnecting/connectors/hadoop/action\_hadoop/)  |
 | [Jenkins](../connnecting/connectors/jenkins/action\_jenkins/)          | [Jira](../connnecting/connectors/jira/action\_jira/) |
