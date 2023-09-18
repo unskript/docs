@@ -2,17 +2,17 @@
 | | | 
  | ---| ---| 
  | [AWS](action_AWS.md) | [Airflow](action_AIRFLOW.md) | [Azure](action_AZURE.md) |
- | [ChatGPT](action_CHATGPT.md) | [Datadog](action_DATADOG.md) | [ElasticSearch](action_ES.md) |
+ | [ChatGPT](action_CHATGPT.md) | [Datadog](action_DATADOG.md) | [ElasticSearch](action_ELASTICSEARCH.md) |
  | [GCP](action_GCP.md) | [Github](action_GITHUB.md) | [Grafana](action_GRAFANA.md) |
  | [Hadoop](action_HADOOP.md) | [Jenkins](action_JENKINS.md) | [Jira](action_JIRA.md) |
- | [Kafka](action_KAFKA.md) | [Kubernetes](action_K8S.md) | [Mantishub](action_MANTISHUB.md) |
+ | [Kafka](action_KAFKA.md) | [Kubernetes](action_KUBERNETES.md) | [Mantishub](action_MANTISHUB.md) |
  | [Mongo](action_MONGODB.md) | [MsSQL](action_MSSQL.md) | [MySQL](action_MYSQL.md) |
  | [Netbox](action_NETBOX.md) | [Nomad](action_NOMAD.md) | [Pingdom](action_PINGDOM.md) |
  | [Postgresql](action_POSTGRESQL.md) | [Prometheus](action_PROMETHEUS.md) | [Redis](action_REDIS.md) |
  | [Rest](action_REST.md) | [SSH](action_SSH.md) | [SalesForce](action_SALESFORCE.md) |
  | [Slack](action_SLACK.md) | [Snowflake](action_SNOWFLAKE.md) | [Splunk](action_SPLUNK.md) |
  | [Stripe](action_STRIPE.md) | [Terraform](action_TERRAFORM.md) | [Zabbix](action_ZABBIX.md) |
- | [infra](action_INFRA.md) | [opensearch](action_OPENSEARCH.md) | 
+ | [opensearch](action_OPENSEARCH.md) | 
 
  
  # Actions By Category: 
@@ -54,7 +54,7 @@
  | [SLACK](action_SLACK.md) | [SNOWFLAKE](action_SNOWFLAKE.md) | [SPLUNK](action_SPLUNK.md) |
  | [STRIPE](action_STRIPE.md) | [STRIPE_CHARGE](action_STRIPE_CHARGE.md) | [STRIPE_DISPUTE](action_STRIPE_DISPUTE.md) |
  | [STRIPE_REFUND](action_STRIPE_REFUND.md) | [TERRAFORM](action_TERRAFORM.md) | [ZABBIX](action_ZABBIX.md) |
- | [INFRA](action_INFRA.md) | [OPENSEARCH](action_OPENSEARCH.md) | 
+ | [OPENSEARCH](action_OPENSEARCH.md) | 
 
 
 
