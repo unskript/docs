@@ -5,7 +5,7 @@
 |                                                                        |                                                                          |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | [AWS](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/aws/action\_aws/)                      | [Airflow](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/airflow/action\_airflow/)        |
-| [Azure](../../connnecting/connectors/azure/action\_azure/)                | [ChatGPT](../../connnecting/connectors/chatgpt/) |
+| [Azure](../../connnecting/connectors/azure/action\_azure/)                | [ChatGPT](../../connnecting/connectors/chatgpt-actions.md) |
 | [Datadog](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/datadog/action\_datadog/)          | [ElasticSearch](../../connnecting/connectors/elasticsearch/action\_elasticsearch/) |
 | [GCP](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/gcp/action\_gcp/)                      | [Github](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/github/action\_github/)             |
 | [Grafana](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/grafana/action\_grafana/)          | [Hadoop](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/hadoop/action\_hadoop/)  |
@@ -41,7 +41,7 @@
 | [AWS\_POSTGRES](../lists/action\_AWS\_POSTGRES.md)                                                | [AIRFLOW](../connnecting/connectors/airflow/action\_airflow.md)                                   |
 | [DATADOG](../connnecting/connectors/datadog/action\_datadog/)                                     | [DATADOG\_INCIDENT](../lists/action\_DATADOG\_INCIDENT.md)                                        |
 | [DATADOG\_METRICS](../connnecting/connectors/datadog/action\_datadog/action\_datadog\_metrics.md) | [DATADOG\_MONITOR](../connnecting/connectors/datadog/action\_datadog/action\_datadog\_monitor.md) |
-| [ES](../connnecting/connectors/elasticsearch/action\_es.md)                                       | [GCP](../connnecting/connectors/gcp/action\_gcp/)                                                 |
+| [ES](../connnecting/connectors/elasticsearch/action\_elasticsearch/)                                       | [GCP](../connnecting/connectors/gcp/action\_gcp/)                                                 |
 | [GCP\_BUCKET](../connnecting/connectors/gcp/action\_gcp/action\_gcp\_bucket.md)                   | [GCP\_FILE\_STORE](../lists/action\_GCP\_FILE\_STORE.md)                                          |
 | [GCP\_VM](../connnecting/connectors/gcp/action\_gcp/action\_gcp\_vm.md)                           | [GCP\_VPC](../lists/action\_GCP\_VPC.md)                                                          |
 | [GCP\_VMS](../lists/action\_GCP\_VMS.md)                                                          | [GCP\_SHEETS](../lists/action\_GCP\_SHEETS.md)                                                    |
