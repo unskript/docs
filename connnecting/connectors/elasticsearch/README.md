@@ -2,7 +2,7 @@
 
 ### [Listing of Elasticsearch xRunBooks](broken-reference)
 
-### [Listing of Elasticsearch Actions](action\_es.md)
+### [Listing of Elasticsearch Actions](action\_elasticsearch/)
 
 ### Authentication
 

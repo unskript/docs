@@ -1,5 +1,8 @@
 # Pingdom
 
+### [Listing of all Pingdom Actions](action\_pingdom/)
+
+
 ### Authentication
 
 ![Information needed to onboard Pingdom connector](<../../../.gitbook/assets/Screen Shot 2022-06-15 at 7.35.07 PM.png>)

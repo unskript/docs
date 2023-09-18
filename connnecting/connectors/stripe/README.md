@@ -1,5 +1,8 @@
 # Stripe
 
+### [Listing of all Stripe Actions](action\_stripe/)
+
+
 ![Information needed to onboard Stripe connector](<../../../.gitbook/assets/Screen Shot 2022-06-15 at 8.21.04 PM.png>)
 
 | Name    | Description                                               |

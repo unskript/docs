@@ -6,6 +6,9 @@ There are three methods that can be used to authenticate a SHH connection:
 * PEM file
 * Vault
 
+### [Listing of all SSH Actions](action\_ssh/)
+
+
 ### Parameters
 
 To connect via SSH you'll need to provide the following parameters (depending on your Authentication type, the requirements change):

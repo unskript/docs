@@ -5,6 +5,8 @@ description: Connect your xRunBook Actions to Slack. Message your team!
 # Slack
 
 
+### [Listing of all Slack Actions](action\_slack/)
+
 
 ### Authenticate
 

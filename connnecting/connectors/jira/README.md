@@ -1,6 +1,6 @@
 # Jira
 
-### [List of Jira Actions](action\_jira.md)
+### [List of Jira Actions](action\_jira/)
 
 ### Authentication
 

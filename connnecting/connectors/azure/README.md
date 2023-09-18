@@ -1,5 +1,7 @@
 # Azure
 
+### [Listing of all Azure Actions](action\_azure/)
+
 ## Authentication
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-04-11 at 11.19.49.jpg" alt=""><figcaption></figcaption></figure>

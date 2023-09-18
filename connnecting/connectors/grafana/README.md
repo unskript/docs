@@ -1,6 +1,6 @@
 # Grafana
 
-### [List of Grafana Actions](action\_grafana.md)
+### [List of Grafana Actions](action\_grafana/)
 
 ### [Create a Grafana Webhook](./#create-a-grafana-webhook-1)
 

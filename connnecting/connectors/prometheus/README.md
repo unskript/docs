@@ -1,6 +1,6 @@
 # Prometheus
 
-### [List of Prometheus Actions](action\_prometheus.md)
+### [List of Prometheus Actions](action\_prometheus/)
 
 ### Authentication
 
