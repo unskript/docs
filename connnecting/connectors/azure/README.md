@@ -7,4 +7,4 @@
 
 Authentication is available by Service Principal Credentials or User Pass Credentials
 
-### [Listing of all Azure Actions](action\_azure/)
+## [Listing of all Azure Actions](action\_azure/)
