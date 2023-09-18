@@ -5,11 +5,11 @@
 |                                                                        |                                                                          |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | [AWS](../connnecting/connectors/aws/action\_aws/)                      | [Airflow](../connnecting/connectors/airflow/action\_airflow/)        |
-| [Azure](../connnecting/connectors/azure/action\_azure/)                | [ChatGPT](../lists/action\_CHATGPT.md) |
+| [Azure](../connnecting/connectors/azure/action\_azure/)                | [ChatGPT](../connnecting/connectors/chatgpt/action\_CHATGPT.md) |
 | [Datadog](../connnecting/connectors/datadog/action\_datadog/)          | [ElasticSearch](../connnecting/connectors/elastricsearch/action\_elasticsearch/) |
-| [GCP](../connnecting/connectors/gcp/action\_gcp/)                      | [Github](../connnecting/connectors/github/action\_github.md)             |
+| [GCP](../connnecting/connectors/gcp/action\_gcp/)                      | [Github](../connnecting/connectors/github/action\_github/)             |
 | [Grafana](../connnecting/connectors/grafana/action\_grafana/)          | [Hadoop](../connnecting/connectors/hadoop/action\_hadoop/)  |
-| [Jenkins](../connnecting/connectors/jenkins/action\_jenkins/)          | [Jira](../connnecting/connectors/jenkins/action\_jira/) |
+| [Jenkins](../connnecting/connectors/jenkins/action\_jenkins/)          | [Jira](../connnecting/connectors/jira/action\_jira/) |
 | [Kafka](../connnecting/connectors/apache-kafka/action\_kafka/)         | [Kubernetes](../connnecting/connectors/kubernetes/action\_kubernetes/)        |
 | [Mongo](../connnecting/connectors/mongodb/action\_mongodb/)            | [MsSQL](../connnecting/connectors/ms-sql/action\_mssql/)               |
 | [MySQL](../connnecting/connectors/mysql/action\_mysql/)                | [Netbox](../connnecting/connectors/netbox/action\_netbox/) |
