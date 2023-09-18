@@ -6,11 +6,11 @@
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | [AWS](../connnecting/connectors/aws/action\_aws/)                      | [Airflow](../connnecting/connectors/airflow/action\_airflow/)        |
 | [Azure](../connnecting/connectors/azure/action\_azure/)                | [ChatGPT](../lists/action\_CHATGPT.md) |
-| [Datadog](../connnecting/connectors/datadog/action\_datadog/)          | [ElasticSearch](../connnecting/connectors/airflow/action\_elasticsearch/) |
+| [Datadog](../connnecting/connectors/datadog/action\_datadog/)          | [ElasticSearch](../connnecting/connectors/elastricsearch/action\_elasticsearch/) |
 | [GCP](../connnecting/connectors/gcp/action\_gcp/)                      | [Github](../connnecting/connectors/github/action\_github.md)             |
 | [Grafana](../connnecting/connectors/grafana/action\_grafana/)          | [Hadoop](../connnecting/connectors/hadoop/action\_hadoop/)  |
 | [Jenkins](../connnecting/connectors/jenkins/action\_jenkins/)          | [Jira](../connnecting/connectors/jenkins/action\_jira/) |
-| [Kafka](../connnecting/connectors/apache-kafka/action\_kafka/)         | [Kubernetes](../connnecting/connectors/kubernetes/action\_k8s/)        |
+| [Kafka](../connnecting/connectors/apache-kafka/action\_kafka/)         | [Kubernetes](../connnecting/connectors/kubernetes/action\_kubernetes/)        |
 | [Mongo](../connnecting/connectors/mongodb/action\_mongodb/)            | [MsSQL](../connnecting/connectors/ms-sql/action\_mssql/)               |
 | [MySQL](../connnecting/connectors/mysql/action\_mysql/)                | [Netbox](../connnecting/connectors/netbox/action\_netbox/) |
 | [Nomad](../connnecting/connectors/nomad/action\_nomad/)                | [Opensearch](../connnecting/connectors/opensearch/action\_opensearch/) |
