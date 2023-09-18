@@ -4,22 +4,22 @@
 
 |                                                                        |                                                                          |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| [AWS](../connnecting/connectors/aws/action\_aws/)                      | [Airflow](../connnecting/connectors/airflow/action\_airflow/)        |
-| [Azure](../connnecting/connectors/azure/action\_azure/)                | [ChatGPT](../connnecting/connectors/chatgpt/action\_CHATGPT.md) |
-| [Datadog](../connnecting/connectors/datadog/action\_datadog/)          | [ElasticSearch](../connnecting/connectors/elasticsearch/action\_elasticsearch/) |
-| [GCP](../connnecting/connectors/gcp/action\_gcp/)                      | [Github](../connnecting/connectors/github/action\_github/)             |
-| [Grafana](../connnecting/connectors/grafana/action\_grafana/)          | [Hadoop](../connnecting/connectors/hadoop/action\_hadoop/)  |
-| [Jenkins](../connnecting/connectors/jenkins/action\_jenkins/)          | [Jira](../connnecting/connectors/jira/action\_jira/) |
-| [Kafka](../connnecting/connectors/apache-kafka/action\_kafka/)         | [Kubernetes](../connnecting/connectors/kubernetes/action\_kubernetes/)        |
-| [Mongo](../connnecting/connectors/mongodb/action\_mongodb/)            | [MsSQL](../connnecting/connectors/ms-sql/action\_mssql/)               |
-| [MySQL](../connnecting/connectors/mysql/action\_mysql/)                | [Netbox](../connnecting/connectors/netbox/action\_netbox/) |
-| [Nomad](../connnecting/connectors/nomad/action\_nomad/)                | [Opensearch](../connnecting/connectors/opensearch/action\_opensearch/) |
-| [Pingdom](../connnecting/connectors/pingdom/action\_pingdom/)          | [[Postgresql](../connnecting/connectors/postgres/action\_postgresql/)  |
-| [Prometheus](../connnecting/connectors/prometheus/action\_prometheus/) | [Redis](../connnecting/connectors/redis/action\_redis/)  |
-| [Rest](../connnecting/connectors/rest/action\_rest/)                   | [Salesforce](../connnecting/connectors/salesforce/action\_salesforce/) |
-| [Splunk](../connnecting/connectors/splunk/action\_splunk/)             | [SSH](../connnecting/connectors/ssh/action\_ssh/)                      |
-| [Slack](../connnecting/connectors/slack/action\_slack/)                | [Snowflake](../connnecting/connectors/snowflake/action\_snowflake/)    |
-| [Stripe](../connnecting/connectors/stripe/action\_stripe/)             | [Terraform](../connnecting/connectors/terraform/action\_terraform/)    |
+| [AWS](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/aws/action\_aws/)                      | [Airflow](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/airflow/action\_airflow/)        |
+| [Azure](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/azure/action\_azure/)                | [ChatGPT](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/chatgpt/action\_CHATGPT.md) |
+| [Datadog](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/datadog/action\_datadog/)          | [ElasticSearch](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/elasticsearch/action\_elasticsearch/) |
+| [GCP](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/gcp/action\_gcp/)                      | [Github](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/github/action\_github/)             |
+| [Grafana](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/grafana/action\_grafana/)          | [Hadoop](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/hadoop/action\_hadoop/)  |
+| [Jenkins](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/jenkins/action\_jenkins/)          | [Jira](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/jira/action\_jira/) |
+| [Kafka](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/apache-kafka/action\_kafka/)         | [Kubernetes](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/kubernetes/action\_kubernetes/)        |
+| [Mongo](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/mongodb/action\_mongodb/)            | [MsSQL](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/ms-sql/action\_mssql/)               |
+| [MySQL](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/mysql/action\_mysql/)                | [Netbox](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/netbox/action\_netbox/) |
+| [Nomad](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/nomad/action\_nomad/)                | [Opensearch](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/opensearch/action\_opensearch/) |
+| [Pingdom](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/pingdom/action\_pingdom/)          | [[Postgresql](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/postgres/action\_postgresql/)  |
+| [Prometheus](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/prometheus/action\_prometheus/) | [Redis](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/redis/action\_redis/)  |
+| [Rest](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/rest/action\_rest/)                   | [Salesforce](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/salesforce/action\_salesforce/) |
+| [Splunk](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/splunk/action\_splunk/)             | [SSH](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/ssh/action\_ssh/)                      |
+| [Slack](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/slack/action\_slack/)                | [Snowflake](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/snowflake/action\_snowflake/)    |
+| [Stripe](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/stripe/action\_stripe/)             | [Terraform](https://docs.unskript.com/unskript-product-documentation/connnecting/connectors/terraform/action\_terraform/)    |
 
 ## Actions By Category:
 
