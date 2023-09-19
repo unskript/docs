@@ -10,7 +10,7 @@ unSkript supports the following Connectors-
 * Data services like [Redis](redis/), [MySQL](mysql/), [Snowflake](snowflake/), [MongoDB](mongodb/), [Kafka](apache-kafka/), [Postgresql](postgres/), [Hadoop](hadoop/), [MSSQL](ms-sql/), [Splunk](splunk/)
 * Observability services like [Grafana](grafana/), [Datadog](datadog/), [Zabbix](zabbix.md), [Pingdom](pingdom/), [OpenSearch](opensearch/), [Elasticsearch](elasticsearch/), [Prometheus](prometheus/)
 * CI/CD platforms such as [Jenkins](jenkins/), [Jira](jira/), [GitHub](github/), [Terraform](terraform/)
-* Infrastructure services such as [AWS](aws/), [GCP](gcp/), [Kubernetes](kubernetes/), [Azure](azure/)
+* Infrastructure services such as [AWS](aws/), [GCP](gcp/), [K8S](kubernetes/), [Azure](azure/)
 * Utilities like [Airflow](airflow/), [Slack](slack/), [Stripe](stripe/)
 * Any API or application with a [REST API](rest/) or [SSH](ssh/) connectivity
 
