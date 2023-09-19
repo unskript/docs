@@ -2,7 +2,7 @@
 
 ### [List of Kubernetes xRunBooks](broken-reference)
 
-### [List of Kubernetes Actions](action\_kubernetes/)
+### [List of Kubernetes Actions](action\_kubernetes.md)
 
 ### Authentication
 
