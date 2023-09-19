@@ -49,6 +49,7 @@
 | [GITHUB\_TEAM](../lists/action\_GITHUB\_TEAM.md)                                                  | [GITHUB\_USER](../lists/action\_GITHUB\_USER.md)                                                  |
 | [GRAFANA](../connnecting/connectors/grafana/action\_grafana.md)                                   | [HADOOP](../connnecting/connectors/hadoop/action\_hadoop.md)                                      |
 | [JIRA](../connnecting/connectors/jira/action\_jira.md)                                            | [KAFKA](../connnecting/connectors/apache-kafka/action\_kafka.md)                                  |
+| [K8S](../connnecting/connectors/kubernetes/action\_kubernetes.md)                                 | |
 | [K8S\_CLUSTER](../lists/action\_K8S\_CLUSTER.md)                                                  | [K8S\_NODE](../lists/action\_K8S\_NODE.md)                                                        |
 | [K8S\_KUBECTL](../lists/action\_K8S\_KUBECTL.md)                                                  | [K8S\_PVC](../lists/action\_K8S\_PVC.md)                                                          |
 | [MANTISHUB](../lists/action\_MANTISHUB.md)                                                        | [MONGODB](../connnecting/connectors/mongodb/action\_mongodb.md)                                   |
