@@ -41,7 +41,7 @@
  | [GITHUB_ISSUE](action_GITHUB_ISSUE.md) | [GITHUB_PR](action_GITHUB_PR.md) | [GITHUB_REPO](action_GITHUB_REPO.md) |
  | [GITHUB_TEAM](action_GITHUB_TEAM.md) | [GITHUB_USER](action_GITHUB_USER.md) | [GITHUB_ORG](action_GITHUB_ORG.md) |
  | [GRAFANA](action_GRAFANA.md) | [HADOOP](action_HADOOP.md) | [JENKINS](action_JENKINS.md) |
- | [JIRA](action_JIRA.md) | [KAFKA](action_KAFKA.md) | [KUBERNETES](action_KUBERNETES.md) |
+ | [JIRA](action_JIRA.md) | [KAFKA](action_KAFKA.md) | [K8S](action_KUBERNETES.md) |
  | [K8S_CLUSTER](action_K8S_CLUSTER.md) | [K8S_NODE](action_K8S_NODE.md) | [K8S_POD](action_K8S_POD.md) |
  | [K8S_KUBECTL](action_K8S_KUBECTL.md) | [K8S_PVC](action_K8S_PVC.md) | [K8S_NAMESPACE](action_K8S_NAMESPACE.md) |
  | [MANTISHUB](action_MANTISHUB.md) | [MONGODB](action_MONGODB.md) | [MONGODB_COLLECTION](action_MONGODB_COLLECTION.md) |
