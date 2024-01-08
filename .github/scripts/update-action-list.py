@@ -46,7 +46,7 @@ def update_readme(path_to_readme: str,
     if not path_to_readme:
         return 
     items_to_update.sort()
-    awesome_repo_url = "https://github.com/unskript/"
+    awesome_repo_url = "https://github.com/unskript/Awesome-CloudOps-Automation/tree/master/"
     print(f"Updating README at {path_to_readme}")
     _r = Path(os.path.abspath(path_to_readme))
     if not _r.is_file():
@@ -57,7 +57,7 @@ def update_readme(path_to_readme: str,
         contents = ''
         for item in items_to_update:
             title,description,action,readme = item
-            readme = readme.replace("/tmp/", awesome_repo_url)
+            readme = readme.replace("/tmp/Awesome-CloudOps-Automation/", awesome_repo_url)
             contents += f'* [{title}]({readme}) : {description}' + '\n'
         f.write(f"# {connector_name} Actions" + '\n')
         f.write(contents)
